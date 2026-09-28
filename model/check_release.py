@@ -12,7 +12,7 @@ for folder in ['parameters','model','docs']:
 paths.extend(p for p in (R/'web').glob('*') if p.is_file() and p.suffix in ['.html','.js','.css'])
 paths.extend(p for p in (R/'web/assets/sockel-d').glob('*') if p.is_file() and p!=M)
 paths.extend(p for p in (R/'web/assets/ux').glob('*') if p.is_file())
-paths.extend(R/p for p in ['README.md','AGENTS.md','package.json','package-lock.json'])
+paths.extend(R/p for p in ['index.html','sources/README.md','README.md','AGENTS.md','package.json','package-lock.json'])
 files={str(p.relative_to(R)):sha(p) for p in sorted(paths)}
 for t in [5,8,9]:
  d=json.loads((R/f'web/assets/sockel-d/model-{t}.json').read_text())
@@ -33,7 +33,7 @@ class Links(HTMLParser):
    if u.scheme or u.netloc or not u.path:continue
    target=(self.page.parent/unquote(u.path)).resolve()
    assert target.exists(),f'{self.page}: missing {v}'
-for name in ['variants','entscheidungen','mechanik','montage','beschaffung','kosten','ux','ux-review']:
+for name in ['projekt','quellen','bauteile','variants','entscheidungen','mechanik','montage','beschaffung','kosten','ux','ux-review','project-review']:
  p=R/f'web/{name}.html';parser=Links();parser.page=p;parser.feed(p.read_text())
 if '--write' in sys.argv:
  M.write_text(json.dumps({'revision':'D-V03','status':'concept; no manufacturing or operational release','scope':'File identity snapshot. Existing mechanical reports retain their own scope; hashes do not certify new checks.','files_sha256':files},indent=2)+'\n')

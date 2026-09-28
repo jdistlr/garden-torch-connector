@@ -2,7 +2,7 @@
 
 **Arbeitsstand 28.09.2026: prüfbares Konzept, keine Fertigungs- oder Betriebsfreigabe.** Ausschließlich Variante D wird weiterentwickelt: massive schwarze Aufnahme mit direkt eingeschnittenem axialem Gewindesackloch. Fünf Teile, keine Gewindebuchse oder Fügezone.
 
-[Viewer öffnen](https://jdistlr.github.io/garden-torch-connector/web/variants.html) · [Entscheidungskette](docs/entscheidungen-d.md) · [Montage](docs/montage-d.md)
+[Projekt öffnen](https://jdistlr.github.io/garden-torch-connector/web/projekt.html) · [Viewer öffnen](https://jdistlr.github.io/garden-torch-connector/web/variants.html) · [Entscheidungskette](docs/entscheidungen-d.md) · [Montage](docs/montage-d.md)
 
 ## Der rote Faden
 

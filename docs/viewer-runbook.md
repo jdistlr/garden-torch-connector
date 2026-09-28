@@ -1,11 +1,11 @@
 # D-V03 · Bauen, prüfen, veröffentlichen
 
-Öffentlicher Einstieg: https://jdistlr.github.io/garden-torch-connector/ → `web/variants.html`. Historisches Original: `web/index.html`. Aktueller Arbeitsstand: [Entscheidungskette](entscheidungen-d.md).
+Öffentlicher Einstieg: https://jdistlr.github.io/garden-torch-connector/ → `web/projekt.html`. Historisches Original: `web/index.html`. Aktueller Arbeitsstand: [Entscheidungskette](entscheidungen-d.md).
 
 ## Dokumente und Oberfläche
 
 - `npm ci` installiert die fixierte Markdown-Abhängigkeit.
-- `npm run docs` erzeugt die fünf Dokumentseiten aus `docs/*-d.md`.
+- `npm run docs` erzeugt die acht Dokumentseiten einschließlich Projekt, Bauteile und Fotos/Maße aus `docs/*-d.md`.
 - `python3 -m http.server 8765 --directory web`; lokal `/variants.html?plate=9` öffnen.
 - `web/project-state.js` hält Plattenwahl/URL, Dokumentlinks, PDF/STEP und Vorschau unabhängig von Three.js aktuell. Explizite URL gewinnt vor lokaler Merkhilfe. Keine Modell-Neugenerierung.
 - `web/montage-d.js` definiert Posen und Aktionszuordnung. Ganzzahlen sind Zielbilder; Übergänge erklären die nächste Handlung. Änderungen an `stepAt` sind keine Änderungen an `poseAt`.

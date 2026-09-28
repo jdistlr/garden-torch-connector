@@ -1,3 +1,4 @@
-const pages=[['variants','Modell'],['entscheidungen','Stand'],['mechanik','Mechanik'],['montage','Montage'],['beschaffung','Beschaffung'],['kosten','Kosten']];
-exports.header=active=>`<header class="site-header"><a class="brand" href="variants.html">Gartenfackel<span>D-V03</span></a><nav aria-label="Hauptnavigation">${pages.map(([slug,label])=>`<a href="${slug}.html"${slug===active?' aria-current="page"':''}>${label}</a>`).join('')}</nav></header>`;
-exports.footer=()=>'<footer class="site-footer"><span>Gartenfackel / D-V03</span><a href="variants.html">Zurück zum Modell</a></footer>';
+const pages=[['projekt','Projekt'],['quellen','Fotos & Maße'],['entscheidungen','Entscheidungen'],['variants','Modell & Zeichnungen'],['bauteile','Bauteile'],['mechanik','Mechanik & Prüfung'],['montage','Montage'],['beschaffung','Beschaffung'],['kosten','Kosten']];
+exports.pages=pages;
+exports.header=active=>`<header class="site-header"><a class="brand" href="projekt.html">Gartenfackel<span>Projekt / D-V03</span></a><details class="project-menu"><summary>Bereiche · ${pages.find(p=>p[0]===active)?.[1]||'Projekt'}</summary><nav aria-label="Projektbereiche">${pages.map(([slug,label])=>`<a href="${slug}.html"${slug===active?' aria-current="page"':''}>${label}</a>`).join('')}</nav></details></header>`;
+exports.footer=()=>'<footer class="site-footer"><span>Gartenfackel · D-V03 · Konzept</span><a href="projekt.html">Projektübersicht</a></footer>';

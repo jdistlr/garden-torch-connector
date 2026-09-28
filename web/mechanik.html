@@ -1,6 +1,6 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Steck-Dreh-Funktion · Gartenfackel</title><link rel="stylesheet" href="design.css?rev=2"></head><body class="document-page"><header class="site-header"><a class="brand" href="variants.html">Gartenfackel<span>D-V03</span></a><nav aria-label="Hauptnavigation"><a href="variants.html">Modell</a><a href="entscheidungen.html">Stand</a><a href="mechanik.html" aria-current="page">Mechanik</a><a href="montage.html">Montage</a><a href="beschaffung.html">Beschaffung</a><a href="kosten.html">Kosten</a></nav></header><main class="document"><div class="document-meta"><p data-project-state>D-V03 · Konzept, keine Freigabe</p><button class="print-action" onclick="window.print()">Drucken / PDF</button></div><article><h1>Steck-Dreh-Funktion</h1>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Steck-Dreh-Funktion · Gartenfackel</title><link rel="stylesheet" href="design.css?rev=3"></head><body class="document-page"><header class="site-header"><a class="brand" href="projekt.html">Gartenfackel<span>Projekt / D-V03</span></a><details class="project-menu"><summary>Bereiche · Mechanik & Prüfung</summary><nav aria-label="Projektbereiche"><a href="projekt.html">Projekt</a><a href="quellen.html">Fotos & Maße</a><a href="entscheidungen.html">Entscheidungen</a><a href="variants.html">Modell & Zeichnungen</a><a href="bauteile.html">Bauteile</a><a href="mechanik.html" aria-current="page">Mechanik & Prüfung</a><a href="montage.html">Montage</a><a href="beschaffung.html">Beschaffung</a><a href="kosten.html">Kosten</a></nav></details></header><main class="document"><div class="project-context"><label>Plattenstärke <select id="thickness"><option value="5">5 mm</option><option value="8">8 mm</option><option value="9">9 mm</option></select></label><a href="bauteile.html">Bauteile &amp; Zusammenhänge</a></div><div class="document-meta"><p data-project-state>D-V03 · Konzept, keine Freigabe</p><button class="print-action" onclick="window.print()">Drucken / PDF</button></div><article><h1>Steck-Dreh-Funktion</h1>
 <p>Stand 28.09.2026. Geprüft werden vorhandene STEP-Körper, keine gemessenen Originalteile. Geometrie und Zeichnungsrevision bleiben D-V03.</p>
-<h2>Bezug und Bewegung</h2>
+<h2 id="bezug-und-bewegung">Bezug und Bewegung</h2>
 <p>Boden z=0, Rohrachse +Z, Stift zeigt +Y. Blick <strong>von oben zur Platte</strong>: positive Rohrdrehung gegen den Uhrzeigersinn. Die bisherige STEP-Baugruppe zeigt die <strong>Einführlage</strong> (0°), nicht die verdrehte Endlage. Für die Animation wird ausschließlich das Rohr bewegt; die Sockelaufnahme bleibt fest.</p>
 <ol>
 <li>Rohr 40 mm oberhalb der bisherigen Einführlage halten, Schlitz mittig auf +Y.</li>
@@ -8,7 +8,7 @@
 <li>Rohr um +50° drehen. Diese Darstellungsposition liegt vor dem ersten geometrischen Anschlag, sie ist keine eingerastete Endlage.</li>
 <li>Zum Lösen um −50° zurückdrehen und axial abziehen. Der Rückweg ist geometrisch ebenso frei.</li>
 </ol>
-<h2>Ergebnis am nominalen Konzept</h2>
+<h2 id="ergebnis-am-nominalen-konzept">Ergebnis am nominalen Konzept</h2>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, bei Bedarf seitlich scrollen"><table>
 <thead>
 <tr>
@@ -18,50 +18,50 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>Radiales Spiel</td>
-<td>(25−24)/2 = 0,5 mm</td>
-<td>Unbelastet konzentrisch; kein Toleranznachweis</td>
+<td data-label="Merkmal">Radiales Spiel</td>
+<td data-label="Ableitung">(25−24)/2 = 0,5 mm</td>
+<td data-label="Bedeutung">Unbelastet konzentrisch; kein Toleranznachweis</td>
 </tr>
 <tr>
-<td>Schlitzspiel je Seite</td>
-<td>(5−4)/2 = 0,5 mm</td>
-<td>Ausrichtung beim Einführen erforderlich</td>
+<td data-label="Merkmal">Schlitzspiel je Seite</td>
+<td data-label="Ableitung">(5−4)/2 = 0,5 mm</td>
+<td data-label="Bedeutung">Ausrichtung beim Einführen erforderlich</td>
 </tr>
 <tr>
-<td>Axiales Spiel im Abzweig</td>
-<td>6−4 = 2 mm gesamt</td>
-<td>Von mittiger Lage je 1 mm bis Kontakt</td>
+<td data-label="Merkmal">Axiales Spiel im Abzweig</td>
+<td data-label="Ableitung">6−4 = 2 mm gesamt</td>
+<td data-label="Bedeutung">Von mittiger Lage je 1 mm bis Kontakt</td>
 </tr>
 <tr>
-<td>Nutsektor</td>
-<td>65°</td>
-<td>Ist nicht der mögliche Drehwinkel des endlichen Stifts</td>
+<td data-label="Merkmal">Nutsektor</td>
+<td data-label="Ableitung">65°</td>
+<td data-label="Bedeutung">Ist nicht der mögliche Drehwinkel des endlichen Stifts</td>
 </tr>
 <tr>
-<td>Erster Drehkontakt</td>
-<td>65°−asin(2/12,5) ≈ 55,79°</td>
-<td>Stift berührt die radiale Endwand am Innenradius des Rohrs</td>
+<td data-label="Merkmal">Erster Drehkontakt</td>
+<td data-label="Ableitung">65°−asin(2/12,5) ≈ 55,79°</td>
+<td data-label="Bedeutung">Stift berührt die radiale Endwand am Innenradius des Rohrs</td>
 </tr>
 <tr>
-<td>Anzeigeweg</td>
-<td>0…50°</td>
-<td>Nominale Reserve vor Anschlag; kein Fertigungs-Sicherheitsabstand</td>
+<td data-label="Merkmal">Anzeigeweg</td>
+<td data-label="Ableitung">0…50°</td>
+<td data-label="Bedeutung">Nominale Reserve vor Anschlag; kein Fertigungs-Sicherheitsabstand</td>
 </tr>
 <tr>
-<td>Rückdrehsicherung</td>
-<td>nicht modelliert</td>
-<td>Keine Rastung, Feder, Rampe oder Hinterschneidung, die Zurückdrehen blockiert</td>
+<td data-label="Merkmal">Rückdrehsicherung</td>
+<td data-label="Ableitung">nicht modelliert</td>
+<td data-label="Bedeutung">Keine Rastung, Feder, Rampe oder Hinterschneidung, die Zurückdrehen blockiert</td>
 </tr>
 </tbody></table></div>
 <p><code>python3 model/check_motion_d.py</code> prüft jede Plattenstärke in Schritten von 0,5 mm bzw. 0,5° gegen die vier festen Körper. Der JSON-Bericht enthält Stichprobenzahl, Schnittvolumen, Mindestabstand, Gegenproben und STEP-Prüfsummen. Abtastung ist kein mathematisch lückenloser Hüllvolumennachweis. Konzentrische Zylinder und der durchgehende Einführschlitz erklären die freien Zwischenlagen zusätzlich geometrisch.</p>
 <p>Absichtliche Gegenproben: −5° in falscher Richtung; +60° über den Anschlag; nach +50° axial um ±1,1 mm verschieben. Diese Lagen überschneiden den Stift. Damit wird insbesondere nicht nur das Ausbleiben einer Fehlermeldung als Prüfung gewertet.</p>
-<h2>Kontakt unter Gewicht und Bedienmoment</h2>
+<h2 id="kontakt-unter-gewicht-und-bedienmoment">Kontakt unter Gewicht und Bedienmoment</h2>
 <p>In der mittigen Darstellungsposition trägt der Stift das Rohr noch nicht: je 1 mm axiale Luft. Unter Eigengewicht sinkt das Rohr bis zur oberen axialen Nutwand ab. Beim Hochziehen liegt die gegenüberliegende Wand am Stift an. Diese Kontaktlagen sind weder Reibungs- noch Festigkeitsnachweise. Die Animation stellt die mittige geometrische Position dar und simuliert keine Schwerkraft.</p>
 <p>Drehmoment gelangt über Nutwand/Stift in die massive Aufnahme und über deren Klemmkontakt zur Platte. Bei festgehaltener Schraube mit Rechtsgewinde kann eine Mitdrehung der Aufnahme <strong>gegen den Uhrzeigersinn von oben</strong> die Aufnahme vom Schraubenkopf wegbewegen und die Klemmung lösen; <strong>im Uhrzeigersinn von oben</strong> kann sie sich weiter auf das Gewinde ziehen. Gerade das Eindrehen des Rohres muss deshalb am Muster geprüft werden. Drehrichtung allein ersetzt keine ausreichende Vorspannung oder Losdrehsicherung.</p>
 <p>Der idealisierte Schraubenkonus liegt nominal an der Senkfläche: bei z=0,2 besitzt die Senkung Radius 8,0 mm, ebenso der Kopf. Reale Kopfkontur einschließlich Kopfrand ist hiervon nicht abgedeckt. Keine Vorspannung aus dem reinen Schnittvolumen ableiten.</p>
-<h2>Toleranzen und Beschichtung</h2>
+<h2 id="toleranzen-und-beschichtung">Toleranzen und Beschichtung</h2>
 <p>Reale Mindestluft radial = (kleinster Rohrinnendurchmesser − größter fertiger Kopfdurchmesser)/2; Beschichtung auf Kopf und Rohrinnenfläche reduziert das Spiel zusätzlich. Ovalität, Schweißnaht, Grat und Achsversatz berücksichtigen. Entsprechend Nutbreite minus größter fertiger Stiftdurchmesser prüfen. Bei Rohrersatz oder geändertem Stift CAD, Zeichnungen und Bewegungsprüfung gemeinsam neu erzeugen.</p>
-<h2>Praktische Abnahme – noch offen</h2>
+<h2 id="praktische-abnahme-noch-offen">Praktische Abnahme – noch offen</h2>
 <ul>
 <li>Kalt und ohne Brennstoff prüfen; Stiftfestigkeit und Verschraubung vorher freigeben.</li>
 <li>Aufnahme/Platte mit gemeinsamem Kontrollstrich markieren, Einstecken und Drehen mehrfach durchführen. Kein Mitdrehen, kein Klemmen; reales Drehmoment erfassen.</li>
@@ -69,6 +69,6 @@
 <li>Fackelhöhe, Gesamtgewicht, Schwerpunkt, Wind-/Stoßlast und Untergrund für Standprüfung festlegen. Die 150-mm-Platte ist kein Standsicherheitsnachweis.</li>
 </ul>
 <p>Drei nächste Rückfragen: (1) Rohrinnen- und Kopfdurchmesser sowie Stiftmaß messen; (2) Originalbewegung bis Anschlag und zurück filmen, insbesondere mögliche Rastung; (3) vollständige Fackel mit Höhe/Gewicht und oberem Anschluss zeigen.</p>
-<h2>Gesamte Montagefolge</h2>
+<h2 id="gesamte-montagefolge">Gesamte Montagefolge</h2>
 <p>Zusätzlich wurden je71Posen der vollständigen Animation für5/8/9mm geprüft: alle zehn Körperpaare, einschließlich radialem Stifteinsetzen, axialem Aufsetzen, Schraubenzuführung und Absetzen. Keine Volumenüberschneidung und kein Bodenunterstand an den Abtastpunkten. Bericht <code>web/assets/sockel-d/assembly-motion-checks.json</code>. Montageauflagen/Hand/Werkzeug fehlen im CAD; der35-mm-Hub zeigt den erforderlichen Zugang schematisch. Beim Schrauben wird nur die glatte Hülle geprüft, nicht das Gewindeprofil oder Vorspannung.</p>
-</article></main><footer class="site-footer"><span>Gartenfackel / D-V03</span><a href="variants.html">Zurück zum Modell</a></footer><script src="project-state.js?rev=2"></script></body></html>
+</article></main><footer class="site-footer"><span>Gartenfackel · D-V03 · Konzept</span><a href="projekt.html">Projektübersicht</a></footer><script src="project-state.js?rev=3"></script></body></html>

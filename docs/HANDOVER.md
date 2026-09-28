@@ -35,3 +35,7 @@ Die frühere Karten-/Linkleisten-Erweiterung wurde gestalterisch zurückgenommen
 ## Separate mobile UX-Vorschau (2026-09-28)
 
 `web/ux.html` bietet Modell / Aufbau / Projekt; `web/ux-review.html` dient der schmalen Browserprüfung. Hauptviewer nicht ersetzt. Konzept, Erweiterungsvertrag und tatsächlicher Prüfumfang: `docs/ux-entwurf.md`. CAD unverändert. Bildfolge mit acht Zielbildern, keine neue kontinuierliche Montageanimation. Mobile Browserrahmen geprüft, reale iOS-/Android-Geräte und WebGL noch offen. Für vollständige Umstellung müssen auch verlinkte Bestandsdokumente ins neue Layout überführt werden.
+
+## Gemeinsame Projektoberfläche · 29.09.2026
+
+Nutzer lehnt auch die Drei-Bereiche-Vorschau ab: vollständige Orchestrierung aller vorhandenen Funktionen beauftragt. Neuer Einstieg `web/projekt.html` mit nächster Tätigkeit und vollständigem Funktionsverzeichnis. Fotos/Maße, Entscheidungen, Modell/Zeichnungen, Bauteile, Mechanik, Montage, Beschaffung und Kosten verwenden die gemeinsame Oberfläche. `docs/projekt-integration.md` dokumentiert Quelle und Verbindung jeder Funktion. Bauteile verbinden Fotos, Kandidaten, Prüfungen, STEP und konkrete Animationsschritte. `web/ux.html` bleibt alter Entwurf; nicht zur Hauptseite machen. CAD und Posen unverändert. Reale Smartphone-Geräte und WebGL in der Cloud weiterhin nicht nachweisbar.
