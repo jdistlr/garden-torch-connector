@@ -18,3 +18,7 @@ Der Nutzer hat die Reduktion auf einen Sockel-Viewer und die Drei-Bereiche-Vorsc
 Auf allen neun aktuellen Seiten dieselbe Navigation. Plattenwahl 5/8/9 auf jeder Fachseite, URL gewinnt vor Merkhilfe. Bauteil- und Animationslinks erhalten zusätzliche Parameter. Mobile Tabellen zeigen Feldbeschriftungen ohne horizontalen Leseweg. Viewerwerkzeuge bleiben sichtbar. Modellgesten ausdrücklich aktivieren und beenden, Zoom auch mit Tasten.
 
 Spätere Geometriebearbeitung bleibt zurückgestellt. Nachweise, Angebote und physische Prüfungen werden durch die Projektintegration nicht vervollständigt. Keine Händlerkommunikation.
+
+## Verifikation
+
+27 Kombinationen aus neun Seiten und drei Plattenstärken sowie Zustandswechsel per DOM geprüft. Alle neuen lokalen Sprungziele auf Existenz geprüft. Live: Plattenparameter im Montage-Link, Bauteil → Beschaffung und Rückverweis; mobile Rahmen 320/375/390 ohne horizontalen Inhaltsüberlauf. Desktop-Einstieg visuell geprüft. Cloud-WebGL nicht verfügbar; CAD-Bild und Downloads bleiben nutzbar. Keine reale iOS-/Android-Prüfung. Dokument- und Modellansichten enthalten weiterhin die vollständigen vorhandenen Fachinformationen.
