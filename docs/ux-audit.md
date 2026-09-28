@@ -20,3 +20,5 @@ Die Desktopansicht vor dieser Korrektur zeigte den Modellbereich erst nach rund 
 DOM-Integration prüft erhaltene Platten-/Download-/Navigations-/Montagefunktion. Modellidentitäten, Posen, generierte Seiten und lokale Links bleiben geprüft. Visuelle Prüfung der veröffentlichten Haupt- und Dokumentseiten im verfügbaren Browser; WebGL dort nicht verfügbar. Daher keine Behauptung einer neuen visuellen Prüfung des gerenderten 3D-Modells. Das Layout und die dokumentierte Ersatzansicht sind getrennt prüfbar.
 
 Keine Geometrie-, Kosten-, Festigkeits- oder Freigabeänderung. Original D02 und Variantenarchiv behalten ihren historischen Darstellungsstand; die sechs aktuellen D-V03-Seiten verwenden das gemeinsame Template.
+
+Nutzerkorrektur zur Farbgebung: zurück zu Weiß, kühlem Hellgrau, dunkler Schrift und sparsamem Blau. Grün aus aktueller Oberfläche sowie Viewer-Hintergrund/Boden entfernt. Materialfarben der CAD-Teile bleiben erhalten.
