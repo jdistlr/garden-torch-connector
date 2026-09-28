@@ -1,6 +1,6 @@
 # Engineering-Web-Viewer: Zielbild und Abnahme
 
-Stand 28.09.2026. Anforderung aufgenommen; noch nicht implementiert. Der Viewer ist nun fester Bestandteil des Zielumfangs.
+Stand 28.09.2026. D02 zeigt Rohr und schwarzes Gegenstück, getrennt oder zusammengesteckt, mit Teilen ein-/ausblenden. Die folgenden Abschnitte beschreiben auch noch offene Ausbaustufen.
 
 ## Ziel
 
@@ -29,7 +29,7 @@ Nach dem [vereinfachten Projektplan](plan.md) besteht die allererste Version nur
 | Technische Ansichten | Orthografisch vorn/seitlich/oben, Isometrie; Perspektive umschaltbar |
 | Darstellung | Schattierte Flächen mit echten CAD-Kanten, Transparenz, Teile ein-/ausblenden |
 | Schnitt | Verschiebbare Schnittebene zur visuellen Untersuchung; Schnittmaterial geschlossen darstellen, Hohlraum offen lassen |
-| Bauteile | Rohr auswählen; Referenz-Erdspieß gesondert, sofern modelliert |
+| Bauteile | Rohr und schwarzes Gegenstück separat ein-/ausblenden |
 | Maße | Definierte CAD-Maße am passenden Merkmal einblenden |
 | Downloads | STEP, PDF und Darstellung aus derselben Revision, sobald verfügbar |
 
@@ -78,7 +78,7 @@ Für echte interaktive Solid-Operationen (Boolesche Schnitte, exakte freie Messu
 2. Gemeinsamen Export von Modell, Kennwerten und Metadaten aufbauen.
 3. Viewer mit Standardansichten, Auswahl und Informationspanels umsetzen.
 4. Schnittdarstellung und definierte Maße ergänzen, visuell und numerisch prüfen.
-5. Hosting festlegen und veröffentlichen. GitHub Pages bleibt ein Kandidat für statische Darstellung; Live-CAD-Neuberechnung erfordert zusätzliche Infrastruktur oder einen Browser-CAD-Kern.
+5. Hosting festlegen und veröffentlichen. GitHub Pages veröffentlicht die statische Darstellung; Live-CAD-Neuberechnung erfordert zusätzliche Infrastruktur oder einen Browser-CAD-Kern.
 
 ## Offizielle technische Referenzen
 

@@ -2,9 +2,11 @@
 
 Hier sammeln wir alles, was wir brauchen, um ein vorhandenes Verbindungsrohr für eine Gartenfackel-Vorrichtung nachvollziehbar zu dokumentieren und daraus später einen Fertigungsauftrag zu machen.
 
-**Stand: 28. September 2026 — Ein CAD-Fotoentwurf D01, STEP und ein erster Web-Viewer sind erstellt. Maße sind unbestätigt; eine Fertigungszeichnung gibt es noch nicht.**
+**Stand: 28. September 2026 — Ein CAD-Fotoentwurf D02, STEP und ein erster Web-Viewer sind erstellt. Maße sind unbestätigt; eine Fertigungszeichnung gibt es noch nicht.**
 
-## Erster Viewer D01
+## Viewer D02: beide Teile
+
+D02 zeigt beide Bauteile getrennt oder zusammengesteckt; jedes lässt sich ausblenden. STEP-Downloads enthalten beide Körper oder jeweils ein Einzelteil. Die Montagelage ist eine unbestätigte Annahme, keine geprüfte Verriegelung.
 
 Der Viewer-Code liegt unter [web/](web/), mit Drehen/Zoomen, Ansichten, Schlitzdetail, Transparenz, Referenzfotos, Maßschätzungen und STEP-Download. Alle Browserdateien sind lokal eingebunden. GitHub Pages veröffentlicht den main-Branch; die Startseite führt zum Viewer.
 
@@ -36,7 +38,7 @@ Im Mittelpunkt steht das **Metallrohr mit einem offenen Längsschlitz und einer 
 
 Der Stift scheint im Schlitz geführt und durch Verdrehen in die seitliche Aussparung bewegt zu werden. **Diese Steck-Dreh-Funktion ist bisher eine Interpretation der Fotos und muss am Bauteil bestätigt werden.**
 
-Zunächst bearbeiten wir das Rohr. Der Erdspieß dient als Gegenstück, damit die Verbindung später passt. Seine Neufertigung ist bisher nicht Teil des Auftrags. Wie die Fackel am anderen Rohrende befestigt wird, ist noch zu klären.
+**Der Projektumfang umfasst beide Teile:** das geschlitzte Rohr und das schwarze Gegenstück mit Kopf, Schaft, Spitze und radialem Stift. Die frühere Beschränkung auf das Rohr war falsch und ist mit D02 korrigiert. Wie die Fackel am anderen Rohrende befestigt wird, ist noch zu klären.
 
 ## Was ist schon erledigt?
 
@@ -47,7 +49,7 @@ Zunächst bearbeiten wir das Rohr. Der Erdspieß dient als Gegenstück, damit di
 | Projektplan und Werkzeugvorschlag | Vorhanden |
 | Maßliste und offene Fragen | Vorhanden |
 | Maße verbindlich bestätigen | Offen |
-| Änderbares 3D-Modell erstellen | D01 als unbestätigter Foto-Entwurf vorhanden |
+| Änderbares 3D-Modell erstellen | D02 als unbestätigter Foto-Entwurf vorhanden |
 | Bemaßte Zeichnung und STEP-Datei | STEP-Entwurf vorhanden; Zeichnung noch offen |
 | Auftragspaket für einen Fertiger | Geplant |
 | Engineering-Web-Viewer mit Informationspanels | Erste statische Version erstellt; Pages-Deployment separat prüfen |
@@ -69,7 +71,7 @@ Ein schönes Modellbild zeigt die Form. Für die Fertigung brauchen wir zusätzl
 
 1. **Bestand verstehen:** Fotos zuordnen und die tatsächliche Montagebewegung erklären.
 2. **Maße aufnehmen:** Vorhandene Linealfotos auswerten und relevante Werte direkt am Bauteil bestätigen.
-3. **Modell aufbauen:** Rohr und Ausschnitte aus den bestätigten Maßen erzeugen.
+3. **Modell aufbauen:** Rohr mit Ausschnitten und schwarzes Gegenstück aus derselben Parameterrevision erzeugen.
 4. **Gemeinsam prüfen:** Passen Aussparung, Stift, Drehrichtung und Gegenstück zusammen?
 5. **Zeichnung und Auftrag fertigstellen:** Material, Oberfläche, Stückzahl und zulässige Maßabweichungen mit dem Fertiger abstimmen.
 

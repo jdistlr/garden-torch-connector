@@ -1,6 +1,6 @@
 # Projektregeln
 
-- Zweck: Verbindungsrohr für eine Gartenfackel-Vorrichtung.
+- Zweck: zweiteilige Gartenfackel-Verbindung aus geschlitztem Rohr und schwarzem Gegenstück (Kopf, Schaft, Spitze, Stift).
 - Vor Änderungen README.md und docs lesen.
 - Beobachtung, Foto-Schätzung, bestätigte Messung und konstruktive Entscheidung trennen.
 - Keine Maße erfinden. null bedeutet unbekannt.

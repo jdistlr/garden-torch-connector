@@ -4,7 +4,7 @@ Stand: 28.09.2026. Dieser Ablauf ersetzt die bisherige große Umsetzungsreihenfo
 
 ## Bereits vorhanden
 
-16 Quelldateien gesichtet, 14 verschiedene Bildvorschauen und Duplikatzuordnung im Repository. Maßliste und Werkzeugentscheidung liegen vor. CAD-Fotoentwurf D01, STEP und eine erste Viewer-Version sind inzwischen erstellt. Direkte Maße und Fertigungsauftrag stehen noch aus. Siehe viewer-runbook.md.
+16 Quelldateien gesichtet, 14 verschiedene Bildvorschauen und Duplikatzuordnung im Repository. Maßliste und Werkzeugentscheidung liegen vor. CAD-Fotoentwurf D02, STEP und eine erste Viewer-Version sind inzwischen erstellt. Direkte Maße und Fertigungsauftrag stehen noch aus. Siehe viewer-runbook.md.
 
 ## Nächste Etappen
 
@@ -28,9 +28,9 @@ Pro Runde ein sichtbares Ergebnis und höchstens drei konkrete Fragen. Der Nutze
 
 ## Minimaler technischer Umfang
 
-CadQuery-Modell und Parameterdatei; ein Exportweg für STEP und Browsermesh. Der erste Viewer zeigt nur Rohr, Drehen/Zoomen/Reset und ein kompaktes Maß-/Statuspanel. Bestehende Standards für Einheiten, gültiges Solid und gemeinsame Revision gelten bereits.
+CadQuery-Modell und Parameterdatei; ein Exportweg für STEP und Browsermesh. Der erste Viewer zeigt beide Teile, Drehen/Zoomen/Reset und ein kompaktes Maß-/Statuspanel. Bestehende Standards für Einheiten, gültiges Solid und gemeinsame Revision gelten bereits.
 
-Schnitte, weitere Panels, Gegenstück und Montageanimation werden nach Bedarf ergänzt. Backend, Browser-CAD-Kern, freie Messwerkzeuge und CI-Automatisierung bleiben vorerst zurückgestellt. FreeCAD/TechDraw kommt zur Zeichnungsableitung hinzu.
+Schnitte, weitere Panels und Montageanimation werden nach Bedarf ergänzt. Backend, Browser-CAD-Kern, freie Messwerkzeuge und CI-Automatisierung bleiben vorerst zurückgestellt. FreeCAD/TechDraw kommt zur Zeichnungsableitung hinzu.
 
 ## Wiederverwendung
 

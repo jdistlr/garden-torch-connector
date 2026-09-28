@@ -18,6 +18,9 @@ A = Stirnfläche am geschlitzten Rohrende; z zeigt von A entlang der Rohrachse z
 | branch_angle | Umfangsausdehnung der seitlichen Aussparung, nicht aus schrägem Foto ableiten | 15 | offen |
 | head_diameter | Durchmesser des Gegenstückkopfes | 03, 16 | offen |
 | head_length | Axiale Länge des Kopfes | 14 | offen |
+| shaft_length | Schaft einschließlich Spitze ab Kopfschulter | 08 | offen |
+| shaft_diameter | Durchmesser des dünnen Schafts | 08 | offen |
+| tip_length | Länge des konischen Endes | 08 | offen |
 | pin_diameter | Durchmesser des radialen Stifts | 09 | offen |
 | pin_projection | Überstand ab Mantelfläche des Kopfes | 09 | offen |
 | pin_axial_position | Abstand Stiftmitte zu eindeutig benannter Kopfstirnfläche | 02, 14 | offen |

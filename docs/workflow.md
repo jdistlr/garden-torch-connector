@@ -3,7 +3,7 @@
 Für überschaubare mechanische Bauteile. Kein automatischer 3D-Scan: Aus Fotos wird die Geometrie interpretiert und durch gezielte Messungen abgesichert.
 
 1. Quellen sammeln, Bilder nummerieren, Duplikate erkennen.
-2. Sichtbare Merkmale markieren und die Funktion in einem Satz festhalten.
+2. Zuerst alle getrennten Bauteile inventarisieren und den Modellumfang abgleichen. Dann sichtbare Merkmale markieren und die Funktion in einem Satz festhalten.
 3. Nur die für den nächsten Entwurf erforderlichen Maße erfassen.
 4. Ein parametrisches Modell und wenige Ansichten erzeugen.
 5. Mit dem Original vergleichen, höchstens drei konkrete Fragen stellen, korrigieren.

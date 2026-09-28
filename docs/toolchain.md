@@ -21,7 +21,7 @@ OpenSCAD ist eine plausible Alternative für codebasierte Geometrie und Anschauu
 
 ## Reproduzierbarkeit
 
-Vor dem ersten Modell-Build unterstützte Python-, CadQuery- und FreeCAD-Versionen in der tatsächlichen Umgebung prüfen. Erfolgreiche Versionen anschließend fixieren. Noch sind weder CAD-Abhängigkeiten installiert noch Builds, STEP-Exporte oder Zeichnungsableitungen geprüft.
+Vor dem ersten Modell-Build unterstützte Python-, CadQuery- und FreeCAD-Versionen in der tatsächlichen Umgebung prüfen. Erfolgreiche Versionen anschließend fixieren. CadQuery 2.7.0 ist installiert; D02 erzeugt zwei Solids mit geprüftem STEP-Rückimport. Zeichnungsableitung bleibt offen.
 
 Offizielle Referenzen:
 - https://cadquery.readthedocs.io/en/latest/intro.html

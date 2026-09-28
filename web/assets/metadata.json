@@ -1,30 +1,30 @@
 {
-  "revision": "D01",
-  "status": "Unbest\u00e4tigter Foto-Entwurf \u2013 nicht zur Fertigung",
+  "revision": "D02",
+  "status": "Unbestätigter Foto-Entwurf – nicht zur Fertigung",
   "units": "mm",
   "dimensions": {
     "length": {
-      "label": "Rohrl\u00e4nge",
+      "label": "Rohrlänge",
       "value": 180,
       "unit": "mm",
       "source": "10",
-      "status": "Foto-Sch\u00e4tzung",
-      "range": "etwa 178\u2013182 mm"
+      "status": "Foto-Schätzung",
+      "range": "etwa 178–182 mm"
     },
     "outer_diameter": {
-      "label": "Au\u00dfendurchmesser",
+      "label": "Außendurchmesser",
       "value": 27,
       "unit": "mm",
       "source": "05",
-      "status": "Foto-Sch\u00e4tzung",
-      "range": "etwa 25\u201329 mm"
+      "status": "Foto-Schätzung",
+      "range": "etwa 25–29 mm"
     },
     "inner_diameter": {
       "label": "Innendurchmesser",
       "value": 25,
       "unit": "mm",
       "source": "05",
-      "status": "Grobe Foto-Sch\u00e4tzung",
+      "status": "Grobe Foto-Schätzung",
       "range": "unsicher; direkt nachmessen"
     },
     "slot_width": {
@@ -32,67 +32,159 @@
       "value": 5,
       "unit": "mm",
       "source": "11, 15",
-      "status": "Foto-Sch\u00e4tzung",
-      "range": "etwa 4\u20136 mm"
+      "status": "Foto-Schätzung",
+      "range": "etwa 4–6 mm"
     },
     "slot_depth": {
       "label": "Schlitztiefe gesamt",
       "value": 38,
       "unit": "mm",
       "source": "11",
-      "status": "Foto-Sch\u00e4tzung",
-      "range": "etwa 35\u201340 mm"
+      "status": "Foto-Schätzung",
+      "range": "etwa 35–40 mm"
     },
     "branch_z": {
       "label": "Abzweig ab Rohrende",
       "value": 18,
       "unit": "mm",
       "source": "11, 15",
-      "status": "Foto-Sch\u00e4tzung",
-      "range": "etwa 16\u201321 mm"
+      "status": "Foto-Schätzung",
+      "range": "etwa 16–21 mm"
     },
     "branch_height": {
-      "label": "Abzweigh\u00f6he",
+      "label": "Abzweighöhe",
       "value": 6,
       "unit": "mm",
       "source": "11, 15",
-      "status": "Foto-Sch\u00e4tzung",
-      "range": "etwa 5\u20137 mm"
+      "status": "Foto-Schätzung",
+      "range": "etwa 5–7 mm"
     },
     "branch_angle": {
       "label": "Abzweig um den Umfang",
       "value": 65,
-      "unit": "\u00b0",
+      "unit": "°",
       "source": "15",
-      "status": "Grobe Formsch\u00e4tzung",
-      "range": "nicht zuverl\u00e4ssig aus Foto messbar"
+      "status": "Grobe Formschätzung",
+      "range": "nicht zuverlässig aus Foto messbar"
+    },
+    "head_diameter": {
+      "label": "Kopf · Durchmesser",
+      "value": 24,
+      "unit": "mm",
+      "source": "03, 16",
+      "status": "Grobe Foto-Schätzung",
+      "range": "etwa 23–25 mm"
+    },
+    "head_length": {
+      "label": "Kopf · Länge",
+      "value": 30,
+      "unit": "mm",
+      "source": "14",
+      "status": "Grobe Foto-Schätzung",
+      "range": "etwa 28–32 mm"
+    },
+    "shaft_diameter": {
+      "label": "Schaft · Durchmesser",
+      "value": 12,
+      "unit": "mm",
+      "source": "08",
+      "status": "Grobe Foto-Schätzung",
+      "range": "etwa 10–13 mm"
+    },
+    "shaft_length": {
+      "label": "Schaft inkl. Spitze · Länge",
+      "value": 100,
+      "unit": "mm",
+      "source": "08",
+      "status": "Grobe Foto-Schätzung",
+      "range": "etwa 95–105 mm"
+    },
+    "tip_length": {
+      "label": "Spitze · Länge",
+      "value": 20,
+      "unit": "mm",
+      "source": "08",
+      "status": "Grobe Foto-Schätzung",
+      "range": "etwa 15–22 mm"
+    },
+    "pin_diameter": {
+      "label": "Stift · Durchmesser",
+      "value": 4,
+      "unit": "mm",
+      "source": "09",
+      "status": "Grobe Foto-Schätzung",
+      "range": "etwa 4–5 mm"
+    },
+    "pin_projection": {
+      "label": "Stift · Überstand ab Kopf",
+      "value": 17,
+      "unit": "mm",
+      "source": "09",
+      "status": "Grobe Foto-Schätzung",
+      "range": "etwa 15–18 mm"
+    },
+    "pin_z": {
+      "label": "Stiftmitte ab Kopfschulter",
+      "value": 15,
+      "unit": "mm",
+      "source": "02, 14",
+      "status": "Grobe Foto-Schätzung",
+      "range": "etwa 13–17 mm"
     }
   },
   "limitations": [
-    "Keine Ma\u00dfe direkt best\u00e4tigt.",
-    "Schlitzende vorl\u00e4ufig halbkreisf\u00f6rmig; seitlicher Abzweig vereinfacht mit geradem Ende.",
-    "Wandst\u00e4rke folgt aus zwei unsicheren Durchmessern.",
-    "Drehrichtung, Gegenst\u00fcck und Passung nicht gepr\u00fcft.",
-    "Volumen und Oberfl\u00e4che beschreiben nur diesen Entwurf; Material und Masse unbekannt."
+    "Keine Maße direkt bestätigt.",
+    "Schlitzende vorläufig halbkreisförmig; seitlicher Abzweig vereinfacht mit geradem Ende.",
+    "Wandstärke folgt aus zwei unsicheren Durchmessern.",
+    "Zwei Bauteile modelliert. Kopf, Schaft, Spitze und Stift vereinfacht; Material, Passung und Montagebewegung unbestätigt.",
+    "Volumen und Oberfläche beschreiben nur diesen Entwurf; Material und Masse unbekannt.",
+    "Montagelage nur zur Anschauung; keine Verriegelungs- oder Belastungsprüfung. Schwarze Farbe beschreibt das Foto, keine Materialfestlegung."
   ],
+  "assembly": {
+    "status": "Illustrative Montagelage; nicht am Original bestätigt",
+    "head_shoulder_z_mm": 6,
+    "pin_direction": "+Y; Längsschlitzmitte",
+    "derivation": "Stiftmitte auf Mitte der seitlichen Aussparung: 18 + 6/2 - 15 = 6 mm. Keine bestätigte Einstecktiefe."
+  },
   "geometry": {
     "valid": true,
-    "solids": 1,
-    "volume_mm3": 14440.781638721739,
-    "area_mm2": 29144.519337958758,
+    "solids": 2,
+    "parts": [
+      {
+        "id": "tube",
+        "label": "Rohr",
+        "solids": 1,
+        "valid": true,
+        "volume_mm3": 14440.781638721739,
+        "area_mm2": 29144.519337958758,
+        "triangles": 1448
+      },
+      {
+        "id": "spike",
+        "label": "Schwarzes Gegenstück",
+        "solids": 1,
+        "valid": true,
+        "volume_mm3": 23587.591428003034,
+        "area_mm2": 6677.776196674488,
+        "triangles": 2966
+      }
+    ],
+    "volume_mm3": 38028.37664414554,
+    "area_mm2": 35822.295534633246,
     "bounds_mm": [
       27.008405386257362,
-      27.00544797339805,
-      180.00840538625738
+      42.50181986207297,
+      274.0182697430886
     ],
-    "triangles": 1448,
+    "triangles": 4414,
     "step_roundtrip": true,
+    "intersection_mm3": 0.0,
     "cadquery_version": "2.7.0",
     "linear_deflection_mm": 0.03,
     "angular_deflection_rad": 0.1
   },
-  "parameter_sha256": "f300c99252e87c1cdc843bd7e725ce1a306d140844294dc9c2acfff5b9b93070",
-  "generator_sha256": "ddd65b20bc22e519a14fc76d961306698e9e212c37fc22517f19af7729c5d483",
-  "mesh_sha256": "aa4943a0ad02337a579f1417f6b228f013f206b8a8c6c2b4263acf77a6ec1085",
-  "step_sha256": "826602dc9991817d4fc3a7ef4953b23f271511444b2716c2efe056ea78f1b02b"
+  "parameter_sha256": "1b39b6e28dc6a8041ed35930a800b762fb7e678b81440bf56d67aa1463ebdb71",
+  "generator_sha256": "1dc1b67d426dc8ad865beb45a2baaddb95dceb6923bf4600a41f0c4a23b3698d",
+  "mesh_sha256": "1b31ea5217d10c85ed2647f29c87e504aa99eb7df0a8560a10b9f739cfbd5ac5",
+  "step_sha256": "30c8cbc9aca16a8a655ef85301ed8b45c1c91f10346f950ea93eff19341da8a2"
 }
