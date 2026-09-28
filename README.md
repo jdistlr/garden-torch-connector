@@ -1,25 +1,125 @@
-# garden-torch-connector
+# Gartenfackel: Verbindungsrohr gemeinsam nachbauen
 
-Verbindungsrohr für eine Gartenfackel-Vorrichtung. Stand: 28.09.2026.
+Hier sammeln wir alles, was wir brauchen, um ein vorhandenes Verbindungsrohr für eine Gartenfackel-Vorrichtung nachvollziehbar zu dokumentieren und daraus später einen Fertigungsauftrag zu machen.
 
-**Status: Quellenaufnahme und Planung; kein freigegebenes Fertigungsmodell.**
+**Stand: 28. September 2026 — Bilder und Planung sind vorhanden. Die Maße sind noch zu bestätigen; ein CAD-Modell und eine Fertigungszeichnung gibt es noch nicht.**
 
-## Einstieg
+## Neu dabei? Hier anfangen
 
-- [Projektplan](docs/plan.md)
-- [Maße und offene Entscheidungen](docs/measurements.md)
-- [Werkzeugentscheidung](docs/toolchain.md)
-- [Bildquellen](sources/README.md)
-- [Maschinenlesbare Parameter](parameters/connector.json)
+Du brauchst zum Mitlesen keine CAD-Software und musst nichts installieren. Dieses Repository ist unser gemeinsamer Projektordner mit nachvollziehbarer Änderungshistorie. Die README ist seine Startseite.
 
-Zuerst wird das vorhandene Rohr dokumentiert. Erdspieß und seitlicher Stift dienen als Referenz für die Verbindung; eine Neufertigung des Erdspießes ist noch nicht beauftragt.
+1. Schau dir unten das Bauteil und die [Bildübersicht](sources/README.md) an.
+2. In der [Maßliste](docs/measurements.md) steht, was wir noch messen und klären müssen.
+3. Der [Projektplan](docs/plan.md) beschreibt den Weg bis zum Auftragspaket.
 
-16 Quelldateien wurden gesichtet, darunter zwei bytegleiche Duplikate. Das Repository enthält 14 verkleinerte Bildvorschauen ohne übernommene EXIF-Metadaten sowie ein SHA-256-Inventar der Originale. Die hochauflösenden Originale sind bisher nicht im Repository enthalten.
+## Um welches Teil geht es?
 
-Maßwerte werden erst nach Bestätigung als Konstruktionsvorgaben verwendet. Unbekannt ist null, nicht 0. Eine aus Fotos erkennbare Steck-Dreh-Funktion bleibt bis zur Bestätigung eine Hypothese.
+Im Mittelpunkt steht das **Metallrohr mit einem offenen Längsschlitz und einer seitlichen Aussparung**. Auf den Fotos liegt daneben ein Erdspieß mit einem dickeren Kopf und einem seitlich herausstehenden Stift.
 
-## Zielunterlagen
+![Vorhandenes Rohr und Erdspieß nebeneinander](sources/previews/06.jpg)
 
-Parametrisches CadQuery-Modell, STEP, technische PDF-Zeichnung, Modellansichten und ein versioniertes Auftragspaket. Eine Browseransicht ist eine spätere Option. GitHub Pages ist nicht eingerichtet.
+*Originalbauteile, noch kein CAD-Rendering.*
 
-Dieses Repository ist aktuell öffentlich.
+Der Stift scheint im Schlitz geführt und durch Verdrehen in die seitliche Aussparung bewegt zu werden. **Diese Steck-Dreh-Funktion ist bisher eine Interpretation der Fotos und muss am Bauteil bestätigt werden.**
+
+Zunächst bearbeiten wir das Rohr. Der Erdspieß dient als Gegenstück, damit die Verbindung später passt. Seine Neufertigung ist bisher nicht Teil des Auftrags. Wie die Fackel am anderen Rohrende befestigt wird, ist noch zu klären.
+
+## Was ist schon erledigt?
+
+| Bestandteil | Stand |
+|---|---|
+| Bilder sichten und zuordnen | Erledigt: 16 Dateien, davon 14 unterschiedliche Fotos |
+| Bildübersicht im Repository | Vorhanden |
+| Projektplan und Werkzeugvorschlag | Vorhanden |
+| Maßliste und offene Fragen | Vorhanden |
+| Maße verbindlich bestätigen | Offen |
+| Änderbares 3D-Modell erstellen | Geplant |
+| Bemaßte Zeichnung und STEP-Datei | Geplant |
+| Auftragspaket für einen Fertiger | Geplant |
+| Drehbare Ansicht im Browser | Spätere Option |
+
+Die Fotos 07 und 12 sind exakte Duplikate von 02 beziehungsweise 03. Im Repository liegen 14 verkleinerte Vorschauen ohne übernommene Kamera-Metadaten. Die hochauflösenden Originale sind hier noch nicht enthalten. Dateinamen und Prüfsummen der Originale stehen im [Quelleninventar](sources/inventory.json).
+
+## Was wollen wir am Ende haben?
+
+- **Ein 3D-Modell**, dessen Maße sich gezielt ändern lassen.
+- **Eine technische Zeichnung als PDF**, mit Ansichten, Schnitt und Detail des Schlitzes.
+- **Eine STEP-Datei**, mit der ein Fertiger das räumliche CAD-Modell weiterverwenden kann.
+- **Anschauliche Modellbilder**, damit Form und Zusammenbau leicht verständlich sind.
+- **Eine kurze Auftragsbeschreibung** mit Material, Stückzahl, Oberfläche und abgestimmten Anforderungen.
+
+Ein schönes Modellbild zeigt die Form. Für die Fertigung brauchen wir zusätzlich eindeutige Maße, zulässige Abweichungen und Materialangaben.
+
+## Wie gehen wir vor?
+
+1. **Bestand verstehen:** Fotos zuordnen und die tatsächliche Montagebewegung erklären.
+2. **Maße aufnehmen:** Vorhandene Linealfotos auswerten und relevante Werte direkt am Bauteil bestätigen.
+3. **Modell aufbauen:** Rohr und Ausschnitte aus den bestätigten Maßen erzeugen.
+4. **Gemeinsam prüfen:** Passen Aussparung, Stift, Drehrichtung und Gegenstück zusammen?
+5. **Zeichnung und Auftrag fertigstellen:** Material, Oberfläche, Stückzahl und zulässige Maßabweichungen mit dem Fertiger abstimmen.
+
+Dabei unterscheiden wir immer zwischen **auf dem Foto gesehen**, **aus dem Foto geschätzt**, **gemessen und bestätigt** und **neu entschieden**. So wird eine Schätzung nicht versehentlich zur Fertigungsvorgabe.
+
+## Was könnt ihr jetzt beitragen?
+
+Für die erste Runde bitte diese fünf Werte in **Millimetern** aufnehmen:
+
+| Maß | Was genau messen? |
+|---|---|
+| Rohrlänge | Von einer Stirnfläche bis zur anderen |
+| Außendurchmesser | Außen über das Rohr, möglichst an mehreren Stellen |
+| Innendurchmesser | Die Öffnung am ungeschlitzten Ende |
+| Schlitzbreite | Abstand zwischen den geraden Schlitzseiten |
+| Gesamte Schlitztiefe | Vom geschlitzten Rohrende bis zum entferntesten Punkt der Rundung |
+
+Durchmesser und Schlitzbreite möglichst mit einem Messschieber messen. Die seitliche Aussparung und das Gegenstück erfassen wir anschließend nach der [ausführlichen Maßliste](docs/measurements.md).
+
+Zum Durchgeben reicht beispielsweise diese Vorlage:
+
+> Rohrlänge: … mm  
+> Außendurchmesser: … mm  
+> Innendurchmesser: … mm  
+> Schlitzbreite: … mm  
+> Gesamte Schlitztiefe: … mm  
+> Messmittel: …  
+> Gemessen am: …
+
+Zusätzlich helfen Antworten auf diese Fragen:
+
+- Soll das Rohr exakt nachgebaut oder verändert werden?
+- Wie wird die Verbindung zusammengesteckt, verdreht und wieder gelöst?
+- Was sitzt am anderen Rohrende?
+- Welches Material und wie viele Stück werden gewünscht?
+
+Ihr könnt Maße und Erläuterungen im gemeinsamen Chat durchgeben. Wer einen GitHub-Account hat, kann auch unter [Issues](https://github.com/jdistlr/garden-torch-connector/issues) eine Frage oder Messung festhalten. Bitte das zugehörige Foto beziehungsweise Bauteil nennen. Zum bloßen Mitlesen braucht ihr beim aktuell öffentlichen Repository keinen Account.
+
+## Welche Werkzeuge sind vorgesehen?
+
+| Werkzeug | Einfach erklärt |
+|---|---|
+| **CadQuery** | Erstellt das 3D-Modell aus einem Programm und einer Maßtabelle. Eine Maßänderung kann dadurch in das Modell übernommen werden. |
+| **FreeCAD mit TechDraw** | Öffnet CAD-Modelle und hilft, technische Zeichnungen daraus abzuleiten. |
+| **GitHub** | Bewahrt Dateien, Entscheidungen und Änderungen gemeinsam auf. |
+
+CadQuery ist als zentrale Modellquelle vorgesehen. Ein zusätzlicher MCP-Server ist für diesen dateibasierten Ablauf zunächst nicht nötig. Die CAD-Umgebung und Exportabläufe sind noch nicht eingerichtet oder getestet.
+
+Die Begründung und offiziellen Dokumentationslinks stehen in der [Werkzeugentscheidung](docs/toolchain.md).
+
+## Wo finde ich was?
+
+| Datei oder Ordner | Inhalt |
+|---|---|
+| [sources/README.md](sources/README.md) | Bildübersicht mit festen Bildnummern |
+| [sources/inventory.json](sources/inventory.json) | Original-Dateinamen, Prüfsummen und Duplikatzuordnung |
+| [docs/plan.md](docs/plan.md) | Arbeitsschritte und Kriterien für den Abschluss |
+| [docs/measurements.md](docs/measurements.md) | Ausführliche Maßliste und Funktionsfragen |
+| [docs/toolchain.md](docs/toolchain.md) | Werkzeugwahl und geplante Dateiformate |
+| [parameters/connector.json](parameters/connector.json) | Vorbereitete Maßtabelle für das spätere Modell |
+
+In der Parameterdatei bedeutet `null`: **noch unbekannt**, nicht null Millimeter.
+
+## Freigabe und Veröffentlichung
+
+Das Repository ist derzeit **öffentlich**. GitHub Pages und eine interaktive 3D-Ansicht sind noch nicht eingerichtet.
+
+Aktuell liegt eine **Projektgrundlage, keine Fertigungsfreigabe** vor. Erst wenn relevante Maße, Material, Funktion und Anforderungen geprüft sind, wird ein eindeutig gekennzeichnetes Auftragspaket zusammengestellt.
