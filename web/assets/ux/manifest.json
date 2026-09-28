@@ -1,0 +1,43 @@
+{
+  "source": "D-V03 existing model JSON and montage-d.js; orthographic preview, no physical simulation",
+  "models": {
+    "5": "a45a7840346a427619d23fdbe055f9912cdaf16f8787c26c3e5ec9836decb277",
+    "8": "3fec659e53015569fe39ef6ca87826da4631c1f9bfc15d9d63d2bfb7954e4983",
+    "9": "f990f7c38df8418460cee44ef1a35f3d368cb89f4c32e25de040fcaed64be40d"
+  },
+  "images": [
+    "assembly-5.png",
+    "section-5.png",
+    "exploded-5.png",
+    "step-0-5.png",
+    "step-1-5.png",
+    "step-2-5.png",
+    "step-3-5.png",
+    "step-4-5.png",
+    "step-5-5.png",
+    "step-6-5.png",
+    "step-7-5.png",
+    "assembly-8.png",
+    "section-8.png",
+    "exploded-8.png",
+    "step-0-8.png",
+    "step-1-8.png",
+    "step-2-8.png",
+    "step-3-8.png",
+    "step-4-8.png",
+    "step-5-8.png",
+    "step-6-8.png",
+    "step-7-8.png",
+    "assembly-9.png",
+    "section-9.png",
+    "exploded-9.png",
+    "step-0-9.png",
+    "step-1-9.png",
+    "step-2-9.png",
+    "step-3-9.png",
+    "step-4-9.png",
+    "step-5-9.png",
+    "step-6-9.png",
+    "step-7-9.png"
+  ]
+}
