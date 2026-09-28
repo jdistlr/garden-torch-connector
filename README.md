@@ -150,7 +150,7 @@ Aktuell liegt eine **Projektgrundlage, keine Fertigungsfreigabe** vor. Erst wenn
 
 ## Technische Zeichnungen für die Werkstatt
 
-[PDF öffnen: drei A3-Blätter D02](web/assets/werkstattzeichnungen-D02.pdf). Auch direkt im Viewer als Download verfügbar.
+[PDF öffnen: drei A3-Blätter D02](web/assets/werkstattzeichnungen-D02.pdf). Im Viewer direkt durchblätterbar und vergrößerbar; zusätzlich als PDF-Download verfügbar.
 
 1. **GF-01 Rohr:** Vorder- und Stirnansicht, Längen- und Durchmessermaße, Schlitzdetail 3:1.
 2. **GF-02 Gegenstück:** Kopf, Schaft, Spitze und Stift, bemaßte Ansicht und Kopfdetail 2:1.

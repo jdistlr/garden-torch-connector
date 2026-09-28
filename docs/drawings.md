@@ -33,3 +33,11 @@ Die PDF-Erzeugung benötigt zusätzlich DejaVu Sans unter `/usr/share/fonts/true
 Drei A3-Seiten, eingebettete Schrift, sichtbare Revisions- und Prüfkennzeichnung, Druckkontrollstrecke 50 mm. Alle Seiten gerendert und visuell geprüft. Einzelteilmaße aus D02; abgeleitete Gesamtlänge 130 als Hilfsmaß geklammert. Der vorläufige Schlitzradius R2,5 ist explizit eine Modellannahme. Die gemeinsame STEP-Datei bleibt unverändert.
 
 Vor Verwendung zur Fertigung sind direkte Messungen, Material, Passungen, Toleranzen, Rauheit, Kanten und Herstellverfahren zu klären. Die Zeichnungen dienen jetzt der gemeinsamen Papierprüfung.
+
+## Direkte Webansicht
+
+Der Viewer enthält eine Werkstattansicht mit drei Blatt-Schaltflächen, Zoom (1 bis 4-fach), Einpassen und einer verschiebbaren Vorschau. Die PNGs sind aus derselben PDF gerendert; zum Drucken die Vektor-PDF nutzen. Nach Neuerzeugung der PDF Vorschauen aktualisieren:
+
+```sh
+pdftoppm -scale-to 2200 -png web/assets/werkstattzeichnungen-D02.pdf web/assets/zeichnung-D02
+```
