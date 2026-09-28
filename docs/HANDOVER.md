@@ -1,3 +1,28 @@
+# Aktuelle Fortsetzung – 28.09.2026
+
+Diese Ergänzung hat Vorrang vor dem historischen Übergabetext darunter. Basis war c87b006b6e43fdf7ffedcac8bf8fee7202f37fac. D-V03-Geometrie, STEP und A3-Prüfzeichnungen wurden nicht verändert. Nur Vollmaterial, keine Buchse.
+
+## Neu erledigt
+
+- Öffentliche D-V03-Modelle für5/8/9mm direkt geladen: exakt plate/adapter/pin/screw/tube.
+- `model/check_motion_d.py`: je81 axiale und101 Winkelstellungen plus101 Rückwegstellungen, Gegenproben. Alle Sollstellungen nominal überschneidungsfrei. `motion-checks.json` mit STEP-Hashes.
+- `model/export_assembly_poses.mjs` plus `model/check_assembly_d.py`: je71Posen der gesamten schematischen Montage, alle Körperpaare/Bodenebene geprüft; `assembly-motion-checks.json`.
+- Befund: bisherige STEP-Lage ist0° **Einführlage**. Nutsektor65°, erster Stiftkontakt analytisch55,793°. Darstellung dreht bis50°; kein Anschlag/Einrasten behauptet. Radial0,5mm, axiales Nutspiel2mm gesamt. Rückdrehen frei. Mitdrehende Aufnahme kann Sockelklemmung lösen, siehe `docs/mechanik-d.md`.
+- `web/montage-d.js`: acht Schritte, Pause/Replay/Zeitleiste/Schrittwahl, Kurzdemo und langsames Tempo. Kein Autoplay; Tabwechsel pausiert. Erklärende Schnitte bei Aufsetzen/Verschrauben und passende Kamera, sonst Gesamtansicht. Stifteinsetzen nur schematisch, Sicherung offen. Rohr bleibt axial mittig, keine Schwerkraftsimulation.
+- Vier neue Dokumente `mechanik-d.md`, `montage-d.md`, `beschaffung-d.md`, `kosten-d.md`, auch als druckbare HTML-Seiten unter web. Erzeugung: `node model/render_docs.cjs` mit Paket marked.
+- Regionale und Online-Recherche mit konkreten Artikeln/Kontakten und Abrufdatum. Keine Kontaktaufnahme. Würth nur Gewerbe; RST-Stiftangaben A1/A2 widersprüchlich;8/9mm-Preise und einige Lieferbedingungen offen.
+- Standardteilkandidaten: Ø25-Vollstahl zuØ24 drehen;28×1,5-Rohr und4×20-Stift sind noch **nicht** im CAD übernommen. Nicht als identische Teile behandeln.
+- Kosten1/5/10 vollständig als **Planungsszenarien**, keine belastbare Fertiger-Gesamtsumme. Belegte Teilpreise/Restmengen getrennt von eigenen Annahmen für Bearbeitung, Oberfläche und Versand. `model/cost_d.py` reproduziert JSON.
+- Browserprüfung:5/8/9, acht Schritte, Pause, Schnitt, Transparenz, Reset,390px ohne Seitenüberlauf, Dokumentseiten; keine JS-Fehler. Screenshotkontrolle für Gesamtansicht/Mobilansicht. Vorhandener Headless-Browser1161 verwendet, Standard-Playwright-Download funktionierte nicht.
+
+## Offen bleibt
+
+Reale Maße, Original-Funktionsversuch, Rückdrehsicherung, Werkstoff, Stiftsicherung, reale Normkopfkontur, Anzugsmoment/Vorspannung, Lasten/Kippsicherheit und vollständige Angebotspreise. Keine Fertigungs-/Betriebsfreigabe. Drei nächste Nutzerrückfragen stehen im Mechanikdokument. Veröffentlichung zum aktuellen Commit über vorhandenes Pages; Deployment und Live-Dateien am Ende der Sitzung prüfen und in der Abschlussantwort genau benennen.
+
+---
+
+## Historischer Übergabetext (vor dieser Fortsetzung)
+
 # Übergabe: Gartenfackel-Verbindung / Stand 28.09.2026
 
 ## Auftrag und Arbeitsweise

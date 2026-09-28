@@ -1,0 +1,178 @@
+{
+  "date": "2026-09-28",
+  "status": "planning scenarios, not final D-V03 quotation",
+  "scope": "5 mm plate; 25mm steel stock machined to24; candidate28x1.5 tube and4x20 pin require new geometry validation",
+  "rows": [
+    {
+      "quantity": 1,
+      "known_candidate_purchase_gross": 37.06,
+      "tube_and_handling_provisional": 4.42,
+      "solid_bar_purchased_mm": 1000,
+      "solid_bar_consumed_mm": 55,
+      "solid_bar_remainder_mm": 945,
+      "screws_purchased": 10,
+      "screws_remaining": 9,
+      "scenarios": [
+        {
+          "scenario": "niedrig",
+          "unknown_shipping_allowance": 6,
+          "tooling_purchase_allowance": 25,
+          "diy_surface_purchase_allowance": 15,
+          "consumables_allowance": 5,
+          "setup_hours": 1,
+          "machining_hours_each": 0.65,
+          "shop_hourly_rate_net": 60,
+          "shop_surface_allowance_gross": 60,
+          "diy_cash_gross": 92.48,
+          "diy_hours": 3.5,
+          "workshop_total_gross": 230.29,
+          "workshop_each_gross": 230.29
+        },
+        {
+          "scenario": "mittel",
+          "unknown_shipping_allowance": 10,
+          "tooling_purchase_allowance": 50,
+          "diy_surface_purchase_allowance": 30,
+          "consumables_allowance": 10,
+          "setup_hours": 1.5,
+          "machining_hours_each": 1,
+          "shop_hourly_rate_net": 85,
+          "shop_surface_allowance_gross": 100,
+          "diy_cash_gross": 141.49,
+          "diy_hours": 3.5,
+          "workshop_total_gross": 414.36,
+          "workshop_each_gross": 414.36
+        },
+        {
+          "scenario": "hoch",
+          "unknown_shipping_allowance": 20,
+          "tooling_purchase_allowance": 90,
+          "diy_surface_purchase_allowance": 60,
+          "consumables_allowance": 20,
+          "setup_hours": 2.5,
+          "machining_hours_each": 1.5,
+          "shop_hourly_rate_net": 120,
+          "shop_surface_allowance_gross": 180,
+          "diy_cash_gross": 231.49,
+          "diy_hours": 3.5,
+          "workshop_total_gross": 832.68,
+          "workshop_each_gross": 832.68
+        }
+      ]
+    },
+    {
+      "quantity": 5,
+      "known_candidate_purchase_gross": 61.7,
+      "tube_and_handling_provisional": 22.12,
+      "solid_bar_purchased_mm": 1000,
+      "solid_bar_consumed_mm": 275,
+      "solid_bar_remainder_mm": 725,
+      "screws_purchased": 10,
+      "screws_remaining": 5,
+      "scenarios": [
+        {
+          "scenario": "niedrig",
+          "unknown_shipping_allowance": 6,
+          "tooling_purchase_allowance": 25,
+          "diy_surface_purchase_allowance": 15,
+          "consumables_allowance": 5,
+          "setup_hours": 1,
+          "machining_hours_each": 0.65,
+          "shop_hourly_rate_net": 60,
+          "shop_surface_allowance_gross": 60,
+          "diy_cash_gross": 134.82,
+          "diy_hours": 9.5,
+          "workshop_total_gross": 458.27,
+          "workshop_each_gross": 91.66
+        },
+        {
+          "scenario": "mittel",
+          "unknown_shipping_allowance": 10,
+          "tooling_purchase_allowance": 50,
+          "diy_surface_purchase_allowance": 30,
+          "consumables_allowance": 10,
+          "setup_hours": 1.5,
+          "machining_hours_each": 1,
+          "shop_hourly_rate_net": 85,
+          "shop_surface_allowance_gross": 100,
+          "diy_cash_gross": 183.82,
+          "diy_hours": 9.5,
+          "workshop_total_gross": 861.3,
+          "workshop_each_gross": 172.26
+        },
+        {
+          "scenario": "hoch",
+          "unknown_shipping_allowance": 20,
+          "tooling_purchase_allowance": 90,
+          "diy_surface_purchase_allowance": 60,
+          "consumables_allowance": 20,
+          "setup_hours": 2.5,
+          "machining_hours_each": 1.5,
+          "shop_hourly_rate_net": 120,
+          "shop_surface_allowance_gross": 180,
+          "diy_cash_gross": 273.82,
+          "diy_hours": 9.5,
+          "workshop_total_gross": 1731.83,
+          "workshop_each_gross": 346.37
+        }
+      ]
+    },
+    {
+      "quantity": 10,
+      "known_candidate_purchase_gross": 92.34,
+      "tube_and_handling_provisional": 44.25,
+      "solid_bar_purchased_mm": 1000,
+      "solid_bar_consumed_mm": 550,
+      "solid_bar_remainder_mm": 450,
+      "screws_purchased": 10,
+      "screws_remaining": 0,
+      "scenarios": [
+        {
+          "scenario": "niedrig",
+          "unknown_shipping_allowance": 6,
+          "tooling_purchase_allowance": 25,
+          "diy_surface_purchase_allowance": 15,
+          "consumables_allowance": 5,
+          "setup_hours": 1,
+          "machining_hours_each": 0.65,
+          "shop_hourly_rate_net": 60,
+          "shop_surface_allowance_gross": 120,
+          "diy_cash_gross": 187.59,
+          "diy_hours": 17.0,
+          "workshop_total_gross": 803.09,
+          "workshop_each_gross": 80.31
+        },
+        {
+          "scenario": "mittel",
+          "unknown_shipping_allowance": 10,
+          "tooling_purchase_allowance": 50,
+          "diy_surface_purchase_allowance": 30,
+          "consumables_allowance": 10,
+          "setup_hours": 1.5,
+          "machining_hours_each": 1,
+          "shop_hourly_rate_net": 85,
+          "shop_surface_allowance_gross": 200,
+          "diy_cash_gross": 236.59,
+          "diy_hours": 17.0,
+          "workshop_total_gross": 1519.82,
+          "workshop_each_gross": 151.98
+        },
+        {
+          "scenario": "hoch",
+          "unknown_shipping_allowance": 20,
+          "tooling_purchase_allowance": 90,
+          "diy_surface_purchase_allowance": 60,
+          "consumables_allowance": 20,
+          "setup_hours": 2.5,
+          "machining_hours_each": 1.5,
+          "shop_hourly_rate_net": 120,
+          "shop_surface_allowance_gross": 350,
+          "diy_cash_gross": 326.59,
+          "diy_hours": 17.0,
+          "workshop_total_gross": 3025.59,
+          "workshop_each_gross": 302.56
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,13 @@
+# Aktueller Einstieg D-V03
+
+Root `index.html` führt zu `web/variants.html`. Lokal: `python3 -m http.server 8765 --directory web`, dann `/variants.html` öffnen. `/index.html` innerhalb web zeigt weiterhin die Originalreferenz D02.
+
+D-V03: `python3 model/check_motion_d.py` prüft den nominalen Rohrweg aus STEP und schreibt `motion-checks.json`. `python3 model/cost_d.py` erzeugt die Kostenszenarien. `node model/render_docs.cjs` (Node mit Paket `marked`) erzeugt druckbare HTML-Seiten aus den vier neuen Markdown-Dokumenten. Für diese Erweiterung wurden CAD/STEP/A3-Dateien nicht verändert.
+
+Die Montageanimation in `web/montage-d.js` verwendet dieselben CAD-Teile. 50° ist eine Demonstrationsposition vor dem Anschlag, nicht eine bestätigte Endlage. STEP und freie Ansicht starten weiterhin bei0°. Automatisches Abspielen nur nach Betätigung; Tabwechsel pausiert; reduzierte Bewegung wählt langsames Tempo. Schnitt/Transparenz bleiben benutzbar. Keine Handsimulation, keine Gewinde-/Kontaktkraftsimulation.
+
+## Historisches D02-Runbook
+
 # Viewer D02
 
 Statische Three.js-Anwendung unter `web/`. Alle Browserabhängigkeiten liegen lokal unter `web/vendor` (Three.js 0.180.0, MIT-Lizenz beigefügt). Keine CDN-Abhängigkeit, kein Backend.
@@ -31,3 +41,7 @@ Das schwarze Gegenstück gehört zum Modellumfang. Kopf, Schaft, konische Spitze
 ## Technische Zeichnungen
 
 Nach `python3 model/build.py` erzeugt `python3 model/drawings.py` die drei A3-Prüfzeichnungen. Anleitung und Darstellungsgrenzen: [drawings.md](drawings.md). Der PDF-Download ist im Viewer neben STEP eingebunden.
+
+## Gesamten schematischen Montageweg prüfen
+
+`node model/export_assembly_poses.mjs /tmp/torch-poses.json`, dann `python3 model/check_assembly_d.py /tmp/torch-poses.json`. Je71Posen für5/8/9mm prüfen alle Körperpaare und die Bodenebene. Das ergänzt die feinere Rohrprüfung; Stiftpressung und Schraubengewindeflanken werden nicht simuliert. Ergebnis `assembly-motion-checks.json`. Ohne äußere Schraubendrehung sind die Außenhülle und Schnittvolumina gleich; nur der Antrieb rotiert in der Ansicht.

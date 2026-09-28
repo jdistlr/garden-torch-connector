@@ -1,0 +1,129 @@
+{
+  "revision": "D-V03",
+  "date": "2026-09-28",
+  "status": "nominal sampled geometry only",
+  "motion": {
+    "insertion_offset_mm": 40,
+    "display_rotation_deg": 50,
+    "branch_sector_deg": 65,
+    "analytic_first_contact_deg": 55.7931037786541,
+    "axial_free_travel_each_direction_mm": 1,
+    "radial_clearance_mm": 0.5,
+    "slot_side_clearance_mm": 0.5
+  },
+  "results": [
+    {
+      "thickness_mm": 5,
+      "paths": [
+        {
+          "phase": "insert",
+          "samples": 81,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.49999999598008554
+        },
+        {
+          "phase": "turn",
+          "samples": 101,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.4999999959800819
+        },
+        {
+          "phase": "reverse",
+          "samples": 101,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.4999999959800819
+        }
+      ],
+      "deliberate_collision_mm3": {
+        "wrong_direction": 1.254133433487675,
+        "past_stop": 2.0208296919636224,
+        "axial_lift_after_turn": 0.0837115655292912,
+        "axial_lower_after_turn": 0.08371157290459698
+      }
+    },
+    {
+      "thickness_mm": 8,
+      "paths": [
+        {
+          "phase": "insert",
+          "samples": 81,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.49999999598008554
+        },
+        {
+          "phase": "turn",
+          "samples": 101,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.4999999959800819
+        },
+        {
+          "phase": "reverse",
+          "samples": 101,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.4999999959800819
+        }
+      ],
+      "deliberate_collision_mm3": {
+        "wrong_direction": 1.2541334334876608,
+        "past_stop": 2.0208296919635935,
+        "axial_lift_after_turn": 0.08371156552929124,
+        "axial_lower_after_turn": 0.08371157290459699
+      }
+    },
+    {
+      "thickness_mm": 9,
+      "paths": [
+        {
+          "phase": "insert",
+          "samples": 81,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.49999999598008554
+        },
+        {
+          "phase": "turn",
+          "samples": 101,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.4999999959800819
+        },
+        {
+          "phase": "reverse",
+          "samples": 101,
+          "max_overlap_mm3": 0,
+          "min_clearance_mm": 0.4999999959800819
+        }
+      ],
+      "deliberate_collision_mm3": {
+        "wrong_direction": 1.2541334334876595,
+        "past_stop": 2.020829691963594,
+        "axial_lift_after_turn": 0.08371156552933554,
+        "axial_lower_after_turn": 0.0837115729045449
+      }
+    }
+  ],
+  "source_sha256": {
+    "adapter-5.step": "8aff24cda908e97c3bfb8f46e39519c52c4dd5507ce9f920fc239e9d7cfb3ed1",
+    "adapter-8.step": "92b0e7324fb015e9eefdb6fa0baa513c08746f974da1e257cd30006f158891b8",
+    "adapter-9.step": "9bfdc890e28b4e66d84598b34e00fe740cd288c788956acae5eb005655f2dee6",
+    "assembly-5.step": "7e91ee101ca52dc9ad43d01635f436d5f273183504c4a730b86d09a50542a870",
+    "assembly-8.step": "4008d61360fe4e20daaa4a9ff0c4892f900dcb89b1d3fa80635e5b01b9602392",
+    "assembly-9.step": "a0581106a7c134f5365ec01694dc7347d2b278216412cb5aeb43e5f48681da5c",
+    "pin-5.step": "2c9b713acfd402c7fd4598c68468e3139fbf63f38518753957c1c80ff18732fc",
+    "pin-8.step": "195d69ba98981924a988043a59594d28a9bcf1fdb4590fb41dfcd7a3090da3a3",
+    "pin-9.step": "64292451a1b300e72b92c821f1f5262dd06b30aaa5257ae5f4bd3e02b815cbd8",
+    "plate-5.step": "617b70be49aa8cfc487205a49e6f12e1b99008989f56e8a6605979c8afb05380",
+    "plate-8.step": "bbcba9a5f926a2dfcdda2bb1d24aab0e2b672d5cabcfb52eaf13681fe9d4be47",
+    "plate-9.step": "032dd586ca9fc3bb9db5c1a5e538268280b41e0ae0de1d484306e38df7696c88",
+    "screw-5.step": "f04964b73dd58939b0931923cfcaac1c42a175c50e74bf1bc8809f97f4cabee4",
+    "screw-8.step": "12d1c47c53bc31e989be9a0a24e034354dca323f794e446fa21614b8634193b8",
+    "screw-9.step": "dd575409d5fdf7c949bb467c9456dd746aab56be0934c15119c22fb3b1324fcb",
+    "tube-5.step": "ca8bb1744af346cc94d9f9349212bb75045341f9ceff806f1c6a80b0d68e04fb",
+    "tube-8.step": "27d56d7925328529e301fbf115bee9b5fa88e8a4158d2fb38c021188616308e2",
+    "tube-9.step": "5472c0de579396fdb7c2f36689c508abab61a6ed83227a660875bc6c32cb4c78"
+  },
+  "limitations": [
+    "No measured dimensions or manufacturing tolerances",
+    "Sampling is not a continuous swept-volume proof",
+    "No detent or reverse-rotation restraint in this model",
+    "No thread, clamp friction, strength or stability simulation"
+  ]
+}

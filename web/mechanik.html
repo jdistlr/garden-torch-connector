@@ -1,0 +1,74 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D-V03 · mechanik</title><style>body{font:16px/1.6 system-ui;color:#24382e;background:#f7f8f4;margin:0}main{max-width:1080px;margin:auto;padding:32px}h1,h2,h3{line-height:1.2}h1{font-size:2.4rem}h2{margin-top:2.5rem}table{border-collapse:collapse;font-size:.9rem;display:block;overflow-x:auto}th,td{border-bottom:1px solid #ccd4ca;padding:12px;text-align:left;vertical-align:top}th{background:#e4eadf}a{color:#265e43}nav{display:flex;gap:18px;flex-wrap:wrap}button{padding:10px 18px;cursor:pointer}code{overflow-wrap:anywhere}@media print{body{background:white;font-size:10pt}main{padding:0}nav,button{display:none}table{display:table;font-size:8pt;overflow:visible}tr{break-inside:avoid}h2{break-after:avoid}a{color:inherit;text-decoration:none}}@media(max-width:600px){main{padding:20px}h1{font-size:1.8rem}}</style></head><body><main><nav><a href="variants.html">← 3D-Viewer</a><a href="montage.html">Montage</a><a href="mechanik.html">Mechanik</a><a href="beschaffung.html">Beschaffung</a><a href="kosten.html">Kosten</a></nav><button onclick="window.print()">Drucken / als PDF speichern</button><h1>D-V03 – Steck-Dreh-Prüfung</h1>
+<p>Stand 28.09.2026. Geprüft werden vorhandene STEP-Körper, keine gemessenen Originalteile. Geometrie und Zeichnungsrevision bleiben D-V03.</p>
+<h2>Bezug und Bewegung</h2>
+<p>Boden z=0, Rohrachse +Z, Stift zeigt +Y. Blick <strong>von oben zur Platte</strong>: positive Rohrdrehung gegen den Uhrzeigersinn. Die bisherige STEP-Baugruppe zeigt die <strong>Einführlage</strong> (0°), nicht die verdrehte Endlage. Für die Animation wird ausschließlich das Rohr bewegt; die Sockelaufnahme bleibt fest.</p>
+<ol>
+<li>Rohr 40 mm oberhalb der bisherigen Einführlage halten, Schlitz mittig auf +Y.</li>
+<li>Rohr ohne Rotation um 40 mm absenken. Die Unterkante liegt anschließend bei Plattendicke +14 mm, die Stiftmitte bei Plattendicke +35 mm.</li>
+<li>Rohr um +50° drehen. Diese Darstellungsposition liegt vor dem ersten geometrischen Anschlag, sie ist keine eingerastete Endlage.</li>
+<li>Zum Lösen um −50° zurückdrehen und axial abziehen. Der Rückweg ist geometrisch ebenso frei.</li>
+</ol>
+<h2>Ergebnis am nominalen Konzept</h2>
+<table>
+<thead>
+<tr>
+<th>Merkmal</th>
+<th>Ableitung</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Radiales Spiel</td>
+<td>(25−24)/2 = 0,5 mm</td>
+<td>Unbelastet konzentrisch; kein Toleranznachweis</td>
+</tr>
+<tr>
+<td>Schlitzspiel je Seite</td>
+<td>(5−4)/2 = 0,5 mm</td>
+<td>Ausrichtung beim Einführen erforderlich</td>
+</tr>
+<tr>
+<td>Axiales Spiel im Abzweig</td>
+<td>6−4 = 2 mm gesamt</td>
+<td>Von mittiger Lage je 1 mm bis Kontakt</td>
+</tr>
+<tr>
+<td>Nutsektor</td>
+<td>65°</td>
+<td>Ist nicht der mögliche Drehwinkel des endlichen Stifts</td>
+</tr>
+<tr>
+<td>Erster Drehkontakt</td>
+<td>65°−asin(2/12,5) ≈ 55,79°</td>
+<td>Stift berührt die radiale Endwand am Innenradius des Rohrs</td>
+</tr>
+<tr>
+<td>Anzeigeweg</td>
+<td>0…50°</td>
+<td>Nominale Reserve vor Anschlag; kein Fertigungs-Sicherheitsabstand</td>
+</tr>
+<tr>
+<td>Rückdrehsicherung</td>
+<td>nicht modelliert</td>
+<td>Keine Rastung, Feder, Rampe oder Hinterschneidung, die Zurückdrehen blockiert</td>
+</tr>
+</tbody></table>
+<p><code>python3 model/check_motion_d.py</code> prüft jede Plattenstärke in Schritten von 0,5 mm bzw. 0,5° gegen die vier festen Körper. Der JSON-Bericht enthält Stichprobenzahl, Schnittvolumen, Mindestabstand, Gegenproben und STEP-Prüfsummen. Abtastung ist kein mathematisch lückenloser Hüllvolumennachweis. Konzentrische Zylinder und der durchgehende Einführschlitz erklären die freien Zwischenlagen zusätzlich geometrisch.</p>
+<p>Absichtliche Gegenproben: −5° in falscher Richtung; +60° über den Anschlag; nach +50° axial um ±1,1 mm verschieben. Diese Lagen überschneiden den Stift. Damit wird insbesondere nicht nur das Ausbleiben einer Fehlermeldung als Prüfung gewertet.</p>
+<h2>Kontakt unter Gewicht und Bedienmoment</h2>
+<p>In der mittigen Darstellungsposition trägt der Stift das Rohr noch nicht: je 1 mm axiale Luft. Unter Eigengewicht sinkt das Rohr bis zur oberen axialen Nutwand ab. Beim Hochziehen liegt die gegenüberliegende Wand am Stift an. Diese Kontaktlagen sind weder Reibungs- noch Festigkeitsnachweise. Die Animation stellt die mittige geometrische Position dar und simuliert keine Schwerkraft.</p>
+<p>Drehmoment gelangt über Nutwand/Stift in die massive Aufnahme und über deren Klemmkontakt zur Platte. Bei festgehaltener Schraube mit Rechtsgewinde kann eine Mitdrehung der Aufnahme <strong>gegen den Uhrzeigersinn von oben</strong> die Aufnahme vom Schraubenkopf wegbewegen und die Klemmung lösen; <strong>im Uhrzeigersinn von oben</strong> kann sie sich weiter auf das Gewinde ziehen. Gerade das Eindrehen des Rohres muss deshalb am Muster geprüft werden. Drehrichtung allein ersetzt keine ausreichende Vorspannung oder Losdrehsicherung.</p>
+<p>Der idealisierte Schraubenkonus liegt nominal an der Senkfläche: bei z=0,2 besitzt die Senkung Radius 8,0 mm, ebenso der Kopf. Reale Kopfkontur einschließlich Kopfrand ist hiervon nicht abgedeckt. Keine Vorspannung aus dem reinen Schnittvolumen ableiten.</p>
+<h2>Toleranzen und Beschichtung</h2>
+<p>Reale Mindestluft radial = (kleinster Rohrinnendurchmesser − größter fertiger Kopfdurchmesser)/2; Beschichtung auf Kopf und Rohrinnenfläche reduziert das Spiel zusätzlich. Ovalität, Schweißnaht, Grat und Achsversatz berücksichtigen. Entsprechend Nutbreite minus größter fertiger Stiftdurchmesser prüfen. Bei Rohrersatz oder geändertem Stift CAD, Zeichnungen und Bewegungsprüfung gemeinsam neu erzeugen.</p>
+<h2>Praktische Abnahme – noch offen</h2>
+<ul>
+<li>Kalt und ohne Brennstoff prüfen; Stiftfestigkeit und Verschraubung vorher freigeben.</li>
+<li>Aufnahme/Platte mit gemeinsamem Kontrollstrich markieren, Einstecken und Drehen mehrfach durchführen. Kein Mitdrehen, kein Klemmen; reales Drehmoment erfassen.</li>
+<li>Axialspiel und Endwinkel messen; Stift darf nicht wandern. Gegen Zurückdrehen ist aktuell keine positive Sicherung nachgewiesen.</li>
+<li>Fackelhöhe, Gesamtgewicht, Schwerpunkt, Wind-/Stoßlast und Untergrund für Standprüfung festlegen. Die 150-mm-Platte ist kein Standsicherheitsnachweis.</li>
+</ul>
+<p>Drei nächste Rückfragen: (1) Rohrinnen- und Kopfdurchmesser sowie Stiftmaß messen; (2) Originalbewegung bis Anschlag und zurück filmen, insbesondere mögliche Rastung; (3) vollständige Fackel mit Höhe/Gewicht und oberem Anschluss zeigen.</p>
+<h2>Gesamte Montagefolge</h2>
+<p>Zusätzlich wurden je71Posen der vollständigen Animation für5/8/9mm geprüft: alle zehn Körperpaare, einschließlich radialem Stifteinsetzen, axialem Aufsetzen, Schraubenzuführung und Absetzen. Keine Volumenüberschneidung und kein Bodenunterstand an den Abtastpunkten. Bericht <code>web/assets/sockel-d/assembly-motion-checks.json</code>. Montageauflagen/Hand/Werkzeug fehlen im CAD; der35-mm-Hub zeigt den erforderlichen Zugang schematisch. Beim Schrauben wird nur die glatte Hülle geprüft, nicht das Gewindeprofil oder Vorspannung.</p>
+</main></body></html>

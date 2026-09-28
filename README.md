@@ -12,7 +12,7 @@ Hier sammeln wir alles, was wir brauchen, um ein vorhandenes Verbindungsrohr fü
 
 [Technischer Stand und Grenzen](docs/sockel-d.md) · [Nächste Features: Beschaffung, Kosten, Montage und Animation](docs/next-features.md)
 
-Die alte Variantenübersicht V01 ist nur noch ein Archiv; ihre überstehenden Schraubenköpfe sind verworfen. D-V03 ist ein prüfbarer Konzeptstand, keine Fertigungsfreigabe. Bewegungsprüfung und reale Normteilauswahl stehen noch aus.
+Die alte Variantenübersicht V01 ist nur noch ein Archiv; ihre überstehenden Schraubenköpfe sind verworfen. D-V03 ist ein prüfbarer Konzeptstand, keine Fertigungsfreigabe. Nominale Bewegungsprüfung ist ergänzt; reale Funktionsprüfung und Normteilfreigabe stehen noch aus.
 
 ## Viewer D02: beide Teile
 
@@ -170,9 +170,16 @@ Schwarzweiße Vektorzeichnung mit Maßpfeilen, Mittellinien, verdeckten Kanten u
 
 [Darstellungsgrundlage und reproduzierbarer Export](docs/drawings.md).
 
-## Sockelvarianten V01
+## Fortschritt: Bewegung, Montage und Beschaffung
 
-[Zweite Viewerseite: A–D im Vergleich](https://jdistlr.github.io/garden-torch-connector/web/variants.html). Mit CAD-Schnitt, Explosionsansicht, Einzelteilen und STEP-Konzepten. Enthält eigene Zeit-/Budgetspannen und qualitative Einschätzungen zur Verbindung. Neue Geometriemaße sind ausdrücklich Konzeptannahmen; keine Fertigungs- oder Standsicherheitsfreigabe.
+Die **Einführlage** der gespeicherten STEP-Baugruppe bleibt unverändert. Ergänzt sind eine abgetastete Bewegungsprüfung für 5/8/9 mm und eine geführte Konzeptanimation: Teile vorbereiten, Stift einsetzen, Aufnahme aufsetzen, von unten verschrauben, absetzen, Rohr aufschieben und um50° drehen. Kein Einrasten wird behauptet; Rückdrehen bleibt frei.
+
+- [Mechanik und Grenzen](docs/mechanik-d.md): 65° Nutsektor bedeutet nur ca.55,8° bis zum Stiftanschlag; Animation endet vorher bei50°.
+- [Montage- und Prüfanleitung](docs/montage-d.md), auch [druckbar im Viewer](https://jdistlr.github.io/garden-torch-connector/web/montage.html).
+- [Beschaffung](docs/beschaffung-d.md): konkrete Artikelalternativen und regionale Kontakte, keine Händler kontaktiert.
+- [Kostenmodell1/5/10](docs/kosten-d.md): belegte Teilpreise und ausdrücklich geschätzte Kosten getrennt. Noch kein vollständiges Angebot.
+
+D-V03 bleibt Vollmaterial mit direktem Gewindesackloch. Ungeprüfte Standardteilalternativen wurden nicht in die CAD-Geometrie übernommen. Die verworfene V01-Studie liegt nur im Archiv `web/variants-v01.html`.
 
 ## Neue Arbeitssitzung
 

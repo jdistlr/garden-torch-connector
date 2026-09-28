@@ -1,0 +1,24 @@
+{
+  "revision": "D-V03",
+  "results": [
+    {
+      "thickness_mm": 5,
+      "pose_samples": 71,
+      "max_overlap_mm3": 0,
+      "min_z_mm": 0.0
+    },
+    {
+      "thickness_mm": 8,
+      "pose_samples": 71,
+      "max_overlap_mm3": 0,
+      "min_z_mm": 0.0
+    },
+    {
+      "thickness_mm": 9,
+      "pose_samples": 71,
+      "max_overlap_mm3": 0,
+      "min_z_mm": 0.0
+    }
+  ],
+  "scope": "Sampled translations of all five CAD bodies; tube rotation included. Screw spin ignored because thread is smooth envelope; recess spin does not alter outer envelope. No forces or thread flank contact simulated."
+}

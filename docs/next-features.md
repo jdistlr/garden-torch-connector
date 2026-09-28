@@ -1,6 +1,6 @@
 # Nächste Ausbaustufen – verbindlicher Arbeitsplan
 
-Aufgenommen am 28.09.2026 nach Nutzerauftrag. Aktuell gewählt: D-V03. Planungsumfang, noch nicht umgesetzt. Keine Bestellung oder Kontaktaufnahme mit Händlern beauftragt.
+Aufgenommen am 28.09.2026 nach Nutzerauftrag. Aktuell gewählt: D-V03. Fortschritt siehe unten; reale Freigaben bleiben offen. Keine Bestellung oder Kontaktaufnahme mit Händlern beauftragt.
 
 ## 1. Funktion vor Inszenierung prüfen
 
@@ -23,7 +23,7 @@ Nutzerbeschreibung: Rohr auf den schwarzen Kopf schieben, radialen Zapfen im off
 
 ## 3. Gesamtkostenrechnung
 
-- Material, Bestellmengen, Reststücke/Verschnitt, Schrauben, Einsätze und Beschichtung.
+- Material, Bestellmengen, Reststücke/Verschnitt, Schrauben, Querstift und Beschichtung.
 - Zuschnitt, Bohren/Senken, Gewinde, Stiftbohrung und Stiftsicherung, Fräsen des Schlitzes, Nacharbeit und Montage.
 - Rüstkosten, Versand pro Lieferant, Mindestbestellwerte, Werkzeuge/Hilfsmittel und Prüfaufwand.
 - Stückkosten für 1 / 5 / 10 Stück; Einmalkosten separat. Eigenleistung und beauftragte Werkstatt getrennt.
@@ -56,3 +56,13 @@ Vom Nutzer ausdrücklich gewünscht: Klein- und Großraum Erlangen in Bayern; Su
 Je Händler: Name, Ort/Adresse, Website, belegter Telefon-/E-Mail-Kontakt oder Kontaktseite, Sortiment/Zuschnittmöglichkeiten, Privatkundenverkauf, Mindestmengen, Abholung, Versand. Ungeklärtes ausdrücklich offen lassen. Preis, Verfügbarkeit und Datenblatt pro Artikel mit Abrufdatum. Mehrere Alternativen vergleichen; keine Verfügbarkeit bei jedem Händler behaupten. Kontaktaufnahme, Reservierung und Bestellung erfolgen erst nach gesondertem Auftrag.
 
 Ergebnisformat: Beschaffungsmatrix nach Stücklistenposition plus regionale Kontaktliste, online Artikelalternativen, wirtschaftlicher Warenkorb je Stückzahl und Hinweise auf erforderliche Maßanpassungen. Keine vorschnelle Bestellung aufgrund der unbestätigten D-V03-Konzeptmaße.
+
+## Fortschritt dieser Fortsetzung
+
+- D-V03 öffentlich für5/8/9mm geladen; Teile exakt plate/adapter/pin/screw/tube.
+- Nominale Rohrbewegung und Gegenproben: [Mechanik](mechanik-d.md), reproduzierbarer STEP-Prüfbericht.
+- Konzeptanimation mit8Schritten, Pause, Zeitleiste, Replay, langsamem Modus und Kurzdemo eingebaut; keine Verriegelungsbehauptung.
+- [Beschaffung](beschaffung-d.md): zwei oder mehr Artikelkandidaten je Position; regionale Kontaktliste. 8/9mm-Endpreis, einige Versandwerte und Privatkundenbedingungen weiterhin offen.
+- [Kosten](kosten-d.md):1/5/10-Stück-Szenarien einschließlich Restmengen, Eigenleistung und Werkstatt; Schätzungen von Anzeigenpreisen getrennt.
+- [Montageanleitung](montage-d.md) mit Werkzeugen, Fertigung, Benutzermontage, Prüfung, Demontage und Pflege, druckbar als HTML.
+- Noch zu tun: reale Maße und Funktion, Rückdrehsicherung, Stiftsitz, Werkstoffe/Oberfläche, reale Schraubenkopfkontur, belastbare Angebote, Stand-/Belastungsnachweis. Keine Fertigungsfreigabe.

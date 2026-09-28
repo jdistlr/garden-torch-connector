@@ -46,3 +46,7 @@ Sacklochabstand zur Schraubenspitze: 4,8 / 7,8 / 8,8 mm für Platte 5 / 8 / 9 mm
 ## Montageübersicht
 
 Aufnahme aus Vollmaterial fertigen, direktes Sacklochgewinde herstellen und Querstift sichern. Platte anheben, Aufnahme aufsetzen, Senkschraube von unten einschrauben und mit noch festzulegender Vorspannung sichern. Schraube darf nicht am Sacklochgrund anschlagen. Platte absetzen, Bodenfreiheit prüfen. Rohr erst nach Prüfung des Steck-Dreh-Wegs aufschieben und drehen. Kein bestätigtes Einrasten voraussetzen. Die Explosionsansicht ist eine Teileübersicht, keine geprüfte Bewegungsanimation.
+
+## Ergänzung: Einführlage und geführte Montage
+
+Die bestehende STEP-Baugruppe ist bei0° in **Einführlage**, nicht in verdrehter Endlage. Der nominale Weg bis50° ist abgetastet; ca.55,8° ist der erste geometrische Drehkontakt, obwohl der Nutsektor65° beträgt. Rückdrehen bleibt frei. Siehe [Mechanik](mechanik-d.md), [Montage](montage-d.md), [Beschaffung](beschaffung-d.md) und [Kosten](kosten-d.md). Die geführte Animation ersetzt nicht den Versuch am Original.
