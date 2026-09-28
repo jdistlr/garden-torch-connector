@@ -30,14 +30,17 @@ Gemeinsam prüfen: Öffnungsrichtung, Drehrichtung, Gegenstück, Maßbezüge, Ma
 
 PDF, STEP, optional STL für einen Anschauungsprototyp, Renderansichten und Auftragsbeschreibung. Paket mit Revision, Commit, Erstellungsdatum und Freigabestatus versehen. Noch offene Werte verhindern die Kennzeichnung als fertigungsfreigegeben.
 
-## 6. Automatisierung und Präsentation — optional
+## 6. Engineering-Web-Viewer — geplant
 
-Nach erfolgreichem lokalem Modellaufbau Abhängigkeiten versionieren und GitHub Actions zur regenerierbaren Erstellung der Exporte ergänzen. Browseransicht mit Drehen/Zoomen und Downloads; Veröffentlichung separat umsetzen. Nicht jeder Push erzeugt eine Fertigungsfreigabe.
+Fester Zielumfang: Three.js-Ansicht mit technischen Standardansichten, Auswahl, Schnittebene und Panels für Maße, CAD-Kennwerte, Quellen und Prüfstatus. Browsermesh und Kennwerte aus derselben CAD-Revision ableiten. Exakte CAD-Geometrie und angenäherte Browserdarstellung ausdrücklich unterscheiden. Siehe [Viewer-Spezifikation](web-viewer.md).
+
+Nach erfolgreichem lokalem Modellaufbau Abhängigkeiten versionieren; automatisierte Exporte über GitHub Actions anschließend ergänzen. Hosting und Veröffentlichung stehen noch aus. Nicht jeder Push erzeugt eine Fertigungsfreigabe.
 
 ## Abnahmekriterien
 
 - Alle produktionsrelevanten Maße und Anforderungen geklärt.
 - CAD-Volumenkörper gültig und STEP wieder einlesbar.
-- Zeichnung und Modell stimmen überein.
+- Zeichnung, STEP, Browsermodell und Kennwerte stammen aus derselben Revision.
+- Viewer-Prüfungen nach web-viewer.md bestanden; insbesondere Einheiten, Schnittdarstellung und Maßzuordnung.
 - Montagefunktion am Gegenstück geprüft; nötigenfalls Musterteil.
 - Versioniertes Auftragspaket durch Auftraggeber freigegeben.
