@@ -1,6 +1,8 @@
 # Gartenfackel · Projektübersicht
 
-Wir entwickeln eine ebene Bodenbefestigung für die vorhandene Gartenfackel. **D-V03 ist der aktuelle Konstruktionsstand.** Das CAD beschreibt bisher den Sockel und die Rohrschnittstelle; die vollständige Fackel, ihr oberer Anschluss und ihre Standsicherheit sind noch nicht erfasst.
+Alle Arbeitsbereiche der Gartenfackel an einem Ort. Aktuell: Sockel D-V03 und Rohrschnittstelle. Die vollständige Fackel und ihre Standsicherheit müssen noch erfasst werden.
+
+[Zu allen Arbeitsbereichen](#im-projekt-arbeiten) · [Modell öffnen](variants.html)
 
 ## Jetzt: Original und gesamte Fackel erfassen
 
