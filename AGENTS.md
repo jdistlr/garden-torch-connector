@@ -8,3 +8,6 @@
 - Unbestätigte Entwürfe niemals als fertigungsfreigegeben bezeichnen.
 - Originalquellen nicht überschreiben. Duplikate über Prüfsummen dokumentieren.
 - Keine unbeauftragte Änderung der Repository-Sichtbarkeit.
+
+- Gewählte Sockelvariante D: kein Bauteil darf im montierten Zustand unter die Plattenunterseite ragen. Senkung samt realem Schraubenkopf prüfen, für jede Plattenstärke.
+- Steck-Dreh-Bewegung und Rückdrehsicherung prüfen, bevor eine erfolgreiche Verriegelung animiert wird.

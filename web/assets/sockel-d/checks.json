@@ -1,0 +1,42 @@
+{
+  "revision": "D-V02",
+  "parameter_sha256": "5cfa74ba0ad07e53036dc08ba6a3bebb2b69599aceb2a7cdcacbbf9f7dbf402b",
+  "results": [
+    {
+      "thickness_mm": 5,
+      "valid_solids": 6,
+      "ground_z_mm": 0,
+      "screw_lowest_z_mm": 0.2,
+      "countersink_depth_mm": 3.7,
+      "remaining_plate_at_bore_mm": 1.3,
+      "nominal_engagement_mm": 15.2,
+      "insert_end_clearance_mm": 0.8,
+      "max_intersection_mm3": 0,
+      "step_roundtrip": true
+    },
+    {
+      "thickness_mm": 8,
+      "valid_solids": 6,
+      "ground_z_mm": 0,
+      "screw_lowest_z_mm": 0.2,
+      "countersink_depth_mm": 3.7,
+      "remaining_plate_at_bore_mm": 4.3,
+      "nominal_engagement_mm": 12.2,
+      "insert_end_clearance_mm": 3.8,
+      "max_intersection_mm3": 0,
+      "step_roundtrip": true
+    },
+    {
+      "thickness_mm": 9,
+      "valid_solids": 6,
+      "ground_z_mm": 0,
+      "screw_lowest_z_mm": 0.2,
+      "countersink_depth_mm": 3.7,
+      "remaining_plate_at_bore_mm": 5.3,
+      "nominal_engagement_mm": 11.2,
+      "insert_end_clearance_mm": 4.8,
+      "max_intersection_mm3": 0,
+      "step_roundtrip": true
+    }
+  ]
+}

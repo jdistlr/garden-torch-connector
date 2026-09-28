@@ -39,3 +39,7 @@ Den Ablauf in [workflow.md](workflow.md) für ähnliche Teile übernehmen. Quell
 ## Abschluss
 
 Ein früher Entwurf ist erreicht, sobald die Form gemeinsam prüfbar ist. Ein Fertigungsstand erfordert zusätzlich bestätigte Maße und Anforderungen, gültige CAD-Geometrie, konsistente Exporte und eine Prüfung der Verbindung am Gegenstück.
+
+## Neue verbindliche Ausbaustufen
+
+[Standardteile, Beschaffung, Gesamtkosten, Funktionsprüfung, Montageanleitung und Produktanimation](next-features.md). Diese Reihenfolge hat Vorrang vor früheren offenen Ausbaustufen.
