@@ -2,17 +2,17 @@
 
 Hier sammeln wir alles, was wir brauchen, um ein vorhandenes Verbindungsrohr für eine Gartenfackel-Vorrichtung nachvollziehbar zu dokumentieren und daraus später einen Fertigungsauftrag zu machen.
 
-**Stand: 28. September 2026 — Ein CAD-Fotoentwurf D02, STEP und ein erster Web-Viewer sind erstellt. Maße sind unbestätigt; drei klassische technische Prüfzeichnungen als A3-PDF sind vorhanden.**
+**Stand: 28. September 2026 — Gewählt ist D-V03: Vollmaterial mit direktem Gewindesackloch. Viewer, STEP und je drei A3-Prüfzeichnungen für 5/8/9 mm Platte sind vorhanden. Detailmaße bleiben unbestätigt.**
 
-## Ausgewählt: Sockelvariante D-V02
+## Ausgewählt: Sockelvariante D-V03
 
 [**Variante D im Webviewer öffnen**](https://jdistlr.github.io/garden-torch-connector/web/variants.html)
 
-150 × 150 mm Grundplatte, wählbar 5/8/9 mm; kurze Aufnahme mit Gewindebuchse und von unten versenkter Schraube. Die Unterseite bleibt in allen drei Konzeptmodellen frei: Schraubenkopf 0,2 mm zurückgesetzt. Schnitt, Explosionsansicht, Einzelteile, Detailansichten, Maße, PNG-Export, STEP-Downloads und drei klassische A3-Zeichnungsblätter sind integriert.
+150 × 150 mm Grundplatte, wählbar 5/8/9 mm; massive Aufnahme mit direkt eingeschnittenem Gewindesackloch und von unten versenkter Schraube. Die Unterseite bleibt in allen drei Konzeptmodellen frei: Schraubenkopf 0,2 mm zurückgesetzt. Schnitt, Explosionsansicht, Einzelteile, Detailansichten, Maße, PNG-Export, STEP-Downloads und je drei klassische A3-Zeichnungsblätter pro Plattenstärke sind integriert.
 
 [Technischer Stand und Grenzen](docs/sockel-d.md) · [Nächste Features: Beschaffung, Kosten, Montage und Animation](docs/next-features.md)
 
-Die alte Variantenübersicht V01 ist nur noch ein Archiv; ihre überstehenden Schraubenköpfe sind verworfen. D-V02 ist ein prüfbarer Konzeptstand, keine Fertigungsfreigabe. Bewegungsprüfung und reale Normteilauswahl stehen noch aus.
+Die alte Variantenübersicht V01 ist nur noch ein Archiv; ihre überstehenden Schraubenköpfe sind verworfen. D-V03 ist ein prüfbarer Konzeptstand, keine Fertigungsfreigabe. Bewegungsprüfung und reale Normteilauswahl stehen noch aus.
 
 ## Viewer D02: beide Teile
 
@@ -173,3 +173,7 @@ Schwarzweiße Vektorzeichnung mit Maßpfeilen, Mittellinien, verdeckten Kanten u
 ## Sockelvarianten V01
 
 [Zweite Viewerseite: A–D im Vergleich](https://jdistlr.github.io/garden-torch-connector/web/variants.html). Mit CAD-Schnitt, Explosionsansicht, Einzelteilen und STEP-Konzepten. Enthält eigene Zeit-/Budgetspannen und qualitative Einschätzungen zur Verbindung. Neue Geometriemaße sind ausdrücklich Konzeptannahmen; keine Fertigungs- oder Standsicherheitsfreigabe.
+
+## Neue Arbeitssitzung
+
+[Ausführliche Übergabe und nächster Arbeitsauftrag](docs/HANDOVER.md).

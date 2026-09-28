@@ -1,8 +1,8 @@
-"""Classical vector review drawings, derived from D02 STEP and parameters.
-Run build.py first. No tolerances or material properties are invented.
+"""Classical D-V03 review drawings derived from current solid-stock STEP.
+Run sockel_d.py first; D_PLATE_THICKNESS=5/8/9 chooses drawing set. No tolerances or material properties are invented.
 """
 from pathlib import Path
-import json, math, hashlib
+import json, math, hashlib, os
 import cadquery as cq
 from OCP.HLRBRep import HLRBRep_Algo, HLRBRep_HLRToShape
 from OCP.HLRAlgo import HLRAlgo_Projector
@@ -14,11 +14,15 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 ROOT=Path(__file__).resolve().parents[1]
 A=ROOT/'web/assets/sockel-d'
+T=int(os.environ.get('D_PLATE_THICKNESS','5'))
+assert T in [5,8,9]
+checks=json.loads((A/'checks.json').read_text())['results']
+check=next(c for c in checks if c['thickness_mm']==T)
 font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 pdfmetrics.registerFont(TTFont('Draw',font));pdfmetrics.registerFont(TTFont('DrawBold',font.replace('Sans.ttf','Sans-Bold.ttf')))
-C=canvas.Canvas(str(A/'zeichnungen-D-V02.pdf'),pagesize=(420*mm,297*mm),pageCompression=1)
-C.setTitle('Variante D-V02 - Prüfzeichnungen mit versenktem Kopf')
-parts={n:cq.importers.importStep(str(A/(n+'-5.step'))).val() for n in ['plate','adapter','insert','screw','weld']}
+C=canvas.Canvas(str(A/f'zeichnungen-D-V03-{T}mm.pdf'),pagesize=(420*mm,297*mm),pageCompression=1)
+C.setTitle('Variante D-V03 - Prüfzeichnungen mit versenktem Kopf')
+parts={n:cq.importers.importStep(str(A/(n+f'-{T}.step'))).val() for n in ['plate','adapter','pin','screw']}
 cut=cq.Solid.makeBox(400,200,300,cq.Vector(-200,0,-50))
 def front(s,x,y,scale=1):project(s,x,y,scale,normal=(0,-1,0),right=(1,0,0))
 def section(s,x,y,scale=1):
@@ -74,12 +78,12 @@ def frame(n,name,number,scale):
  C.saveState();C.scale(mm,mm);C.setLineWidth(.5);C.rect(15,10,395,277)
  text(23,278,'GARTENFACKEL-VERBINDUNG',5,bold=True)
  text(403,278,'PRÜFZEICHNUNG · NICHT ZUR FERTIGUNG',4,bold=True,align='right')
- text(23,269,'D-V02: Konstruktionsannahmen / unbestätigte Maße. Keine Allgemeintoleranz festgelegt.',3.5)
+ text(23,269,f'D-V03 / Platte {T} mm: Vollmaterial. Unbestätigte Detailmaße; keine Allgemeintoleranz.',3.5)
  # Title block, bottom right: 180 x 40 mm.
  C.rect(230,10,180,40);line(230,22,410,22);line(230,34,410,34);line(230,42,410,42)
  line(315,10,315,22);line(357,10,357,22);line(385,10,385,22)
  text(233,45,name,4.5,bold=True);text(233,37,'Werkstoff / Oberfläche: offen',3.2);text(327,37,'Toleranzen / Passung: offen',3)
- text(233,29,'Zeichnungs-Nr.: '+number,3.5);text(365,29,'Rev. D-V02',3.5)
+ text(233,29,'Zeichnungs-Nr.: '+number,3.5);text(365,29,'Rev. D-V03',3.5)
  text(233,17,'Erstellt: 28.09.2026',3);text(233,12,'Prüfung / Freigabe: offen',2.7)
  text(318,17,'Maßstab '+scale,3);text(318,12,'Maße in mm',3)
  text(360,17,'A3 quer',3);text(360,12,'420 × 297',2.7);text(388,17,'Blatt',3);text(388,12,f'{n} / 3',3)
@@ -96,43 +100,44 @@ project(parts['plate'],115,162,normal=(0,0,-1),right=(1,0,0));axis(33,162,197,16
 dh(40,190,76,87,87,'150');dv(87,237,205,190,190,'150')
 leader(123.2,162,149,184,'Ø16,4 × 90° (Annahme)')
 text(244,246,'Schnitt / Kopfauflage 4:1',4,bold=True)
-local=parts['plate'].intersect(cq.Solid.makeBox(34,34,10,cq.Vector(-17,-17,0)))
+local=parts['plate'].intersect(cq.Solid.makeBox(34,34,12,cq.Vector(-17,-17,0)))
 section(local,320,177,4);front(parts['screw'].intersect(cut),320,177,4)
 line(245,177,401,177,.35,[3,1]);text(245,169,'Bodenebene z = 0',3.5)
-dv(177,197,395,388,388,'5')
+dv(177,177+T*4,395,388,388,str(T))
 leader(320-8*4,177+.2*4,250,149,'Kopffläche 0,2 zurückgesetzt')
 leader(320+4.5*4,177+3.7*4,341,218,'Ø9 Durchgang')
-for i,t in enumerate(['90°-Senkung idealisiert: Tiefe 3,7.', 'Restdicke am Bohrungsrand: 1,3.', 'Kein Teil unter der Auflageebene.', 'Schrauben-Hüllmodell M8 × 20; Kopf Ø16.', 'Kopfrand, Übergänge und Toleranzen fehlen.', 'Reales Kaufteil vor Senkungsauslegung wählen.', '8 / 9 mm: siehe separate STEP-Modelle.']):text(242,134-i*8,t,3.3)
+for i,t in enumerate(['90°-Senkung idealisiert: Tiefe 3,7.', f'Restdicke am Bohrungsrand: {T-3.7:.1f} mm.', 'Kein Teil unter der Auflageebene.', 'Schrauben-Hüllmodell M8 × 20; Kopf Ø16.', 'Kopfrand, Übergänge und Toleranzen fehlen.', 'Reales Kaufteil vor Senkungsauslegung wählen.', f'Dieses Blatt gehört zur {T}-mm-Platte.']):text(242,134-i*8,t,3.3)
 end()
-frame(2,'Aufnahme / separate Gewindebuchse','GF-D-02','2:1 / 3:1')
-adapter=parts['adapter'].translate((0,0,-5));insert=parts['insert'].translate((0,0,-5))
-text(28,252,'Hülse und Kopf · Längsschnitt',4,bold=True)
+frame(2,'Vollmaterial-Aufnahme / Querstift','GF-D-02','2:1 / 3:1')
+adapter=parts['adapter'].translate((0,0,-T))
+text(28,252,'Massive Aufnahme · Längsschnitt 2:1',4,bold=True)
 section(adapter,92,121,2);axis(92,112,92,229)
-dv(121,221,45,68,68,'50');dv(121,161,130,116,116,'20');dv(161,221,145,116,116,'30')
-dh(68,116,107,121,121,'Ø24');dh(74,110,94,121,121,'Ø18')
-leader(96,191,161,212,'Querstift Ø4 / Überstand 17')
-text(247,252,'Gewindebuchse · Längsschnitt 3:1',4,bold=True)
-section(insert,302,173,3);axis(302,164,302,230)
-dh(275.6,328.4,159,173,173,'Ø17,6');dv(173,221,350,328.4,328.4,'16')
-leader(314,201,347,231,'M8 · schematisch')
-for i,t in enumerate(['Gewinde im CAD glatt mit Nenndurchmesser.', 'Fügezone 1 bis 3 mm über Unterkante.', 'Fügeverfahren und Nahtmaß noch auszulegen.', 'Unterkante nach dem Fügen plan / gratfrei.', 'Material und Schweißbarkeit nicht festgelegt.', 'Die Buchse muss Zug und Drehmoment übertragen.', 'Keine freigegebene Toleranz oder Rauheit.']):text(235,139-i*8,t,3.3)
-text(27,73,'Kopf und Querstift: D02-Fotoschätzungen. Hülse und Buchse: neue Konstruktionsannahmen.',3.2)
+dv(121,221,45,68,68,'50');dh(68,116,107,121,121,'Ø24')
+leader(100,144,143,149,'M8 · direkt, Zieltiefe 18')
+leader(96,191,151,212,'Radialer Stiftsitz Ø4; Tiefe 4')
+text(247,252,'Querstift · Seitenansicht 3:1',4,bold=True)
+C.setLineWidth(.5);C.rect(250,214,63,12);axis(244,220,321,220)
+dh(250,313,199,214,214,'21 = 4 Sitz + 17 Überstand')
+dv(214,226,329,313,313,'Ø4')
+text(235,183,'Gewinde und Bohrung',4,bold=True)
+for i,t in enumerate(['Direktes Gewindesackloch im Vollmaterial.', 'Gewinde-Zieltiefe 18; zyl. Bohrtiefe 20.', 'Bohrspitze zusätzlich 2,4 (Konzept).', 'CAD-Bohrung Ø8 = nominale Gewindehülle.', 'Kein Kernloch-Fertigungsdurchmesser!', 'Gewindeauslauf / Werkzeugzugang auslegen.', 'Stiftpassung und Sicherung noch festlegen.', 'Werkstoff / Oberfläche / Toleranzen offen.']):text(235,172-i*8,t,3.3)
+text(27,73,'Vollmaterial: Nutzerentscheidung. Sämtliche Detailmaße unbestätigt; keine separate Gewindebuchse.',3.2)
 end()
 frame(3,'Variante D / Montage und Prüfung','GF-D-00','2:1 Detail')
 text(25,251,'Montageschnitt · Fackelrohr ausgeblendet',4,bold=True)
-for name in ['plate','adapter','insert','weld']:
+for name in ['plate','adapter','pin']:
  shape=parts[name]
- if name=='plate':shape=shape.intersect(cq.Solid.makeBox(64,64,8,cq.Vector(-32,-32,0)))
+ if name=='plate':shape=shape.intersect(cq.Solid.makeBox(64,64,12,cq.Vector(-32,-32,0)))
  section(shape,99,125,2)
 front(parts['screw'].intersect(cut),99,125,2)
 line(25,125,181,125,.5);text(25,115,'Boden / Auflageebene z = 0',3.5)
-leader(108,149,155,165,'1 · Gewindebuchse')
-leader(104,139,155,146,'2 · Senkschraube')
+leader(117,172,155,182,'2 · Massive Aufnahme')
+leader(104,139,155,146,'4 · Senkschraube')
 text(238,246,'GEOMETRISCHE PRÜFUNG',4,bold=True)
-for i,t in enumerate(['Platte: 150 × 150 × 5 mm.', 'Kopfunterseite: z = +0,2 mm.', 'Kein Unterstand; kein Kollisionvolumen.', '6 gültige Solids inkl. Rohr; STEP rückgelesen.', 'Nominaler Eingriff: 15,2 mm (vereinfacht).', 'Freiraum bis Buchsenende: 0,8 mm.', 'Gewindeauslauf / Fasen noch nicht enthalten.']):text(238,236-i*8,t,3.3)
+for i,t in enumerate([f'Platte: 150 × 150 × {T} mm.', 'Kopfunterseite: z = +0,2 mm.', 'Kein Unterstand; kein Kollisionvolumen.', '5 gültige Solids inkl. Rohr; STEP rückgelesen.', f"Nominaler Eingriff: {check['nominal_engagement_mm']:.1f} mm.", f"Abstand zum Bohrungsgrund: {check['bore_end_clearance_mm']:.1f} mm.", 'Gewindeauslauf / Fasen noch nicht enthalten.']):text(238,236-i*8,t,3.3)
 text(238,167,'VOR FERTIGUNG',4,bold=True)
-for i,t in enumerate(['Kaufteil, Werkstoffe und Standardhalbzeuge wählen.', 'Senkung und Toleranzkette gegen Kopf prüfen.', 'Fügezone, Vorspannung und Losdrehen prüfen.', 'Steck-Dreh-Weg / tatsächliche Rastung prüfen.', 'Standsicherheit der ganzen Fackel prüfen.']):text(238,157-i*8,t,3.3)
-text(25,86,'Montage: Buchse sichern → Aufnahme auflegen → Schraube von unten anziehen → Platte absetzen.',3.2)
+for i,t in enumerate(['Kaufteil, Werkstoffe und Standardhalbzeuge wählen.', 'Senkung und Toleranzkette gegen Kopf prüfen.', 'Stiftsitz, Vorspannung und Losdrehen prüfen.', 'Steck-Dreh-Weg / tatsächliche Rastung prüfen.', 'Standsicherheit der ganzen Fackel prüfen.']):text(238,157-i*8,t,3.3)
+text(25,86,'Montage: Querstift sichern → Aufnahme auflegen → Schraube von unten anziehen → Platte absetzen.',3.2)
 text(25,78,'Erst danach Fackelrohr aufschieben und erst nach Prüfung der Steck-Dreh-Funktion verbinden.',3.2)
 text(25,65,'Senkungs-/Gewindeangaben sind Konzeptwerte. Keine Traglast oder Fertigungsfreigabe.',3.2)
 end();C.save()

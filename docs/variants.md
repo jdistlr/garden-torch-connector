@@ -1,6 +1,6 @@
 # Archivhinweis
 
-Die ursprünglichen Varianten A–D (V01) sind überholt. Gewählt ist [D-V02](sockel-d.md) mit vollständig versenktem Schraubenkopf. Angaben unten dienen nur der Historie.
+Die ursprünglichen Varianten A–D (V01) sind überholt. Gewählt ist [D-V03](sockel-d.md) mit vollständig versenktem Schraubenkopf. Angaben unten dienen nur der Historie.
 
 # Sockelvarianten V01
 

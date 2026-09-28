@@ -1,0 +1,38 @@
+{
+  "revision": "D-V03",
+  "selection": "Nutzerentscheidung: Vollmaterial, direktes Gewindesackloch, keine Buchse",
+  "plate": {
+    "width": 150,
+    "depth": 150,
+    "thicknesses": [
+      5,
+      8,
+      9
+    ],
+    "status": "unbestätigte Nutzerschätzung"
+  },
+  "adapter": {
+    "outer_diameter": 24,
+    "height": 50,
+    "thread_nominal_diameter": 8,
+    "thread_target_depth": 18,
+    "bore_cylindrical_depth": 20,
+    "drill_tip_depth": 2.4,
+    "pin_seat_depth": 4,
+    "status": "Vollmaterial vom Nutzer festgelegt; Detailmaße Konzeptannahmen, Werkstoff und Passung offen"
+  },
+  "screw": {
+    "nominal_diameter": 8,
+    "length_including_head": 20,
+    "head_envelope_diameter": 16,
+    "cone_angle": 90,
+    "recess": 0.2,
+    "status": "vereinfachte Hüllgeometrie; konkretes Kaufteil samt Kopfrand und Toleranzen noch abzugleichen"
+  },
+  "countersink": {
+    "opening_diameter": 16.4,
+    "through_diameter": 9,
+    "depth": 3.7,
+    "status": "aus idealisierter 90°-Hüllgeometrie abgeleitet, kein freigegebenes Fertigungsmaß"
+  }
+}

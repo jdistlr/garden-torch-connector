@@ -11,3 +11,5 @@
 
 - Gewählte Sockelvariante D: kein Bauteil darf im montierten Zustand unter die Plattenunterseite ragen. Senkung samt realem Schraubenkopf prüfen, für jede Plattenstärke.
 - Steck-Dreh-Bewegung und Rückdrehsicherung prüfen, bevor eine erfolgreiche Verriegelung animiert wird.
+
+- D-V03: schwarze Aufnahme aus Vollmaterial mit direktem Gewindesackloch. Keine separate Gewindebuchse oder ringförmige Fügezone. Querstift separat zeigen und dessen Sicherung offen kennzeichnen.
