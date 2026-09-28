@@ -159,3 +159,7 @@ Aktuell liegt eine **Projektgrundlage, keine Fertigungsfreigabe** vor. Erst wenn
 Schwarzweiße Vektorzeichnung mit Maßpfeilen, Mittellinien, verdeckten Kanten und Schriftfeld. Auf A3 bei **100 % / tatsächliche Größe** drucken; 50-mm-Kontrollstrecke nachprüfen. Alle Maßzahlen bleiben unbestätigte Foto-Schätzungen. Material, Passungen, Toleranzen, Rauheit und Fügeverfahren sind offen; die PDF ist keine Fertigungsfreigabe.
 
 [Darstellungsgrundlage und reproduzierbarer Export](docs/drawings.md).
+
+## Sockelvarianten V01
+
+[Zweite Viewerseite: A–D im Vergleich](https://jdistlr.github.io/garden-torch-connector/web/variants.html). Mit CAD-Schnitt, Explosionsansicht, Einzelteilen und STEP-Konzepten. Enthält eigene Zeit-/Budgetspannen und qualitative Einschätzungen zur Verbindung. Neue Geometriemaße sind ausdrücklich Konzeptannahmen; keine Fertigungs- oder Standsicherheitsfreigabe.
