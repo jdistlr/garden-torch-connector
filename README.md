@@ -4,6 +4,12 @@ Hier sammeln wir alles, was wir brauchen, um ein vorhandenes Verbindungsrohr fü
 
 **Stand: 28. September 2026 — Bilder und Planung sind vorhanden. Die Maße sind noch zu bestätigen; ein CAD-Modell und eine Fertigungszeichnung gibt es noch nicht.**
 
+## Ab jetzt: ein sichtbares Ergebnis pro Runde
+
+Wir beginnen mit einem **Formabgleich aus Fotos und einer einfachen Skizze**. Danach folgen wenige CAD-Ansichten, ein minimaler drehbarer Web-Viewer und gezielte Maßkorrekturen. Ein früher Entwurf darf klar markierte Foto-Schätzungen enthalten; er ist nicht fertigungsfreigegeben.
+
+Der erste Viewer bekommt nur Drehen/Zoomen, Ansicht zurücksetzen und eine Infobox mit Maßen und Status. Schnitte und weitere Panels folgen schrittweise. Pro Runde klären wir höchstens drei konkrete Fragen. Siehe [kurzer Projektplan](docs/plan.md) und [wiederverwendbarer Ablauf](docs/workflow.md).
+
 ## Neu dabei? Hier anfangen
 
 Du brauchst zum Mitlesen keine CAD-Software und musst nichts installieren. Dieses Repository ist unser gemeinsamer Projektordner mit nachvollziehbarer Änderungshistorie. Die README ist seine Startseite.
