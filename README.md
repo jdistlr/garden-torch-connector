@@ -36,7 +36,7 @@ Zunächst bearbeiten wir das Rohr. Der Erdspieß dient als Gegenstück, damit di
 | Änderbares 3D-Modell erstellen | Geplant |
 | Bemaßte Zeichnung und STEP-Datei | Geplant |
 | Auftragspaket für einen Fertiger | Geplant |
-| Drehbare Ansicht im Browser | Spätere Option |
+| Engineering-Web-Viewer mit Informationspanels | Geplant; fester Bestandteil des Zielumfangs |
 
 Die Fotos 07 und 12 sind exakte Duplikate von 02 beziehungsweise 03. Im Repository liegen 14 verkleinerte Vorschauen ohne übernommene Kamera-Metadaten. Die hochauflösenden Originale sind hier noch nicht enthalten. Dateinamen und Prüfsummen der Originale stehen im [Quelleninventar](sources/inventory.json).
 
@@ -45,6 +45,7 @@ Die Fotos 07 und 12 sind exakte Duplikate von 02 beziehungsweise 03. Im Reposito
 - **Ein 3D-Modell**, dessen Maße sich gezielt ändern lassen.
 - **Eine technische Zeichnung als PDF**, mit Ansichten, Schnitt und Detail des Schlitzes.
 - **Eine STEP-Datei**, mit der ein Fertiger das räumliche CAD-Modell weiterverwenden kann.
+- **Einen Engineering-Web-Viewer**, in dem ihr das Modell drehen, schneiden und mit Maß-, Kennwert- und Quellenpanels untersuchen könnt.
 - **Anschauliche Modellbilder**, damit Form und Zusammenbau leicht verständlich sind.
 - **Eine kurze Auftragsbeschreibung** mit Material, Stückzahl, Oberfläche und abgestimmten Anforderungen.
 
@@ -59,6 +60,12 @@ Ein schönes Modellbild zeigt die Form. Für die Fertigung brauchen wir zusätzl
 5. **Zeichnung und Auftrag fertigstellen:** Material, Oberfläche, Stückzahl und zulässige Maßabweichungen mit dem Fertiger abstimmen.
 
 Dabei unterscheiden wir immer zwischen **auf dem Foto gesehen**, **aus dem Foto geschätzt**, **gemessen und bestätigt** und **neu entschieden**. So wird eine Schätzung nicht versehentlich zur Fertigungsvorgabe.
+
+## Das Modell im Browser untersuchen
+
+Geplant ist eine Three.js-Ansicht mit technischen Standardansichten, sichtbaren Kanten, Transparenz und einer Schnittebene. Daneben zeigen Panels Maße, Materialvolumen, Modellstand, Bildquellen und offene Punkte. Masse wird erst bei bekanntem Material und bekannter Dichte berechnet.
+
+Das Browserbild wird aus dem CAD-Modell abgeleitet. Verbindliche Maße und Kennwerte stammen aus der CAD-Geometrie; ein angeklicktes Dreieck im Browser wäre nur eine Näherung. Der Viewer ist noch nicht gebaut. [Funktionen und Qualitätsanforderungen](docs/web-viewer.md) sind jetzt dokumentiert.
 
 ## Was könnt ihr jetzt beitragen?
 
@@ -114,6 +121,7 @@ Die Begründung und offiziellen Dokumentationslinks stehen in der [Werkzeugentsc
 | [docs/plan.md](docs/plan.md) | Arbeitsschritte und Kriterien für den Abschluss |
 | [docs/measurements.md](docs/measurements.md) | Ausführliche Maßliste und Funktionsfragen |
 | [docs/toolchain.md](docs/toolchain.md) | Werkzeugwahl und geplante Dateiformate |
+| [docs/web-viewer.md](docs/web-viewer.md) | Browseransicht, Informationspanels und Qualitätsanforderungen |
 | [parameters/connector.json](parameters/connector.json) | Vorbereitete Maßtabelle für das spätere Modell |
 
 In der Parameterdatei bedeutet `null`: **noch unbekannt**, nicht null Millimeter.
