@@ -39,3 +39,15 @@ Die frühere Karten-/Linkleisten-Erweiterung wurde gestalterisch zurückgenommen
 ## Gemeinsame Projektoberfläche · 29.09.2026
 
 Nutzer lehnt auch die Drei-Bereiche-Vorschau ab: vollständige Orchestrierung aller vorhandenen Funktionen beauftragt. Neuer Einstieg `web/projekt.html` mit nächster Tätigkeit und vollständigem Funktionsverzeichnis. Fotos/Maße, Entscheidungen, Modell/Zeichnungen, Bauteile, Mechanik, Montage, Beschaffung und Kosten verwenden die gemeinsame Oberfläche. `docs/projekt-integration.md` dokumentiert Quelle und Verbindung jeder Funktion. Bauteile verbinden Fotos, Kandidaten, Prüfungen, STEP und konkrete Animationsschritte. `web/ux.html` bleibt alter Entwurf; nicht zur Hauptseite machen. CAD und Posen unverändert. Reale Smartphone-Geräte und WebGL in der Cloud weiterhin nicht nachweisbar.
+
+
+## Szenenwerkzeuge · September 2026
+
+- Bauteilwahl per Liste und 3D-Treffer, Hervorhebung und Verbindungen zu Bauteilangaben, Fotos/Messliste, Beschaffung und Einbauschritt. Die Textauswahl funktioniert auch ohne WebGL.
+- Fünf Untersuchungsfragen führen zu Kamerapositionen; Übergänge sind unterbrechbar und bei reduzierter Bewegung unmittelbar.
+- Verschiebbarer Y-Schnitt mit Stencil-Schnittflächen; nur Darstellung, keine Änderung an CAD oder Downloads. Während Montage gelten die vorhandenen erklärenden Sockelschnitte.
+- Montage hebt das aktive Teil hervor; Richtungspfeile und optionale vorherige Position ergänzen die unveränderte Posefunktion. Keine Rastung ergänzt.
+- Technische/Produktdarstellung mit prozeduraler Studioumgebung; automatische oder manuelle Renderqualität. Oberflächen sind Visualisierungen, keine Materialfestlegung.
+- Ansichtslink speichert Kamera, Plattenwahl, Teil, Darstellungszustand und pausierten Montageschritt. PNG kann Revision, Plattenstärke und Konzeptstatus enthalten.
+
+Prüfung: DOM-Integration mit realer Three.js-Geometrie/Mathematik und ersetztem Renderer prüft Auswahl, Schnittzustand, Montage, Positionshilfe, Teilen, Reset und Qualität. Nominale Posen bleiben durch bestehenden Regressionstest geschützt. Der Cloud-Browser kann keinen WebGL-Kontext erstellen: Licht, Schatten, Stencil-Kappen und Antialiasing sind dort **nicht visuell geprüft**. Vor visueller Abnahme auf einem WebGL-fähigen Smartphone und Desktop insbesondere Schnitt durch Gewindesackloch, Bauteilauswahl, Touch-Scroll/Drehen und Wiederöffnung eines Ansichtslinks prüfen.
