@@ -27,3 +27,7 @@ Den Lauf „pages build and deployment“ unter Actions prüfen. Der erste eigen
 ## Korrektur D02
 
 Das schwarze Gegenstück gehört zum Modellumfang. Kopf, Schaft, konische Spitze und radialer Stift bilden einen eigenen Solid. Die gemeinsame STEP-Datei enthält zwei getrennte Solids in illustrativer Montagelage; Einzeldateien behalten dasselbe Bezugssystem. Der Viewer startet getrennt und kann beide Teile zusammensetzen oder ausblenden. Diese Anzeigeverschiebung verändert die CAD-Kennwerte nicht.
+
+## Technische Zeichnungen
+
+Nach `python3 model/build.py` erzeugt `python3 model/drawings.py` die drei A3-Prüfzeichnungen. Anleitung und Darstellungsgrenzen: [drawings.md](drawings.md). Der PDF-Download ist im Viewer neben STEP eingebunden.

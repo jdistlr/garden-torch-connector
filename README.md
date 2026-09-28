@@ -2,7 +2,7 @@
 
 Hier sammeln wir alles, was wir brauchen, um ein vorhandenes Verbindungsrohr für eine Gartenfackel-Vorrichtung nachvollziehbar zu dokumentieren und daraus später einen Fertigungsauftrag zu machen.
 
-**Stand: 28. September 2026 — Ein CAD-Fotoentwurf D02, STEP und ein erster Web-Viewer sind erstellt. Maße sind unbestätigt; eine Fertigungszeichnung gibt es noch nicht.**
+**Stand: 28. September 2026 — Ein CAD-Fotoentwurf D02, STEP und ein erster Web-Viewer sind erstellt. Maße sind unbestätigt; drei klassische technische Prüfzeichnungen als A3-PDF sind vorhanden.**
 
 ## Viewer D02: beide Teile
 
@@ -50,7 +50,7 @@ Der Stift scheint im Schlitz geführt und durch Verdrehen in die seitliche Aussp
 | Maßliste und offene Fragen | Vorhanden |
 | Maße verbindlich bestätigen | Offen |
 | Änderbares 3D-Modell erstellen | D02 als unbestätigter Foto-Entwurf vorhanden |
-| Bemaßte Zeichnung und STEP-Datei | STEP-Entwurf vorhanden; Zeichnung noch offen |
+| Bemaßte Zeichnung und STEP-Datei | STEP und drei bemaßte Prüfzeichnungen als A3-PDF vorhanden |
 | Auftragspaket für einen Fertiger | Geplant |
 | Engineering-Web-Viewer mit Informationspanels | Erste statische Version erstellt; Pages-Deployment separat prüfen |
 
@@ -147,3 +147,15 @@ In der Parameterdatei bedeutet `null`: **noch unbekannt**, nicht null Millimeter
 Das Repository ist derzeit **öffentlich**. Die erste interaktive 3D-Ansicht ist veröffentlicht; GitHub Pages baut Änderungen am main-Branch automatisch.
 
 Aktuell liegt eine **Projektgrundlage, keine Fertigungsfreigabe** vor. Erst wenn relevante Maße, Material, Funktion und Anforderungen geprüft sind, wird ein eindeutig gekennzeichnetes Auftragspaket zusammengestellt.
+
+## Technische Zeichnungen für die Werkstatt
+
+[PDF öffnen: drei A3-Blätter D02](web/assets/werkstattzeichnungen-D02.pdf). Auch direkt im Viewer als Download verfügbar.
+
+1. **GF-01 Rohr:** Vorder- und Stirnansicht, Längen- und Durchmessermaße, Schlitzdetail 3:1.
+2. **GF-02 Gegenstück:** Kopf, Schaft, Spitze und Stift, bemaßte Ansicht und Kopfdetail 2:1.
+3. **GF-00 Zusammenbau:** illustrative Montagelage, Positionsnummern und Stückliste.
+
+Schwarzweiße Vektorzeichnung mit Maßpfeilen, Mittellinien, verdeckten Kanten und Schriftfeld. Auf A3 bei **100 % / tatsächliche Größe** drucken; 50-mm-Kontrollstrecke nachprüfen. Alle Maßzahlen bleiben unbestätigte Foto-Schätzungen. Material, Passungen, Toleranzen, Rauheit und Fügeverfahren sind offen; die PDF ist keine Fertigungsfreigabe.
+
+[Darstellungsgrundlage und reproduzierbarer Export](docs/drawings.md).
