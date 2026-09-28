@@ -23,3 +23,4 @@ main{max-width:1440px;margin:auto;padding:0 40px}.hero{display:flex;align-items:
 
 .page-title{font-size:38px;margin:6px 0 18px}.document-meta{margin-bottom:22px}.project-context{margin-bottom:12px;padding:10px 0}.part-links{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:0!important}.part-links a{font-size:15px;min-height:48px;display:flex;align-items:center}.document article>p:first-of-type{color:var(--ink)}
 @media(max-width:760px){.document{padding-top:20px}.page-title{font-size:32px;margin-bottom:12px}.site-header{padding-top:10px;padding-bottom:6px}.brand{min-height:40px}.project-menu summary{min-height:40px}.document-meta{font-size:12px;margin-bottom:16px}.project-context{font-size:14px}.project-context select{min-height:44px}.part-links{display:grid;grid-template-columns:1fr;gap:0}.part-links a{padding:6px 0}.document article>h2{margin-top:32px}}
+.part-links{max-width:none!important;width:100%}
