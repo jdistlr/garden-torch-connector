@@ -15,6 +15,10 @@ Diese Ergänzung hat Vorrang vor dem historischen Übergabetext darunter. Basis 
 - Kosten1/5/10 vollständig als **Planungsszenarien**, keine belastbare Fertiger-Gesamtsumme. Belegte Teilpreise/Restmengen getrennt von eigenen Annahmen für Bearbeitung, Oberfläche und Versand. `model/cost_d.py` reproduziert JSON.
 - Browserprüfung:5/8/9, acht Schritte, Pause, Schnitt, Transparenz, Reset,390px ohne Seitenüberlauf, Dokumentseiten; keine JS-Fehler. Screenshotkontrolle für Gesamtansicht/Mobilansicht. Vorhandener Headless-Browser1161 verwendet, Standard-Playwright-Download funktionierte nicht.
 
+## Zusätzliche Reparatur
+
+Nach der Erweiterung wurde `blatt-8-3.png` beim vollständigen Dekodieren als abgeschnitten erkannt. Aus der unveränderten 8-mm-PDF, Seite3, mit2200px neu gerendert, visuell geprüft. Alle neun PNGs danach vollständig dekodiert. PDF und CAD bleiben unverändert.
+
 ## Offen bleibt
 
 Reale Maße, Original-Funktionsversuch, Rückdrehsicherung, Werkstoff, Stiftsicherung, reale Normkopfkontur, Anzugsmoment/Vorspannung, Lasten/Kippsicherheit und vollständige Angebotspreise. Keine Fertigungs-/Betriebsfreigabe. Drei nächste Nutzerrückfragen stehen im Mechanikdokument. Veröffentlichung zum aktuellen Commit über vorhandenes Pages; Deployment und Live-Dateien am Ende der Sitzung prüfen und in der Abschlussantwort genau benennen.
