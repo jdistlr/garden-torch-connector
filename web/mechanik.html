@@ -1,5 +1,4 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D-V03 · mechanik</title><style>body{font:16px/1.6 system-ui;color:#24382e;background:#f7f8f4;margin:0}main{max-width:1080px;margin:auto;padding:32px}h1,h2,h3{line-height:1.2}h1{font-size:2.4rem}h2{margin-top:2.5rem}table{border-collapse:collapse;font-size:.9rem;display:block;overflow-x:auto}th,td{border-bottom:1px solid #ccd4ca;padding:12px;text-align:left;vertical-align:top}th{background:#e4eadf}a{color:#265e43}nav{display:flex;gap:18px;flex-wrap:wrap}button{padding:10px 18px;cursor:pointer}code{overflow-wrap:anywhere}@media print{body{background:white;font-size:10pt}main{padding:0}nav,button{display:none}table{display:table;font-size:8pt;overflow:visible}tr{break-inside:avoid}h2{break-after:avoid}a{color:inherit;text-decoration:none}}@media(max-width:600px){main{padding:20px}h1{font-size:1.8rem}}</style></head><body><main><nav><a href="entscheidungen.html">Stand & Entscheidungen</a><a href="variants.html">← 3D-Viewer</a><a href="montage.html">Montage</a><a href="mechanik.html">Mechanik</a><a href="beschaffung.html">Beschaffung</a><a href="kosten.html">Kosten</a></nav><p data-project-state>D-V03 · Konzept, keine Freigabe</p><button onclick="window.print()">Drucken / als PDF speichern</button><h1>D-V03 – Steck-Dreh-Prüfung</h1>
-<p><a href="entscheidungen.html">Gemeinsamer Stand, Stückliste und nächste Entscheidungen</a></p>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Steck-Dreh-Funktion · Gartenfackel</title><link rel="stylesheet" href="design.css?rev=1"></head><body class="document-page"><header class="site-header"><a class="brand" href="variants.html">Gartenfackel<span>D-V03</span></a><nav aria-label="Hauptnavigation"><a href="variants.html">Modell</a><a href="entscheidungen.html">Stand</a><a href="mechanik.html" aria-current="page">Mechanik</a><a href="montage.html">Montage</a><a href="beschaffung.html">Beschaffung</a><a href="kosten.html">Kosten</a></nav></header><main class="document"><div class="document-meta"><p data-project-state>D-V03 · Konzept, keine Freigabe</p><button class="print-action" onclick="window.print()">Drucken / PDF</button></div><article><h1>Steck-Dreh-Funktion</h1>
 <p>Stand 28.09.2026. Geprüft werden vorhandene STEP-Körper, keine gemessenen Originalteile. Geometrie und Zeichnungsrevision bleiben D-V03.</p>
 <h2>Bezug und Bewegung</h2>
 <p>Boden z=0, Rohrachse +Z, Stift zeigt +Y. Blick <strong>von oben zur Platte</strong>: positive Rohrdrehung gegen den Uhrzeigersinn. Die bisherige STEP-Baugruppe zeigt die <strong>Einführlage</strong> (0°), nicht die verdrehte Endlage. Für die Animation wird ausschließlich das Rohr bewegt; die Sockelaufnahme bleibt fest.</p>
@@ -10,7 +9,7 @@
 <li>Zum Lösen um −50° zurückdrehen und axial abziehen. Der Rückweg ist geometrisch ebenso frei.</li>
 </ol>
 <h2>Ergebnis am nominalen Konzept</h2>
-<table>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabelle, bei Bedarf seitlich scrollen"><table>
 <thead>
 <tr>
 <th>Merkmal</th>
@@ -53,7 +52,7 @@
 <td>nicht modelliert</td>
 <td>Keine Rastung, Feder, Rampe oder Hinterschneidung, die Zurückdrehen blockiert</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><code>python3 model/check_motion_d.py</code> prüft jede Plattenstärke in Schritten von 0,5 mm bzw. 0,5° gegen die vier festen Körper. Der JSON-Bericht enthält Stichprobenzahl, Schnittvolumen, Mindestabstand, Gegenproben und STEP-Prüfsummen. Abtastung ist kein mathematisch lückenloser Hüllvolumennachweis. Konzentrische Zylinder und der durchgehende Einführschlitz erklären die freien Zwischenlagen zusätzlich geometrisch.</p>
 <p>Absichtliche Gegenproben: −5° in falscher Richtung; +60° über den Anschlag; nach +50° axial um ±1,1 mm verschieben. Diese Lagen überschneiden den Stift. Damit wird insbesondere nicht nur das Ausbleiben einer Fehlermeldung als Prüfung gewertet.</p>
 <h2>Kontakt unter Gewicht und Bedienmoment</h2>
@@ -72,4 +71,4 @@
 <p>Drei nächste Rückfragen: (1) Rohrinnen- und Kopfdurchmesser sowie Stiftmaß messen; (2) Originalbewegung bis Anschlag und zurück filmen, insbesondere mögliche Rastung; (3) vollständige Fackel mit Höhe/Gewicht und oberem Anschluss zeigen.</p>
 <h2>Gesamte Montagefolge</h2>
 <p>Zusätzlich wurden je71Posen der vollständigen Animation für5/8/9mm geprüft: alle zehn Körperpaare, einschließlich radialem Stifteinsetzen, axialem Aufsetzen, Schraubenzuführung und Absetzen. Keine Volumenüberschneidung und kein Bodenunterstand an den Abtastpunkten. Bericht <code>web/assets/sockel-d/assembly-motion-checks.json</code>. Montageauflagen/Hand/Werkzeug fehlen im CAD; der35-mm-Hub zeigt den erforderlichen Zugang schematisch. Beim Schrauben wird nur die glatte Hülle geprüft, nicht das Gewindeprofil oder Vorspannung.</p>
-</main><script src="project-state.js?rev=1"></script></body></html>
+</article></main><footer class="site-footer"><span>Gartenfackel / D-V03</span><a href="variants.html">Zurück zum Modell</a></footer><script src="project-state.js?rev=2"></script></body></html>

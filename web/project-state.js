@@ -19,6 +19,7 @@
   document.querySelectorAll('[data-pdf]').forEach(a=>a.href=`assets/sockel-d/zeichnungen-D-V03-${thickness}mm.pdf`);
   const sheet=document.querySelector('#sheet');if(sheet){sheet.src=`assets/sockel-d/blatt-${thickness}-1.png?rev=5`;sheet.alt=`D-V03 · ${thickness} mm · Prüfzeichnung Blatt 1`;}
   document.querySelectorAll('[data-sheet]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.sheet==='1')));
+  const fallback=document.querySelector('#model-fallback');if(fallback)fallback.src=`assets/sockel-d/blatt-${thickness}-3.png?rev=5`;
   const label=document.querySelector('#drawing-thickness');if(label)label.textContent=thickness;
   document.dispatchEvent(new CustomEvent('platechange',{detail:Number(thickness)}));
  }

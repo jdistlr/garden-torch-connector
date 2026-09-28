@@ -27,3 +27,7 @@ Zuerst Remote-HEAD und Pages prüfen. `docs/viewer-runbook.md` enthält Befehle 
 ## Softwareprüfung dieser Reparatur
 
 Release-Prüfung: drei Modellidentitäten, generierte Dokumentseiten und lokale Links. 2.103 Posen gegenüber dem Ausgangscommit exakt identisch; ein festgehaltener Hash der 213 nominalen Abtastposen erkennt spätere Bewegungsänderungen. DOM-Integration prüft Plattenwahl und Downloads mit/ohne WebGL, Seitenkontext, Aktionszuordnung, Pause/Reset und reduzierte Bewegung. Dafür wird der Renderer ersetzt; das ist keine visuelle 3D-Prüfung. Der lokale Chromium-Download schlug fehl. Live-Dokumentprüfung folgt nach Veröffentlichung.
+
+## Layoutkorrektur nach Nutzerkritik
+
+Die frühere Karten-/Linkleisten-Erweiterung wurde gestalterisch zurückgenommen. Aktuelle Seiten nutzen `web/design.css` und die gemeinsame Navigation aus `model/site-shell.cjs`. Hauptseite: kurzer Kopf, drei Sprunglinks, Modellarbeitsfläche, danach Zeichnungen und Maße/Dateien. Doppelte Budget-/Montage-/Statuszusammenfassungen entfernt; vollständiger Inhalt bleibt auf den Fachseiten. Darstellungsoptionen sind aufklappbar, Montagebedienung erscheint nur im Modus. Kein klebender Kopf oder klebender Viewer. Bei WebGL-Ausfall wird die vorhandene Zusammenbau-Prüfzeichnung eindeutig als Ersatzansicht gezeigt. CAD und Posen unverändert.

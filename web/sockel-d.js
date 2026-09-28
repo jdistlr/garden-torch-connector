@@ -28,7 +28,7 @@ try{
  function pause(){playing=false;$('#play-montage').textContent='Abspielen';}
  function lockMontage(on){document.querySelectorAll('[data-view],#parts input,#tube,#explode,#dimensions').forEach(e=>e.disabled=on);document.body.classList.toggle('is-montage',on);}
  function enterMontage(){if(!montage){montage=true;guideShot=null;$('#explode').value=0;$('#tube').checked=true;objects.forEach(o=>o.visible=true);$('#parts').querySelectorAll('input').forEach(c=>c.checked=true);controls.target.set(0,0,155);camera.position.set(420,520,390);controls.update();}lockMontage(true);$('#montage-mode').textContent='Freie Ansicht';update();}
- function leaveMontage(){pause();montage=false;guideShot=null;lockMontage(false);$('#montage-mode').textContent='Montage ansehen';objects.forEach(o=>o.group.rotation.z=0);update();view('iso');}
+ function leaveMontage(){pause();montage=false;guideShot=null;lockMontage(false);$('#montage-mode').textContent='Montage erklären';objects.forEach(o=>o.group.rotation.z=0);update();view('iso');}
  $('#montage-guide').onchange=()=>{guideShot=null;update();};
  $('#montage-mode').onclick=()=>{if(montage)leaveMontage();else enterMontage();};
  $('#play-montage').onclick=()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches){pause();progress=Math.min(7,Math.floor(progress)+1);enterMontage();return;}enterMontage();if(playing){pause();return;}if(progress>=7)progress=0;playing=true;previousTime=null;$('#play-montage').textContent='Pause';update();};
@@ -42,4 +42,4 @@ try{
  $('#montage-speed').value=matchMedia('(prefers-reduced-motion: reduce)').matches?'slow':'explain';
  $('#snapshot').onclick=()=>{renderer.render(scene,camera);const a=document.createElement('a');a.download=`Sockel-D-V03-${thick}mm.png`;a.href=renderer.domElement.toDataURL('image/png');a.click();};
  new ResizeObserver(()=>{renderer.setSize(host.clientWidth,host.clientHeight);camera.aspect=host.clientWidth/host.clientHeight;camera.updateProjectionMatrix();if(montage)frameMontage();}).observe(host);renderer.setAnimationLoop(time=>{if(playing){const dt=previousTime===null?0:Math.min((time-previousTime)/1000,.1);progress=Math.min(7,progress+dt/($('#montage-speed').value==='demo'?2:$('#montage-speed').value==='slow'?8:5));update();if(progress>=7)pause();}previousTime=time;controls.update();drawLabels();renderer.render(scene,camera);});await load();
-}catch(e){set3D(false);$('#status').textContent='3D nicht verfügbar · Dokumente nutzbar';$('#error').hidden=false;$('#error').textContent='3D-Ansicht nicht verfügbar. Plattenwahl, Zeichnungen und Downloads bleiben nutzbar. '+e.message;}
+}catch(e){set3D(false);document.body.classList.add('no-webgl');$('#model-fallback').hidden=false;$('#status').textContent='Ersatzansicht · Prüfzeichnung';$('#error').hidden=false;$('#error').textContent='3D ist in diesem Browser nicht verfügbar. Angezeigt wird die Prüfzeichnung; Plattenwahl und Downloads funktionieren weiterhin.';}
