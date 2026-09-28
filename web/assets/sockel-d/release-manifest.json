@@ -5,7 +5,7 @@
   "files_sha256": {
     "AGENTS.md": "f548faf95131179b669901cc98ad087ad8445b18247f0bddefcaef34249f52a1",
     "README.md": "2f4fb1b91ce0675e41b74a2bca99a7d6ef6615f904d2f273d7a3a55f2fd09840",
-    "docs/HANDOVER.md": "0677940ef8ca0ebc269b3454de03fa4dca8d95a34fd2e6a2059a0e70fcafe4c8",
+    "docs/HANDOVER.md": "7bf3bda98de79449003afd47c0709931380160ca858d53f6b8b18b5710c9eacb",
     "docs/beschaffung-d.md": "ed98f62a8049a30ee71b3279b0501c41259fe1966b718f98ca1a2ccd076a0d0d",
     "docs/drawings.md": "856bb65218baf622af0c984cbab901ef1adda96b2a1bf98b0132f819258a653c",
     "docs/entscheidungen-d.md": "80915fcfae26205d6079ab8ca4ea0054c4895a4b312b84670cd157f8cec1ed4b",
@@ -18,7 +18,7 @@
     "docs/sockel-d.md": "adf5f4b2756c08e3ebc5a440d73e5ad2d141300cc96ad7e660ae45a262e4808b",
     "docs/toolchain.md": "7227530242f95047790cf084b6322b2ec6bd09fc082538fc47fb86bea89e0a0f",
     "docs/ux-audit.md": "1cbfba8e8367598374bc4de64c201645f0081c4fcdb6fb7e21599d487cb00fbf",
-    "docs/ux-entwurf.md": "fd2afe5f7bbde50499e6965d7420d0835314952efa6f861b320b05747d39e9ae",
+    "docs/ux-entwurf.md": "51ad1bc558b634013ef1d072d0bebd0d72ec75c1c9286f23a00a0bcf861076cf",
     "docs/validation-d01.md": "02a5be80e1402e6ba8721bd98aac72782114451216df06a5163962c75c3cf66f",
     "docs/validation-d02.md": "c208cf916682d6810962528d26ca74c09bcc0a94ac19c664222a25652d4f014e",
     "docs/variants.md": "d9c7a09fa972a7d7c1699ce1995b586759b98b7fd38ea96cb2a179a7ffb9d95c",

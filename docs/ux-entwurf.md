@@ -44,3 +44,7 @@ Spätere Maßansicht: Ausgangswert, temporärer Wert, Einheit, Herkunft und zul�
 `ux-review.html` zeigt echte eingebettete Seiten bei 320, 375, 390 und 428 CSS-Pixeln. Dies ersetzt keine Prüfung auf iOS Safari oder Android. Desktop und schmale Browseransichten visuell prüfen; Navigation, Dialoge, Plattenwechsel und Downloads zusätzlich funktional prüfen. Ein grüner Build ist keine ästhetische Abnahme.
 
 Die Modellbilder stammen aus den unveränderten D-V03-Netzen. Der Renderer verändert nur Projektion, Licht und bereits definierte Montagepositionen. Alle fünf Teile bleiben plate, adapter, pin, screw und tube.
+
+### Durchgeführt
+
+Live-Vorschau f00e2a9: Desktop visuell geprüft. Drei echte Browserrahmen mit Außenbreiten 320/375/390/428 px; wegen Rahmen und Desktop-Scrollbalken verfügbare Inhaltsbreite jeweils 17 px kleiner. Kein horizontaler Inhaltsüberlauf in Modell, Aufbau und Projekt. Geprüft: Plattenwechsel auf 9 mm einschließlich PDF-Link, Exportdialog öffnen/schließen, nächster Montageschritt, Abspielen/Pause, Kostenwahl 10 Stück. Screenshot: `ux-mobile-review.jpg`. Noch keine Geräteprüfung auf iOS/Android; 3D-WebGL-Funktion in dieser Cloud-Umgebung nicht visuell nachweisbar. Bestehende Unterseiten verwenden weiterhin ihr bisheriges Layout. Die neue Vorschau ist daher kein abgeschlossener Austausch aller Seiten.

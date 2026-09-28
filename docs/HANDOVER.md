@@ -31,3 +31,7 @@ Release-Prüfung: drei Modellidentitäten, generierte Dokumentseiten und lokale 
 ## Layoutkorrektur nach Nutzerkritik
 
 Die frühere Karten-/Linkleisten-Erweiterung wurde gestalterisch zurückgenommen. Aktuelle Seiten nutzen `web/design.css` und die gemeinsame Navigation aus `model/site-shell.cjs`. Hauptseite: kurzer Kopf, drei Sprunglinks, Modellarbeitsfläche, danach Zeichnungen und Maße/Dateien. Doppelte Budget-/Montage-/Statuszusammenfassungen entfernt; vollständiger Inhalt bleibt auf den Fachseiten. Darstellungsoptionen sind aufklappbar, Montagebedienung erscheint nur im Modus. Kein klebender Kopf oder klebender Viewer. Bei WebGL-Ausfall wird die vorhandene Zusammenbau-Prüfzeichnung eindeutig als Ersatzansicht gezeigt. CAD und Posen unverändert.
+
+## Separate mobile UX-Vorschau (2026-09-28)
+
+`web/ux.html` bietet Modell / Aufbau / Projekt; `web/ux-review.html` dient der schmalen Browserprüfung. Hauptviewer nicht ersetzt. Konzept, Erweiterungsvertrag und tatsächlicher Prüfumfang: `docs/ux-entwurf.md`. CAD unverändert. Bildfolge mit acht Zielbildern, keine neue kontinuierliche Montageanimation. Mobile Browserrahmen geprüft, reale iOS-/Android-Geräte und WebGL noch offen. Für vollständige Umstellung müssen auch verlinkte Bestandsdokumente ins neue Layout überführt werden.
