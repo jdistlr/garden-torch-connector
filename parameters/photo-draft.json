@@ -1,0 +1,16 @@
+{
+  "revision": "D01",
+  "status": "Unbestätigter Foto-Entwurf – nicht zur Fertigung",
+  "units": "mm",
+  "dimensions": {
+    "length": {"label":"Rohrlänge","value":180,"unit":"mm","source":"10","status":"Foto-Schätzung","range":"etwa 178–182 mm"},
+    "outer_diameter": {"label":"Außendurchmesser","value":27,"unit":"mm","source":"05","status":"Foto-Schätzung","range":"etwa 25–29 mm"},
+    "inner_diameter": {"label":"Innendurchmesser","value":25,"unit":"mm","source":"05","status":"Grobe Foto-Schätzung","range":"unsicher; direkt nachmessen"},
+    "slot_width": {"label":"Schlitzbreite","value":5,"unit":"mm","source":"11, 15","status":"Foto-Schätzung","range":"etwa 4–6 mm"},
+    "slot_depth": {"label":"Schlitztiefe gesamt","value":38,"unit":"mm","source":"11","status":"Foto-Schätzung","range":"etwa 35–40 mm"},
+    "branch_z": {"label":"Abzweig ab Rohrende","value":18,"unit":"mm","source":"11, 15","status":"Foto-Schätzung","range":"etwa 16–21 mm"},
+    "branch_height": {"label":"Abzweighöhe","value":6,"unit":"mm","source":"11, 15","status":"Foto-Schätzung","range":"etwa 5–7 mm"},
+    "branch_angle": {"label":"Abzweig um den Umfang","value":65,"unit":"°","source":"15","status":"Grobe Formschätzung","range":"nicht zuverlässig aus Foto messbar"}
+  },
+  "limitations": ["Keine Maße direkt bestätigt.","Schlitzende vorläufig halbkreisförmig; seitlicher Abzweig vereinfacht mit geradem Ende.","Wandstärke folgt aus zwei unsicheren Durchmessern.","Drehrichtung, Gegenstück und Passung nicht geprüft.","Volumen und Oberfläche beschreiben nur diesen Entwurf; Material und Masse unbekannt."]
+}

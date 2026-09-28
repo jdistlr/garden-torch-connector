@@ -2,7 +2,15 @@
 
 Hier sammeln wir alles, was wir brauchen, um ein vorhandenes Verbindungsrohr für eine Gartenfackel-Vorrichtung nachvollziehbar zu dokumentieren und daraus später einen Fertigungsauftrag zu machen.
 
-**Stand: 28. September 2026 — Bilder und Planung sind vorhanden. Die Maße sind noch zu bestätigen; ein CAD-Modell und eine Fertigungszeichnung gibt es noch nicht.**
+**Stand: 28. September 2026 — Ein CAD-Fotoentwurf D01, STEP und ein erster Web-Viewer sind erstellt. Maße sind unbestätigt; eine Fertigungszeichnung gibt es noch nicht.**
+
+## Erster Viewer D01
+
+Der Viewer-Code liegt unter [web/](web/), mit Drehen/Zoomen, Ansichten, Schlitzdetail, Transparenz, Referenzfotos, Maßschätzungen und STEP-Download. Alle Browserdateien sind lokal eingebunden. Veröffentlichung erfolgt über den Pages-Workflow; den erfolgreichen Lauf unter Actions prüfen.
+
+Geplante Adresse: https://jdistlr.github.io/garden-torch-connector/
+
+[Starten, neu erzeugen und veröffentlichen](docs/viewer-runbook.md).
 
 ## Ab jetzt: ein sichtbares Ergebnis pro Runde
 
@@ -39,10 +47,10 @@ Zunächst bearbeiten wir das Rohr. Der Erdspieß dient als Gegenstück, damit di
 | Projektplan und Werkzeugvorschlag | Vorhanden |
 | Maßliste und offene Fragen | Vorhanden |
 | Maße verbindlich bestätigen | Offen |
-| Änderbares 3D-Modell erstellen | Geplant |
-| Bemaßte Zeichnung und STEP-Datei | Geplant |
+| Änderbares 3D-Modell erstellen | D01 als unbestätigter Foto-Entwurf vorhanden |
+| Bemaßte Zeichnung und STEP-Datei | STEP-Entwurf vorhanden; Zeichnung noch offen |
 | Auftragspaket für einen Fertiger | Geplant |
-| Engineering-Web-Viewer mit Informationspanels | Geplant; fester Bestandteil des Zielumfangs |
+| Engineering-Web-Viewer mit Informationspanels | Erste statische Version erstellt; Pages-Deployment separat prüfen |
 
 Die Fotos 07 und 12 sind exakte Duplikate von 02 beziehungsweise 03. Im Repository liegen 14 verkleinerte Vorschauen ohne übernommene Kamera-Metadaten. Die hochauflösenden Originale sind hier noch nicht enthalten. Dateinamen und Prüfsummen der Originale stehen im [Quelleninventar](sources/inventory.json).
 
@@ -71,7 +79,7 @@ Dabei unterscheiden wir immer zwischen **auf dem Foto gesehen**, **aus dem Foto 
 
 Geplant ist eine Three.js-Ansicht mit technischen Standardansichten, sichtbaren Kanten, Transparenz und einer Schnittebene. Daneben zeigen Panels Maße, Materialvolumen, Modellstand, Bildquellen und offene Punkte. Masse wird erst bei bekanntem Material und bekannter Dichte berechnet.
 
-Das Browserbild wird aus dem CAD-Modell abgeleitet. Verbindliche Maße und Kennwerte stammen aus der CAD-Geometrie; ein angeklicktes Dreieck im Browser wäre nur eine Näherung. Der Viewer ist noch nicht gebaut. [Funktionen und Qualitätsanforderungen](docs/web-viewer.md) sind jetzt dokumentiert.
+Das Browserbild wird aus dem CAD-Modell abgeleitet. Verbindliche Maße und Kennwerte stammen aus der CAD-Geometrie; ein angeklicktes Dreieck im Browser wäre nur eine Näherung. Die erste Version ist gebaut; Schnittfunktion und freie Messungen sind noch nicht enthalten. [Funktionen und Qualitätsanforderungen](docs/web-viewer.md) sind jetzt dokumentiert.
 
 ## Was könnt ihr jetzt beitragen?
 
@@ -114,7 +122,7 @@ Ihr könnt Maße und Erläuterungen im gemeinsamen Chat durchgeben. Wer einen Gi
 | **FreeCAD mit TechDraw** | Öffnet CAD-Modelle und hilft, technische Zeichnungen daraus abzuleiten. |
 | **GitHub** | Bewahrt Dateien, Entscheidungen und Änderungen gemeinsam auf. |
 
-CadQuery ist als zentrale Modellquelle vorgesehen. Ein zusätzlicher MCP-Server ist für diesen dateibasierten Ablauf zunächst nicht nötig. Die CAD-Umgebung und Exportabläufe sind noch nicht eingerichtet oder getestet.
+CadQuery ist als zentrale Modellquelle vorgesehen. Ein zusätzlicher MCP-Server ist für diesen dateibasierten Ablauf zunächst nicht nötig. CadQuery 2.7.0 erzeugt den Entwurf; gültiger Körper und STEP-Rückimport sind geprüft. FreeCAD/TechDraw ist noch nicht eingerichtet.
 
 Die Begründung und offiziellen Dokumentationslinks stehen in der [Werkzeugentscheidung](docs/toolchain.md).
 
@@ -134,6 +142,6 @@ In der Parameterdatei bedeutet `null`: **noch unbekannt**, nicht null Millimeter
 
 ## Freigabe und Veröffentlichung
 
-Das Repository ist derzeit **öffentlich**. GitHub Pages und eine interaktive 3D-Ansicht sind noch nicht eingerichtet.
+Das Repository ist derzeit **öffentlich**. Eine interaktive 3D-Ansicht und der GitHub-Pages-Workflow sind erstellt. Die tatsächliche Veröffentlichung ist über den Deployment-Status zu prüfen.
 
 Aktuell liegt eine **Projektgrundlage, keine Fertigungsfreigabe** vor. Erst wenn relevante Maße, Material, Funktion und Anforderungen geprüft sind, wird ein eindeutig gekennzeichnetes Auftragspaket zusammengestellt.

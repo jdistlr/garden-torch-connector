@@ -4,7 +4,7 @@ Stand: 28.09.2026. Dieser Ablauf ersetzt die bisherige große Umsetzungsreihenfo
 
 ## Bereits vorhanden
 
-16 Quelldateien gesichtet, 14 verschiedene Bildvorschauen und Duplikatzuordnung im Repository. Maßliste und Werkzeugentscheidung liegen vor. Noch kein CAD-Modell, Viewer oder Fertigungsauftrag.
+16 Quelldateien gesichtet, 14 verschiedene Bildvorschauen und Duplikatzuordnung im Repository. Maßliste und Werkzeugentscheidung liegen vor. CAD-Fotoentwurf D01, STEP und eine erste Viewer-Version sind inzwischen erstellt. Direkte Maße und Fertigungsauftrag stehen noch aus. Siehe viewer-runbook.md.
 
 ## Nächste Etappen
 
