@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "status": "awaiting_measurements",
+  "datum": "A: slotted end face; +z toward opposite end; proposed",
+  "tube": {
+    "length": null,
+    "outer_diameter": null,
+    "inner_diameter": null
+  },
+  "slot": {
+    "width": null,
+    "total_depth": null,
+    "end_radius": null,
+    "branch_z_min": null,
+    "branch_z_max": null,
+    "branch_angle_deg": null,
+    "branch_direction": null
+  },
+  "mating_part": {
+    "head_diameter": null,
+    "head_length": null,
+    "pin_diameter": null,
+    "pin_projection": null,
+    "pin_axial_position": null
+  },
+  "requirements": {
+    "material": null,
+    "surface": null,
+    "quantity": null,
+    "tolerances": null
+  },
+  "confirmed_measurements": []
+}

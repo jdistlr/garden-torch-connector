@@ -1,0 +1,130 @@
+[
+  {
+    "id": "01",
+    "original_filename": "c025250a-c53f-4d44-953b-b51a2895120a.jpeg",
+    "sha256": "1e9b902ec7961067c641a0e93ed7e603a780c3d5028ae29036ba33fefc63a574",
+    "size_bytes": 580147,
+    "duplicate_of": null,
+    "preview": "previews/01.jpg"
+  },
+  {
+    "id": "02",
+    "original_filename": "c2dd781c-c029-472b-8916-0572f082a688.jpeg",
+    "sha256": "2d36624023b6561c43af2bb2b992a4da319d39e56d3e4647e9450786d7ec6694",
+    "size_bytes": 1040616,
+    "duplicate_of": null,
+    "preview": "previews/02.jpg"
+  },
+  {
+    "id": "03",
+    "original_filename": "b6397d8d-5606-4fd4-804d-cb1c8ffc2459.jpeg",
+    "sha256": "04f9fa3e22dd3ee730d6f4138057dcd56d048a05c0d2f41269e3cb0e539fdea9",
+    "size_bytes": 512728,
+    "duplicate_of": null,
+    "preview": "previews/03.jpg"
+  },
+  {
+    "id": "04",
+    "original_filename": "770963bf-83e9-4d73-a546-395ee7011af2.jpeg",
+    "sha256": "24e2a082e97e4bfe8aa0473615c604721bb46b85530b9eaa41e3407e88985870",
+    "size_bytes": 949692,
+    "duplicate_of": null,
+    "preview": "previews/04.jpg"
+  },
+  {
+    "id": "05",
+    "original_filename": "d25fbeb4-5704-4547-92a3-1bc558ffb706.jpeg",
+    "sha256": "18ea174fe70973388db82f826768659f8e299ff3802bdd8d18c38d30cdef924e",
+    "size_bytes": 553489,
+    "duplicate_of": null,
+    "preview": "previews/05.jpg"
+  },
+  {
+    "id": "06",
+    "original_filename": "a8d2a226-68be-4107-a939-810022d7b5f3.jpeg",
+    "sha256": "e2d05f3fc86f9e83dfe4e44a564b6da605009278bfb6e832374f48892231e2f3",
+    "size_bytes": 722460,
+    "duplicate_of": null,
+    "preview": "previews/06.jpg"
+  },
+  {
+    "id": "07",
+    "original_filename": "c2dd781c-c029-472b-8916-0572f082a688(1).jpeg",
+    "sha256": "2d36624023b6561c43af2bb2b992a4da319d39e56d3e4647e9450786d7ec6694",
+    "size_bytes": 1040616,
+    "duplicate_of": "02",
+    "preview": "previews/02.jpg"
+  },
+  {
+    "id": "08",
+    "original_filename": "2cbe45b2-ac37-43ae-ace5-9af881fc3149.jpeg",
+    "sha256": "c7ff15863b5a55ca23d29ce600c9564e2097f619499749f62c2e1807ae0aca22",
+    "size_bytes": 521939,
+    "duplicate_of": null,
+    "preview": "previews/08.jpg"
+  },
+  {
+    "id": "09",
+    "original_filename": "b44842b1-9857-46c0-88cb-d7219e7a3317.jpeg",
+    "sha256": "2f6dcb3a76a37a6a7bd397b5434da378542269528b42b1e193af67df0b8b6047",
+    "size_bytes": 518920,
+    "duplicate_of": null,
+    "preview": "previews/09.jpg"
+  },
+  {
+    "id": "10",
+    "original_filename": "f7f0c052-5922-44b0-a378-f3b95042c35c.jpeg",
+    "sha256": "a1aa93ffa38735fd21de5ef144a5c03f65e1e03f700866f33b8047ba6406c0dc",
+    "size_bytes": 676467,
+    "duplicate_of": null,
+    "preview": "previews/10.jpg"
+  },
+  {
+    "id": "11",
+    "original_filename": "c7c14dd1-7148-4289-b7f1-deb02a866f91.jpeg",
+    "sha256": "814c0b7a90dfbef2d41f8900ddb7768dd226ec71baa7607a7d6d72cb6692622c",
+    "size_bytes": 630407,
+    "duplicate_of": null,
+    "preview": "previews/11.jpg"
+  },
+  {
+    "id": "12",
+    "original_filename": "b6397d8d-5606-4fd4-804d-cb1c8ffc2459(1).jpeg",
+    "sha256": "04f9fa3e22dd3ee730d6f4138057dcd56d048a05c0d2f41269e3cb0e539fdea9",
+    "size_bytes": 512728,
+    "duplicate_of": "03",
+    "preview": "previews/03.jpg"
+  },
+  {
+    "id": "13",
+    "original_filename": "c57e6f74-b437-4fa0-a741-8a0c9f06620b.jpeg",
+    "sha256": "3a0238d775bf3623a1703778fcdcd166e1ff3642b41b5a7efe50e906af8f1cf5",
+    "size_bytes": 633184,
+    "duplicate_of": null,
+    "preview": "previews/13.jpg"
+  },
+  {
+    "id": "14",
+    "original_filename": "0ad5de4a-d02b-462d-9cbb-9326edaf42ef.jpeg",
+    "sha256": "12817337ddea9f4dd1283a74084f27212549d57c1c892b7f628ab2bc791cf023",
+    "size_bytes": 530013,
+    "duplicate_of": null,
+    "preview": "previews/14.jpg"
+  },
+  {
+    "id": "15",
+    "original_filename": "198170f8-691c-4b49-b059-1cc2399ac592.jpeg",
+    "sha256": "25540919c5d88cdd40c8c05299a0e06f4a4d97b6b9d976cafc668c88c6456c7e",
+    "size_bytes": 531999,
+    "duplicate_of": null,
+    "preview": "previews/15.jpg"
+  },
+  {
+    "id": "16",
+    "original_filename": "9d7ff87f-ca16-4c7a-bd5d-0082947ab250.jpeg",
+    "sha256": "2ac9033134804595e72c21257a7e40c0576f597b651d5157d310041a5ede3a48",
+    "size_bytes": 586225,
+    "duplicate_of": null,
+    "preview": "previews/16.jpg"
+  }
+]
