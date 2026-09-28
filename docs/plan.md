@@ -1,46 +1,41 @@
-# Projektplan
+# Projektplan: kleine Schritte, sichtbare Ergebnisse
 
-## 1. Quellenbasis — abgeschlossen
+Stand: 28.09.2026. Dieser Ablauf ersetzt die bisherige große Umsetzungsreihenfolge. Die ausführliche Viewer-Spezifikation bleibt das spätere Zielbild.
 
-- 16 vorhandene JPEG-Dateien visuell als Übersicht gesichtet.
-- Prüfsummen ermittelt; 07 entspricht 02 und 12 entspricht 03.
-- 14 Vorschauen, Quellenzuordnung und Original-Prüfsummen im Repository.
-- Sichtbar: hohles Metallrohr, vom Ende offener Längsschlitz mit gerundetem Ende und seitlicher Aussparung; separater spitzer Einsatz mit zylindrischem Kopf und radialem Stift.
-- Materialgüte, Belastbarkeit und genaue Maße sind aus den Bildern nicht belegt.
+## Bereits vorhanden
 
-## 2. Maßaufnahme und Funktionsklärung — nächster Schritt
+16 Quelldateien gesichtet, 14 verschiedene Bildvorschauen und Duplikatzuordnung im Repository. Maßliste und Werkzeugentscheidung liegen vor. Noch kein CAD-Modell, Viewer oder Fertigungsauftrag.
 
-Maßtabelle gemeinsam vervollständigen. Erst Gesamtmaße, danach Schlitz und Gegenstück. Fotoablesungen als Schätzung kennzeichnen und direkt am Bauteil bestätigen. Klären, ob eine Kopie oder eine geänderte Ausführung gewünscht ist und wie die Fackel am anderen Rohrende befestigt wird.
+## Nächste Etappen
 
-Ergebnis: bestätigte Parameter mit Quelle, Messmethode und Datum.
+| Etappe | Sichtbares Ergebnis | Was wir daran prüfen |
+|---|---|---|
+| 1. Formabgleich | Ein Blatt mit ausgewählten Fotos und nummerierten Merkmalen; einfache Skizze ohne Maßstabsanspruch | Rohr, offener Längsschlitz, Rundung, seitliche Aussparung und Montagebewegung richtig verstanden? |
+| 2. Grober CAD-Entwurf | Drei Modellansichten plus STEP-Entwurf | Stimmen Form, Ausschnittrichtung und grobe Proportionen? |
+| 3. Minimaler Web-Viewer | Ein drehbares Modell, Ansicht zurücksetzen, eine Infobox mit Maßen und deren Status | Dasselbe Modell im Browser verständlich und maßstäblich korrekt dargestellt? |
+| 4. Gezielte Korrektur | Überarbeiteter Entwurf, markierte Änderungen; Schnittbild bei Bedarf | Nur noch die für Form und Passung entscheidenden offenen Maße nachmessen |
+| 5. Fertigungsunterlagen | Bemaßte PDF-Zeichnung, STEP und kurze Auftragsbeschreibung | Maße, Passung, Material, Oberfläche, Stückzahl und Toleranzen geklärt? |
 
-## 3. Parametrisches Modell — geplant
+## Startregel
 
-CadQuery-Modell des Rohres mit getrennten Merkmalen für Grundkörper, Längsschlitz und seitliche Aussparung. Referenzkörper für den Erdspieß optional. Maße zentral aus parameters/connector.json lesen. Keine parallelen, unabhängig gepflegten OpenSCAD- und CadQuery-Geometrien.
+Zuerst vorhandene Linealfotos im Detail auswerten. Ablesbare Werte als Foto-Schätzung samt Quelle und Unsicherheit festhalten. Keine scheinpräzisen Zahlen. Für ein erstes Größenmodell bevorzugt Rohrlänge sowie Außen- und Innendurchmesser bestätigen lassen; weitere Maße nur anfordern, wenn sie den nächsten Entwurf tatsächlich blockieren.
 
-Prüfen: positiver Wandquerschnitt, Ausschnitte nur in beabsichtigter Wand, gültiger Volumenkörper, richtige Endlage und Kollisionsfreiheit entlang der bestätigten Montagebewegung. Ein Kollisionscheck allein belegt weder Spiel noch Festigkeit.
+Ein früher Entwurf darf ausdrücklich gekennzeichnete Foto-Schätzungen verwenden. Unbekannte Werte bleiben offen. Frei gewählte Beispielwerte sind keine Rekonstruktion und dürfen nicht unbemerkt ergänzt werden. Bestätigte Werte werden getrennt geführt. Jede Entwurfsansicht trägt ihren Status.
 
-## 4. Zeichnung und Review — geplant
+## Kurze Rückkopplung
 
-STEP-Export; FreeCAD/TechDraw für Ansichten, Schnitt und Schlitzdetail. Ansichten aus dem Modell ableiten. Maßtext nicht unabhängig von den Modellparametern eintippen. Beim Import eines STEP-Modells entsteht nicht automatisch der originale parametrische Modellbaum; CadQuery bleibt die Modellquelle.
+Pro Runde ein sichtbares Ergebnis und höchstens drei konkrete Fragen. Der Nutzer korrigiert Form, Richtung oder Maße direkt am gezeigten Merkmal. Danach neue Revision erzeugen. Kein vollständiger Fragebogen vor dem ersten Formabgleich.
 
-Gemeinsam prüfen: Öffnungsrichtung, Drehrichtung, Gegenstück, Maßbezüge, Material, Oberfläche, Kanten und erforderliches Spiel. Toleranzen mit dem Fertiger abstimmen.
+## Minimaler technischer Umfang
 
-## 5. Auftragspaket — geplant
+CadQuery-Modell und Parameterdatei; ein Exportweg für STEP und Browsermesh. Der erste Viewer zeigt nur Rohr, Drehen/Zoomen/Reset und ein kompaktes Maß-/Statuspanel. Bestehende Standards für Einheiten, gültiges Solid und gemeinsame Revision gelten bereits.
 
-PDF, STEP, optional STL für einen Anschauungsprototyp, Renderansichten und Auftragsbeschreibung. Paket mit Revision, Commit, Erstellungsdatum und Freigabestatus versehen. Noch offene Werte verhindern die Kennzeichnung als fertigungsfreigegeben.
+Schnitte, weitere Panels, Gegenstück und Montageanimation werden nach Bedarf ergänzt. Backend, Browser-CAD-Kern, freie Messwerkzeuge und CI-Automatisierung bleiben vorerst zurückgestellt. FreeCAD/TechDraw kommt zur Zeichnungsableitung hinzu.
 
-## 6. Engineering-Web-Viewer — geplant
+## Wiederverwendung
 
-Fester Zielumfang: Three.js-Ansicht mit technischen Standardansichten, Auswahl, Schnittebene und Panels für Maße, CAD-Kennwerte, Quellen und Prüfstatus. Browsermesh und Kennwerte aus derselben CAD-Revision ableiten. Exakte CAD-Geometrie und angenäherte Browserdarstellung ausdrücklich unterscheiden. Siehe [Viewer-Spezifikation](web-viewer.md).
+Den Ablauf in [workflow.md](workflow.md) für ähnliche Teile übernehmen. Quellen, Parameter, Modell und Exporte getrennt halten. Das Repository bleibt beim konkreten Verbindungsrohr; weder Umbenennung noch Plattformumbau nötig. Gemeinsamen Code erst auslagern, wenn ein zweites reales Bauteil denselben Ablauf nutzt.
 
-Nach erfolgreichem lokalem Modellaufbau Abhängigkeiten versionieren; automatisierte Exporte über GitHub Actions anschließend ergänzen. Hosting und Veröffentlichung stehen noch aus. Nicht jeder Push erzeugt eine Fertigungsfreigabe.
+## Abschluss
 
-## Abnahmekriterien
-
-- Alle produktionsrelevanten Maße und Anforderungen geklärt.
-- CAD-Volumenkörper gültig und STEP wieder einlesbar.
-- Zeichnung, STEP, Browsermodell und Kennwerte stammen aus derselben Revision.
-- Viewer-Prüfungen nach web-viewer.md bestanden; insbesondere Einheiten, Schnittdarstellung und Maßzuordnung.
-- Montagefunktion am Gegenstück geprüft; nötigenfalls Musterteil.
-- Versioniertes Auftragspaket durch Auftraggeber freigegeben.
+Ein früher Entwurf ist erreicht, sobald die Form gemeinsam prüfbar ist. Ein Fertigungsstand erfordert zusätzlich bestätigte Maße und Anforderungen, gültige CAD-Geometrie, konsistente Exporte und eine Prüfung der Verbindung am Gegenstück.
