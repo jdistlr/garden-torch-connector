@@ -2,7 +2,9 @@
 
 Alle Längen in mm. Noch keine Maßzahl ist als bestätigt eingetragen.
 
-## Bezugssystem (Vorschlag)
+Aktueller Verwendungszweck: die Originalschnittstelle für D-V03 bestätigen. Schaft und Spitze unten dokumentieren nur den historischen Erdspieß; sie gehören nicht zum neuen Sockel. Neue Sockelparameter und Nachweise: [Entscheidungskette](entscheidungen-d.md).
+
+## Bezugssystem der Originalmessung (Vorschlag)
 
 A = Stirnfläche am geschlitzten Rohrende; z zeigt von A entlang der Rohrachse zum anderen Ende. Winkelnull = Mitte des Längsschlitzes. Drehrichtung ausdrücklich mit Blickrichtung angeben. Diese Definition vor dem Modellaufbau gemeinsam bestätigen.
 

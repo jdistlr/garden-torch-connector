@@ -1,4 +1,7 @@
-# D-V03 – Kosten für 1 / 5 / 10 Stück
+# Budgetstudie · abweichende Teile, 5-mm-Platte
+
+[Gemeinsamer Stand, Stückliste und nächste Entscheidungen](entscheidungen-d.md)
+
 
 Stand28.09.2026. **Vollständiges Kostenschema mit Planungsszenarien, kein vollständiges Händlerangebot.** Die Fertigungs-/Oberflächenkosten sind eigene Budgetannahmen. Für8/9mm Platte fehlen passende Endpreise; die folgende Rechnung gilt ausschließlich für5mm. Das Beispiel nutzt außerdem Kandidatenrohr28×1,5 und Stift4×20, die noch nicht die unveränderte D-V03-Geometrie darstellen. Nicht als fertigen Einkaufsauftrag benutzen.
 
@@ -50,15 +53,17 @@ Bearbeitungszeit umfasst Ablängen/Planen/Ø24-Drehen, Direktgewinde und radiale
 
 Eigenleistung setzt bereits vorhandene geeignete Dreh-/Fräsmöglichkeit, sichere Spannmittel und Messausrüstung voraus; Maschinenkauf ist nicht in25–90€ Werkzeug enthalten. Fehlt diese Ausstattung, ist dieses Szenario nicht nutzbar. Eigenzeit: angenommene2h Vorbereitung plus1,5h/Stück, also3,5/9,5/17h; monetär mit0€ bewertet und separat ausgewiesen. Selbstkosten lassen sich durch persönlichen Stundenwert×Eigenzeit ergänzen.
 
-## Planungssummen inklusive obiger Platzhalter
+## Gerundete Planungsspannen für die Kandidatenstudie
 
-| Menge | Eigenleistung niedrig / mittel / hoch, EUR brutto Auszahlung | Werkstatt niedrig / mittel / hoch, EUR brutto gesamt |
+Bewusst auf etwa 10 EUR gerundet; die Rechenwerte im JSON sind keine Preisgenauigkeit. **Keine Gesamtsumme für das unveränderte D-V03-CAD.**
+
+| Menge | Eigenleistung niedrig / mittel / hoch, EUR Auszahlung | Werkstatt niedrig / mittel / hoch, EUR gesamt brutto |
 |---|---|---|
-| 1 | 92,48 / 141,49 / 231,49 | 230,29 / 414,36 / 832,68 |
-| 5 | 134,82 / 183,82 / 273,82 | 458,27 / 861,30 / 1.731,83 |
-| 10 | 187,59 / 236,59 / 326,59 | 803,09 / 1.519,82 / 3.025,59 |
+| 1 | ca. 90 / 140 / 230 | ca. 230 / 410 / 830 |
+| 5 | ca. 130 / 180 / 270 | ca. 460 / 860 / 1.730 |
+| 10 | ca. 190 / 240 / 330 | ca. 800 / 1.520 / 3.030 |
 
-Werkstatt-Mittelszenario pro Stück:414,36 /172,26 /151,98€. Keine Preisprognose oder garantierte Obergrenze: externe Mindestauftragswerte, nicht freigegebene Sicherung, geänderte Materialien oder Zusatzprüfungen können diese Spanne verändern. Oberfläche enthält ein Budget für schwarze Aufnahme und Korrosionsschutz der Platte; Verfahren und Temperaturbeständigkeit sind noch festzulegen.
+Keine Preisprognose oder garantierte Obergrenze. Externe Mindestauftragswerte, Rückdrehsicherung, andere Werkstoffe, Prototypwiederholungen und zusätzliche Nachweise sind nicht abschließend kalkuliert. Oberfläche enthält nur ein Budget für schwarze Aufnahme und Korrosionsschutz; Verfahren und Temperaturbeständigkeit bleiben offen. Für 8/9 mm fehlt eine entsprechende Studie.
 
 Formel Werkstatt: bepreister Teilwarenkorb + Rohr/Logistik + Rohrversandplatzhalter + (Rüstzeit + n×Bearbeitungszeit)×Nettostundensatz×1,19 + Oberflächencharge brutto + Hilfsmittel. Eigenleistung: Teilwarenkorb + Rohr/Logistik + Versandplatzhalter + Werkzeug + Oberflächengebinde + Hilfsmittel.
 

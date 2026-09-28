@@ -1,5 +1,8 @@
 # D-V03 – Steck-Dreh-Prüfung
 
+[Gemeinsamer Stand, Stückliste und nächste Entscheidungen](entscheidungen-d.md)
+
+
 Stand 28.09.2026. Geprüft werden vorhandene STEP-Körper, keine gemessenen Originalteile. Geometrie und Zeichnungsrevision bleiben D-V03.
 
 ## Bezug und Bewegung

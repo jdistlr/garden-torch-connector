@@ -1,3 +1,5 @@
+> Historische Originalreferenz, kein aktueller D-V03-Nachweis. Aktuell: [Entscheidungskette](entscheidungen-d.md) und [D-V03](sockel-d.md).
+
 # Klassische technische Prüfzeichnungen D02
 
 Die PDF unter `web/assets/werkstattzeichnungen-D02.pdf` enthält drei A3-Querformatblätter. Ziel ist eine gut lesbare Werkstattdarstellung in vertrauter Zeichenpraxis, keine dekorative Retro-Grafik.

@@ -1,101 +1,29 @@
-# Aktuelle Fortsetzung – 28.09.2026
+# Übergabe · D-V03 nach Konsistenzaudit
 
-Diese Ergänzung hat Vorrang vor dem historischen Übergabetext darunter. Basis war c87b006b6e43fdf7ffedcac8bf8fee7202f37fac. D-V03-Geometrie, STEP und A3-Prüfzeichnungen wurden nicht verändert. Nur Vollmaterial, keine Buchse.
+Stand 28.09.2026. Ausgangscommit der Reparatur: `59661168c681c6fc0ee955d2f77ed9527727616c`. Frühere Übergabetexte sind in Git erhalten. Aktueller Einstieg: README und [Entscheidungskette](entscheidungen-d.md).
 
-## Neu erledigt
+## Verbindlich
 
-- Öffentliche D-V03-Modelle für5/8/9mm direkt geladen: exakt plate/adapter/pin/screw/tube.
-- `model/check_motion_d.py`: je81 axiale und101 Winkelstellungen plus101 Rückwegstellungen, Gegenproben. Alle Sollstellungen nominal überschneidungsfrei. `motion-checks.json` mit STEP-Hashes.
-- `model/export_assembly_poses.mjs` plus `model/check_assembly_d.py`: je71Posen der gesamten schematischen Montage, alle Körperpaare/Bodenebene geprüft; `assembly-motion-checks.json`.
-- Befund: bisherige STEP-Lage ist0° **Einführlage**. Nutsektor65°, erster Stiftkontakt analytisch55,793°. Darstellung dreht bis50°; kein Anschlag/Einrasten behauptet. Radial0,5mm, axiales Nutspiel2mm gesamt. Rückdrehen frei. Mitdrehende Aufnahme kann Sockelklemmung lösen, siehe `docs/mechanik-d.md`.
-- `web/montage-d.js`: acht Schritte, Pause/Replay/Zeitleiste/Schrittwahl, Kurzdemo und langsames Tempo. Kein Autoplay; Tabwechsel pausiert. Erklärende Schnitte bei Aufsetzen/Verschrauben und passende Kamera, sonst Gesamtansicht. Stifteinsetzen nur schematisch, Sicherung offen. Rohr bleibt axial mittig, keine Schwerkraftsimulation.
-- Vier neue Dokumente `mechanik-d.md`, `montage-d.md`, `beschaffung-d.md`, `kosten-d.md`, auch als druckbare HTML-Seiten unter web. Erzeugung: `node model/render_docs.cjs` mit Paket marked.
-- Regionale und Online-Recherche mit konkreten Artikeln/Kontakten und Abrufdatum. Keine Kontaktaufnahme. Würth nur Gewerbe; RST-Stiftangaben A1/A2 widersprüchlich;8/9mm-Preise und einige Lieferbedingungen offen.
-- Standardteilkandidaten: Ø25-Vollstahl zuØ24 drehen;28×1,5-Rohr und4×20-Stift sind noch **nicht** im CAD übernommen. Nicht als identische Teile behandeln.
-- Kosten1/5/10 vollständig als **Planungsszenarien**, keine belastbare Fertiger-Gesamtsumme. Belegte Teilpreise/Restmengen getrennt von eigenen Annahmen für Bearbeitung, Oberfläche und Versand. `model/cost_d.py` reproduziert JSON.
-- Browserprüfung:5/8/9, acht Schritte, Pause, Schnitt, Transparenz, Reset,390px ohne Seitenüberlauf, Dokumentseiten; keine JS-Fehler. Screenshotkontrolle für Gesamtansicht/Mobilansicht. Vorhandener Headless-Browser1161 verwendet, Standard-Playwright-Download funktionierte nicht.
+Nur D, Vollmaterial mit direktem axialem Gewindesackloch; fünf Teile plate/adapter/pin/screw/tube. Kein Bodenunterstand. Keine Buchse/Fügezone, keine Varianten A–C. Repository und Veröffentlichung autorisiert; Händlerkontakt/Bestellung nicht. Deutsch, sichtbare kleine Ergebnisse und regelmäßige Statusmeldungen; nach Abschluss keine laufenden Tasks behaupten.
 
-## Zusätzliche Reparatur
+## Reparaturumfang
 
-Nach der Erweiterung wurde `blatt-8-3.png` beim vollständigen Dekodieren als abgeschnitten erkannt. Aus der unveränderten 8-mm-PDF, Seite3, mit2200px neu gerendert, visuell geprüft. Alle neun PNGs danach vollständig dekodiert. PDF und CAD bleiben unverändert.
+- D-V03 als einheitlicher Einstieg, Original D02 und V01 als historische Referenzen; README/Plan/Toolchain/Viewer-Dokumentation bereinigt.
+- Gemeinsame Entscheidungskette mit aktueller CAD-Stückliste, ausdrücklich abweichenden Recherchekandidaten, Nachweisen, Tätigkeiten und Abschlusskriterien.
+- Plattenzustand über URL und Seitenlinks; Zeichnungs-/STEP-Auswahl unabhängig von WebGL. Keine 8/9-mm-Gesamtkosten vorgetäuscht.
+- Animation erklärt die laufende Aktion statt den vorherigen Schritt. Ganzzahlige Schrittwahl zeigt Zielbild. Posefunktion unverändert. Sockelschnitt ohne rotierende Rohr-Halbschnitte; freie Ansichts-/Teilewerkzeuge während Montage gesperrt. Reset und Fehlerzustände bereinigt; reduzierte Bewegung über manuelle Schritte.
+- Kostensummen im Text gerundet; exakte Rechenwerte bleiben im JSON. Studie betrifft andere Teile und ist kein Preis des aktuellen CAD.
+- Dateihash-Manifest und Prüfung gegen generierte Dokumentseiten/lokale Links. Keine automatische universelle CAD-Parametrisierung behaupten.
+- Frontend-Modifikationen ohne neue Modelle nur als spätere Ausbaustufe dokumentiert.
 
-## Offen bleibt
+## Unverändert / offen
 
-Reale Maße, Original-Funktionsversuch, Rückdrehsicherung, Werkstoff, Stiftsicherung, reale Normkopfkontur, Anzugsmoment/Vorspannung, Lasten/Kippsicherheit und vollständige Angebotspreise. Keine Fertigungs-/Betriebsfreigabe. Drei nächste Nutzerrückfragen stehen im Mechanikdokument. Veröffentlichung zum aktuellen Commit über vorhandenes Pages; Deployment und Live-Dateien am Ende der Sitzung prüfen und in der Abschlussantwort genau benennen.
+CAD, STEP, A3 und nominale Bewegungspose bleiben unverändert. Die gespeicherten mechanischen Prüfberichte stammen aus der vorherigen Sitzung. Aktuelle Softwareprüfung erzeugt keinen zusätzlichen Festigkeitsnachweis. Reale Maße, Schraubenkopf, Stiftsicherung, Losdrehen, Werkzeugzugang, obere Fackelschnittstelle und Standfestigkeit müssen physisch bzw. konstruktiv geklärt werden. Keine Fertigungs-/Betriebsfreigabe.
 
----
+## Fortsetzung
 
-## Historischer Übergabetext (vor dieser Fortsetzung)
+Zuerst Remote-HEAD und Pages prüfen. `docs/viewer-runbook.md` enthält Befehle und Veröffentlichungskriterien. Bilder in `sources/previews/` zuerst nutzen; alte Scratch-Pfade können fehlen. Details zur Originalbewegung, Spiel und Schraubenwirkung: `docs/mechanik-d.md`. Nächste drei Nachweispakete in `docs/entscheidungen-d.md`.
 
-# Übergabe: Gartenfackel-Verbindung / Stand 28.09.2026
+## Softwareprüfung dieser Reparatur
 
-## Auftrag und Arbeitsweise
-
-Nutzer Johannes/Hannes und ein Freund entwickeln ein Verbinderelement für Gartenfackeln. Repository `jdistlr/garden-torch-connector`, öffentlich. GitHub Pages: https://jdistlr.github.io/garden-torch-connector/ ; ausgewählter Viewer `web/variants.html`. Veröffentlichung und Repository-Arbeit sind beauftragt. Keine Händler kontaktieren oder Bestellungen auslösen ohne separaten Auftrag.
-
-Deutsch, verständlich, kleine sichtbare Schritte. Nutzer war mehrfach wegen scheinbar abgebrochener Streams verunsichert: während laufender Arbeit kurze Statusmeldungen geben; nach Ende nicht behaupten, ein Hintergrundtask laufe weiter. Nutzer war zu Recht enttäuscht über ausgelassenes zweites Teil, überstehende Schraube und unbelegte Hohlteilannahme. Keine neuen Konstruktionsannahmen als gemessen oder bestätigt darstellen.
-
-## Verbindliche Entscheidungen
-
-- Ausschließlich Variante D weiterentwickeln. V01/A–D sind verworfenes Archiv.
-- D-V03 ersetzt D-V02: **schwarze Aufnahme aus Vollmaterial, direktes axiales Gewindesackloch**. Keine separate Gewindebuchse, keine Passhülse, keine orange Fügezone.
-- Grundplatte 150 × 150 mm; 5 mm, eventuell 8–9 mm. Vage Nutzerschätzungen, keine Festigkeitsvorgabe.
-- Platte muss plan auf dem Boden liegen. Von unten eingesetzte Senkschraube darf nicht unterstehen.
-- Rohr wird auf den schwarzen Kopf geschoben; Querstift läuft im Schlitz und Rohr wird in den seitlichen Nutabschnitt verdreht. Tatsächliches selbsttätiges Einrasten/Rückdrehsicherung ist NICHT nachgewiesen.
-- Gängige Standardhalbzeuge und Normteile, günstig im normalen Fachhandel; keine Sondermaße festschreiben, nur weil der Fotoentwurf sie benutzt.
-
-## Quellen und bisherige Modelle
-
-16 bereitgestellte Fotos, darunter Duplikate. `sources/README.md`, `sources/previews/`, `web/assets/photos/` und Maßdokumentation zuerst lesen. Originaldateien waren zusätzlich im alten Scratch `project_sources/`; neue Session darf deren Verfügbarkeit nicht voraussetzen. Die in Nutzertexten wiederholten Image-read-Fehler ersetzen keine Dateiprüfung. Nicht behaupten, Fotos gesehen zu haben, wenn sie nicht geöffnet wurden.
-
-Original D02: silbernes geschlitztes Rohr und schwarzer Erdspieß mit Kopf und radialem Stift. Fotoentwurf etwa Rohr L180, außen27/innen25; Kopf Ø24 ×30; SchaftØ12 ×100 inkl20 Spitze; StiftØ4, Überstand17. Alles unbestätigte Fotoschätzung, keine Vermessung. Original D02 bleibt als Referenz unter `web/index.html`, nicht mit neuer Sockelvariante verwechseln.
-
-D-V02 hatte unberechtigt eine hohle Aufnahme mit Gewindebuchse. Nutzer hat Vollmaterial festgelegt; dieser Stand ist überholt und über Git-Historie rekonstruierbar.
-
-## D-V03: umgesetzt
-
-- `model/sockel_d.py`: CadQuery, massive Aufnahme mit vereinfachtem direktem Sacklochgewinde, separater Querstift; Grundplatte und idealisierter versenkter Schraubenkopf; Originalrohr als Referenz.
-- `parameters/sockel-d-v03.json`: Konzeptparameter; früheres v02-Parameterfile entfernt.
-- 5 Körper: Platte, massive Aufnahme, Querstift, Senkschraube, Fackelrohr. Keine Buchse/Fügezone mehr. Querstift wird in Explosion zusätzlich radial versetzt.
-- Konzeptannahmen: AufnahmeØ24 ×50; nominal M8, Gewinde-Zieltiefe18; zylindrische Bohrtiefe20 plus2,4 Spitze. Glatte CAD-BohrungØ8 ist **Gewindehüllmodell, kein Kernloch-Fertigungsdurchmesser**. QuerstiftØ4 ×21 (4 Sitz +17 Überstand); Passung/Sicherung noch offen.
-- Schraube ideal M8×20 inkl Kopf, 90° KopfØ16, Kopfunterseite0,2 über Boden. SenkungØ16,4, DurchgangØ9, Tiefe3,7. Noch kein gegen konkretes Normkaufteil verifiziertes Modell.
-- `web/sockel-d.js`, `web/variants.html`, `web/sockel-d.css`: Plattenwahl5/8/9, alle Teile inkl Rohr initial, Drehen/Zoom, Isometrie/Seite/Unterseite/Senkkopfdetail, echter CAD-Schnitt, Transparenz, Kanten, Maße, Teileauswahl, Explosionsregler, PNG-Export. **Noch keine geführte Montageanimation.**
-- STEP-Baugruppen/Einzelteile und Prüf-JSON unter `web/assets/sockel-d/`. Alte Buchsen-/Fügezonen-Downloads entfernt.
-- `model/drawings_d.py`: je drei klassische A3-Prüfzeichnungen für jede Plattenstärke; insgesamt drei PDFs/neun Blätter. PDF/Blattwahl im Viewer folgt der Plattenwahl. Platte/Senkung; massive Aufnahme/Querstift; Montageschnitt. Klassische Schwarzweißdarstellung, keine behauptete historische DIN-Vollkonformität.
-- Dokumentation, Stückliste, Montageübersicht und README auf Vollmaterial aktualisiert.
-- Alte D-V02-Kalkulation226–655 EUR wurde zurückgezogen, weil Buchsenfertigung/Fügen entfallen. Noch keine neue belastbare Kalkulation behaupten.
-
-## Prüfstand
-
-Für5/8/9: fünf gültige Solids, keine volumetrischen Überschneidungen in nominaler Montagelage, kein Teil unterz0; STEP-Rückimport mit gleicher Körperzahl und Volumen geprüft.
-
-| Platte mm | Restdicke Senkung mm | nominale Gewindeüberdeckung mm | Abstand Schraubenspitze bis zyl. Bohrungsende mm |
-|---|---|---|---|
-|5|1,3|15,2|4,8|
-|8|4,3|12,2|7,8|
-|9|5,3|11,2|8,8|
-
-Kein Tragfähigkeits-, Losdreh-, Kipp- oder Bewegungsnachweis. Werkstoff, reale Schraube, wirksame Gewindelänge, Toleranzen, Beschichtung und Stiftsicherung offen. CAD-Endlagenprüfung beweist nicht einen kollisionsfreien Steck-Dreh-Montageweg.
-
-Lokaler Playwright-Check: drei Plattenstärken, Schnitt, Explosion, Transparenz, Rohrschalter, Maßansicht, Zeichnungsblätter, mobile Breite390; keine JavaScriptfehler/kein horizontaler Overflow. Vollmaterial-Schnitt visuell gesehen. Zeichnungen gerendert; nach PDF-Export gab es sporadisch abgeschnittene PNGs, durch Einzelblatt-Rerender repariert. Bei Fortsetzung Bilddateien vollständig dekodieren; Browser-naturalWidth allein genügt nicht. PDF-Blätter müssen weiterhin als Prüfzeichnungen ohne Fertigungsfreigabe markiert bleiben.
-
-## Nächste Aufgaben (bereits beauftragt, noch offen)
-
-1. Funktionsprüfung des axialen Aufschiebens und Verdrehens: Geometrie, Einsteckweg, Winkel, Drehrichtung, Kontakt, Spiel, Rückdrehsicherung; reale Maße gezielt erfragen. Bewegung darf die Sockelverschraubung nicht lösen. Keine erfundene Rastung animieren.
-2. Breite Beschaffung entlang Stückliste: Erlangen plus Nürnberg, Fürth, Herzogenaurach, Forchheim und Internethändler. Kontakte/Adresse/Telefon/E-Mail oder Kontaktseite, Produkt-/Zuschnittlinks, Legierung, Abmessung, Privatkundenverkauf, Mindestmenge, Abholung/Versand, Preisstand und Verfügbarkeit belegen. Pro Position möglichst zwei Quellen. Standard-Rundvollmaterial statt Buchse/Hohlrohr für die schwarze Aufnahme.
-3. Gesamtkosten1/5/10: tatsächliche Kaufmengen, Material/Verschnitt, Schraube/Stift, Platte, Rüsten/Bearbeiten, Schlitz, Oberfläche, Montage, Versand, Werkzeug/Prüfung; Eigenleistung vs Werkstatt, netto/brutto trennen. Recherche ist noch nicht abgeschlossen. Frühe Suchspuren: Herrmann Buntmetall Nürnberg, JERA Metall Nürnberg, Rackl Wendelstein, Würth Erlangen, Hornbach/BAUHAUS. Keine davon als passendes lieferbares Angebot verifiziert. Neu recherchieren.
-4. Vollständige Montageanleitung mit Positionsnummern, Werkzeug, Drehmoment erst nach Werkstoff-/Schraubenwahl, Kontrolle und Demontage. Kurze Montageübersicht existiert bereits.
-5. Ästhetische Gesamtanimation: erklärende Schrittsteuerung und kurze Produktdemo, Pause/Zeitleiste/Replay, Schnitt/Transparenz zur Erklärung. Platte zum Verschrauben anheben, Schraube von unten, plan absetzen, Rohr aufschieben und drehen. Stiftmontage als Fertigungsschritt trennen. Mechanik vorher prüfen. Keine optischen Tricks/Erfolgsgarantie.
-6. Wiederverwendbarkeit: später generischer Ablauf Quelle→Maße/Annahmen→CAD→Zeichnung→Viewer→Stückliste; kein überdimensioniertes Framework.
-
-## Technische Fortsetzung
-
-Vor Änderungen `AGENTS.md`, `README.md`, `docs/sockel-d.md`, `docs/next-features.md`, `docs/measurements.md`, `docs/viewer-runbook.md` lesen. Neues Repo/Remote prüfen, nicht auf alten Scratch vertrauen.
-
-Erzeugung: Python/CadQuery2.7.0/ReportLab; `python3 model/sockel_d.py`; pro Stärke `D_PLATE_THICKNESS=5 python3 model/drawings_d.py` (8/9 analog). Modelle/Parameter/Zeichnungstexte sind noch nicht vollständig universell parametrisiert; alle abhängigen Maße gemeinsam aktualisieren. PNGs per `pdftoppm` einzeln rendern und verifizieren.
-
-GitHub Pages nutzt main-Branch/root. Root index leitet zu `web/variants.html`. Kein zusätzliches Hosting. Alte lokale `.github/` und `tmp/` nicht versehentlich committen. GitHub-Connector-Git-Data-API wurde für Blob/Tree/Commit/Ref verwendet, da kein Shell-Push-Zugang eingerichtet. Schreibzugriff und Veröffentlichung sind autorisiert. Bei API-Upload jeden Blob-Hash gegen lokalen Git-Hash prüfen, binäre/größere Dateien in base64-Lesestücken von240000 Bytes laden; Tooloutput kann sonst abschneiden. Für Löschungen Tree-Eintrag sha:null. Ref niemals force aktualisieren; aktuellen Remotezustand prüfen.
-
-## Zuerst in neuer Session
-
-Aktuellen Commit und Pages-Auslieferung prüfen: sichtbare Revision muss D-V03 sein, Teile müssen `plate, adapter, pin, screw, tube` enthalten, nicht `insert/weld`. Falls Deployment noch läuft, zuerst abschließen. Danach mit Funktionsklärung und Beschaffungsrecherche fortfahren, keine neuen Varianten A–C und keine Rückkehr zur Gewindebuchse.
+Release-Prüfung: drei Modellidentitäten, generierte Dokumentseiten und lokale Links. 2.103 Posen gegenüber dem Ausgangscommit exakt identisch; ein festgehaltener Hash der 213 nominalen Abtastposen erkennt spätere Bewegungsänderungen. DOM-Integration prüft Plattenwahl und Downloads mit/ohne WebGL, Seitenkontext, Aktionszuordnung, Pause/Reset und reduzierte Bewegung. Dafür wird der Renderer ersetzt; das ist keine visuelle 3D-Prüfung. Der lokale Chromium-Download schlug fehl. Live-Dokumentprüfung folgt nach Veröffentlichung.

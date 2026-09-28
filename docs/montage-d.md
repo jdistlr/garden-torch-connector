@@ -1,5 +1,8 @@
 # Montage- und Prüfanleitung D-V03
 
+[Gemeinsamer Stand, Stückliste und nächste Entscheidungen](entscheidungen-d.md)
+
+
 Stand 28.09.2026 · **Konzeptanleitung, keine Fertigungs- oder Betriebsfreigabe.** Für kalte, unbeladene Bauteile. Fackel/Brennstoffbehälter, oberer Anschluss und Standsicherheit sind noch nicht ausgelegt. Die Nummern entsprechen Viewer und Stückliste.
 
 ## Teile und Vorbereitung

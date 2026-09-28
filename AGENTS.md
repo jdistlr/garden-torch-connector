@@ -1,10 +1,10 @@
 # Projektregeln
 
-- Zweck: zweiteilige Gartenfackel-Verbindung aus geschlitztem Rohr und schwarzem Gegenstück (Kopf, Schaft, Spitze, Stift).
+- Zweck: ausschließlich Sockel D-V03 aus Grundplatte, massiver Aufnahme, Querstift, Senkschraube und geschlitztem Rohr. Der Erdspieß ist historische Originalreferenz.
 - Vor Änderungen README.md und docs lesen.
 - Beobachtung, Foto-Schätzung, bestätigte Messung und konstruktive Entscheidung trennen.
 - Keine Maße erfinden. null bedeutet unbekannt.
-- CadQuery ist die geplante Geometriequelle. Zeichnungen und Exportmodelle aus derselben Revision ableiten.
+- CadQuery ist die Geometriequelle. Zeichnungen und Exportmodelle aus derselben Revision ableiten.
 - Unbestätigte Entwürfe niemals als fertigungsfreigegeben bezeichnen.
 - Originalquellen nicht überschreiben. Duplikate über Prüfsummen dokumentieren.
 - Keine unbeauftragte Änderung der Repository-Sichtbarkeit.

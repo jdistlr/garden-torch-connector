@@ -9,6 +9,8 @@ export const steps = [
  ['Rohr aufschieben', 'Axial absenken, bis die Stiftmitte auf der Mitte des seitlichen Ausschnitts liegt. Keine Verdrehung während des Einführens.'],
  ['50° verdrehen · keine Rastung', 'Blick von oben zur Platte: Rohr gegen den Uhrzeigersinn drehen. 50° ist eine geprüfte Darstellungsposition vor dem nominalen Anschlag bei ca. 55,8°. Der Rückweg bleibt frei; keine Rückdrehsicherung nachgewiesen.']
 ];
+// Integer positions are completed target poses; in-between describes the action toward the next pose.
+export function stepAt(value) { return Math.min(7,Math.max(0,Math.ceil(value-1e-9))); }
 export function poseAt(value, thickness) {
  const q=Math.max(0,Math.min(7,value)),i=Math.min(6,Math.floor(q)),u=q-i,s=u*u*(3-2*u);
  const frames=[

@@ -25,9 +25,9 @@ Das beweist die geometrische Montagelage, nicht Festigkeit, Kippsicherheit oder 
 
 Python mit CadQuery und ReportLab: `python3 model/sockel_d.py`, danach je Stärke `D_PLATE_THICKNESS=5 python3 model/drawings_d.py` (ebenso mit 8 und 9). Die dokumentierten Konzeptparameter liegen in `parameters/sockel-d-v03.json`. Bei Maßänderungen Generator, Parameterdatei, Zeichnungen und Prüfwerte gemeinsam aktualisieren; noch keine universelle Parametrik für beliebige Produkte.
 
-## Nächste Schritte
+## Nächste Entscheidungen
 
-[Arbeitsplan](next-features.md): breite regionale und Online-Beschaffung entlang der Stückliste, Funktionsprüfung des Steck-Dreh-Verschlusses, Gesamtkosten für 1/5/10 Stück, Montageanleitung, anschließend erklärende und ästhetische Montageanimation. Die alte Buchsen-Kostenschätzung ist zurückgezogen. Kosten für Vollmaterial werden neu recherchiert und kalkuliert.
+[Entscheidungskette](entscheidungen-d.md): reale Maße und Funktion, vollständige Fackel, kompatible Stückliste, Sicherung und Belastbarkeit. Recherche, Budgetstudie, Konzeptanleitung und Animation sind vorhanden. Die Budgetstudie verwendet teilweise andere Teile und ist kein Preis des aktuellen CAD.
 
 ## Stückliste D-V03
 

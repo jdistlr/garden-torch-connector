@@ -1,3 +1,5 @@
+> Historische Originalreferenz, kein aktueller D-V03-Nachweis. Aktuell: [Entscheidungskette](entscheidungen-d.md) und [D-V03](sockel-d.md).
+
 # Prüfung D01
 
 28.09.2026: CadQuery 2.7.0 erzeugt einen gültigen Solid. STEP wieder eingelesen; Volumenabweichung unter 1e-8 relativ.

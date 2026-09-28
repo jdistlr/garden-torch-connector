@@ -1,47 +1,31 @@
-# Aktueller Einstieg D-V03
+# D-V03 · Bauen, prüfen, veröffentlichen
 
-Root `index.html` führt zu `web/variants.html`. Lokal: `python3 -m http.server 8765 --directory web`, dann `/variants.html` öffnen. `/index.html` innerhalb web zeigt weiterhin die Originalreferenz D02.
+Öffentlicher Einstieg: https://jdistlr.github.io/garden-torch-connector/ → `web/variants.html`. Historisches Original: `web/index.html`. Aktueller Arbeitsstand: [Entscheidungskette](entscheidungen-d.md).
 
-D-V03: `python3 model/check_motion_d.py` prüft den nominalen Rohrweg aus STEP und schreibt `motion-checks.json`. `python3 model/cost_d.py` erzeugt die Kostenszenarien. `node model/render_docs.cjs` (Node mit Paket `marked`) erzeugt druckbare HTML-Seiten aus den vier neuen Markdown-Dokumenten. Für diese Erweiterung wurden CAD/STEP/A3-Dateien nicht verändert.
+## Dokumente und Oberfläche
 
-Die Montageanimation in `web/montage-d.js` verwendet dieselben CAD-Teile. 50° ist eine Demonstrationsposition vor dem Anschlag, nicht eine bestätigte Endlage. STEP und freie Ansicht starten weiterhin bei0°. Automatisches Abspielen nur nach Betätigung; Tabwechsel pausiert; reduzierte Bewegung wählt langsames Tempo. Schnitt/Transparenz bleiben benutzbar. Keine Handsimulation, keine Gewinde-/Kontaktkraftsimulation.
+- `npm ci` installiert die fixierte Markdown-Abhängigkeit.
+- `npm run docs` erzeugt die fünf Dokumentseiten aus `docs/*-d.md`.
+- `python3 -m http.server 8765 --directory web`; lokal `/variants.html?plate=9` öffnen.
+- `web/project-state.js` hält Plattenwahl/URL, Dokumentlinks, PDF/STEP und Vorschau unabhängig von Three.js aktuell. Explizite URL gewinnt vor lokaler Merkhilfe. Keine Modell-Neugenerierung.
+- `web/montage-d.js` definiert Posen und Aktionszuordnung. Ganzzahlen sind Zielbilder; Übergänge erklären die nächste Handlung. Änderungen an `stepAt` sind keine Änderungen an `poseAt`.
+- `node model/test_montage.mjs` prüft die Handlungszuordnung und die nominalen Rohrposen.
 
-## Historisches D02-Runbook
+## CAD und geometrische Prüfung
 
-# Viewer D02
+Python-Abhängigkeiten: `python3 -m pip install -r model/requirements.txt`. D-V03: `python3 model/sockel_d.py`, dann `D_PLATE_THICKNESS=5 python3 model/drawings_d.py` (auch 8 und 9). PNG-Vorschauen aus den entsprechenden PDFs erzeugen und vollständig dekodieren/visuell prüfen.
 
-Statische Three.js-Anwendung unter `web/`. Alle Browserabhängigkeiten liegen lokal unter `web/vendor` (Three.js 0.180.0, MIT-Lizenz beigefügt). Keine CDN-Abhängigkeit, kein Backend.
+`python3 model/check_motion_d.py` prüft den nominalen Rohrweg aus STEP und schreibt `motion-checks.json` mit STEP-Hashes. `node model/export_assembly_poses.mjs /tmp/torch-poses.json`, danach `python3 model/check_assembly_d.py /tmp/torch-poses.json` prüft die Gesamtmontage. Keine Kraft-/Gewindeflanken-/Schwerkraftsimulation; diskrete Prüfung ist kein lückenloser Bewegungsnachweis.
 
-## Lokal ansehen
+`python3 model/cost_d.py` reproduziert die abweichende 5-mm-Kandidatenstudie. Nicht als CAD-Stücklistenkosten behandeln.
 
-Im Repository `python3 -m http.server 8765 --directory web` ausführen und http://localhost:8765 öffnen. Nicht index.html per file:// starten, da JSON-Daten geladen werden.
+## Freigabe einer Veröffentlichung
 
-## Modell neu erzeugen
+1. Geänderte Inhalte prüfen; bei Geometrie/Posenänderungen auch CAD, Zeichnungen und beide Bewegungsprüfungen erneuern. Kopierte Zahlen in Generator/Parametern/Dokumenten bleiben bis zur vollständigen Parametrisierung eine manuelle Prüfpflicht.
+2. `npm run docs`; Browserfälle prüfen: 5/8/9, URL/Seitenwechsel, Downloads ohne WebGL, echte 3D-Funktionen, Fehlerzustand, Schritte/Übergänge, reduzierte Bewegung, mobile Ansicht. Nicht erfolgreich prüfbare Fälle im Übergabetext benennen.
+3. `python3 model/check_release.py --write` erstellt nach der Prüfung das Dateihash-Manifest. `npm run check` prüft Modellidentität, Aktionszuordnung, aktuelle HTML-Generierung, lokale Links und Manifestgleichheit. Das Manifest verhindert stilles Dateidriften, ist aber kein mechanischer Nachweis.
+4. Commit auf main ohne Force-Push. Vorhandenes GitHub Pages aus Branch/root verwenden. Erfolgreichen Lauf zum neuen Commit und live ausgelieferte geänderte Dateien verifizieren.
 
-CadQuery 2.7.0 installieren: `python3 -m pip install -r model/requirements.txt`. Danach `python3 model/build.py` ausführen. Das Skript liest ausschließlich `parameters/photo-draft.json` und erzeugt STEP, Browsermesh und Metadaten unter web/assets. `parameters/connector.json` bleibt der unveränderte Platz für bestätigte Maße.
+## Tatsächliche Grenzen
 
-D02 ist ein ausdrücklich unbestätigter Foto-Entwurf. Geschätzte Werte und ihre Bildquellen sind in der separaten Parameterdatei gespeichert. Der seitliche Ausschnitt ist geometrisch vereinfacht. Mesh und STEP werden aus denselben zwei CAD-Körpern erzeugt. Dieser erste Viewer nutzt ein Mesh-JSON mit Millimeterkoordinaten; GLB ist nicht nötig. Keine Umrechnung in Meter findet statt.
-
-Parameter-, Generator-, STEP- und Mesh-Prüfsummen sind in metadata.json festgehalten. Modellgeometrie und STEP-Rückimport werden beim Erzeugen geprüft. CAD-Volumen und Oberfläche sind Kennwerte des Entwurfs, keine Messungen am Original.
-
-## GitHub Pages
-
-Der vorhandene Pages-Dienst veröffentlicht den main-Branch aus dem Repository-Stamm. index.html führt nach web/. Es wird kein zweiter eigener Deployment-Workflow benötigt.
-
-Öffentlicher Einstieg: https://jdistlr.github.io/garden-torch-connector/
-
-Direkter Viewer: https://jdistlr.github.io/garden-torch-connector/web/
-
-Den Lauf „pages build and deployment“ unter Actions prüfen. Der erste eigene Deploy-Lauf war erfolgreich; für weitere Änderungen wird ausschließlich die bestehende Branch-Veröffentlichung genutzt.
-
-## Korrektur D02
-
-Das schwarze Gegenstück gehört zum Modellumfang. Kopf, Schaft, konische Spitze und radialer Stift bilden einen eigenen Solid. Die gemeinsame STEP-Datei enthält zwei getrennte Solids in illustrativer Montagelage; Einzeldateien behalten dasselbe Bezugssystem. Der Viewer startet getrennt und kann beide Teile zusammensetzen oder ausblenden. Diese Anzeigeverschiebung verändert die CAD-Kennwerte nicht.
-
-## Technische Zeichnungen
-
-Nach `python3 model/build.py` erzeugt `python3 model/drawings.py` die drei A3-Prüfzeichnungen. Anleitung und Darstellungsgrenzen: [drawings.md](drawings.md). Der PDF-Download ist im Viewer neben STEP eingebunden.
-
-## Gesamten schematischen Montageweg prüfen
-
-`node model/export_assembly_poses.mjs /tmp/torch-poses.json`, dann `python3 model/check_assembly_d.py /tmp/torch-poses.json`. Je71Posen für5/8/9mm prüfen alle Körperpaare und die Bodenebene. Das ergänzt die feinere Rohrprüfung; Stiftpressung und Schraubengewindeflanken werden nicht simuliert. Ergebnis `assembly-motion-checks.json`. Ohne äußere Schraubendrehung sind die Außenhülle und Schnittvolumina gleich; nur der Antrieb rotiert in der Ansicht.
+Rohraufschieben und Drehen sind nominal geprüft, Originalfunktion und Rückdrehsicherung bleiben offen. 50° ist keine eingerastete Endlage. Werkzeug-/Handzugang ist nicht modelliert. Download-Auswahl funktioniert auch bei WebGL-Ausfall; bei vollständig deaktiviertem JavaScript gilt die sichtbare statische 5-mm-Vorauswahl. Keine Frontend-Geometriebearbeitung implementiert.

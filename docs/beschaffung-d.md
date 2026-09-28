@@ -1,5 +1,8 @@
 # D-V03 – Beschaffungsrecherche
 
+[Gemeinsamer Stand, Stückliste und nächste Entscheidungen](entscheidungen-d.md)
+
+
 Rechercheabruf: **28.09.2026**. Öffentliche Händlerseiten, keine Kontaktaufnahme und keine Bestellung. Preise sind abgerufene Anzeigen einschließlich ggf. älterer Suchindexstände, keine verbindlichen Angebote oder reservierten Bestände. Vor Bestellung im Warenkorb erneut prüfen. Schwarz ist eine Oberflächenanforderung, keine Werkstoffbestimmung.
 
 ## Ergebnis und Kompatibilität

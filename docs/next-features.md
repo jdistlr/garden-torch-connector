@@ -66,3 +66,11 @@ Ergebnisformat: Beschaffungsmatrix nach Stücklistenposition plus regionale Kont
 - [Kosten](kosten-d.md):1/5/10-Stück-Szenarien einschließlich Restmengen, Eigenleistung und Werkstatt; Schätzungen von Anzeigenpreisen getrennt.
 - [Montageanleitung](montage-d.md) mit Werkzeugen, Fertigung, Benutzermontage, Prüfung, Demontage und Pflege, druckbar als HTML.
 - Noch zu tun: reale Maße und Funktion, Rückdrehsicherung, Stiftsitz, Werkstoffe/Oberfläche, reale Schraubenkopfkontur, belastbare Angebote, Stand-/Belastungsnachweis. Keine Fertigungsfreigabe.
+
+## Konvergenz nach Audit · aktueller Vorrang
+
+Die [Entscheidungskette](entscheidungen-d.md) führt den aktuellen Arbeitsstand und die nächsten realen Nachweise. Darstellung und Downloads bleiben D-V03; Kandidaten bleiben getrennt, bis ihre Kompatibilität geprüft ist. Keine visuelle Fertigstellung als mechanische Freigabe behandeln.
+
+## Später beauftragt, jetzt ausdrücklich zurückgestellt
+
+Frontend-Modifikationen ohne neue Modellgenerierung: zunächst Umfang definieren (Ansicht/Materialdarstellung gegenüber maßverändernder Vorschau). Temporäre Vorschau, Rücksetzen und Vergleich anbieten. Maßänderung muss bestehende Prüfwerte als nicht anwendbar kennzeichnen; keine unveränderten STEP/PDF als Vorschau-Export ausgeben. Reale CAD-Neuberechnung und erneute Prüfung bleiben getrennte Vorgänge. Noch nicht implementiert.

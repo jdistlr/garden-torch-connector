@@ -1,3 +1,5 @@
+> Historische Originalreferenz, kein aktueller D-V03-Nachweis. Aktuell: [Entscheidungskette](entscheidungen-d.md) und [D-V03](sockel-d.md).
+
 # Prüfung D02
 
 - Zwei gültige CAD-Solids; gemeinsamer STEP-Rückimport erhält zwei Solids und Volumen (relative Abweichung < 1e-8).

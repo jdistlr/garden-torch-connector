@@ -1,30 +1,9 @@
-# Werkzeugentscheidung
+# Aktuelle Werkzeugkette D-V03
 
-## Vorschlag: CadQuery als Modellquelle, FreeCAD/TechDraw für Zeichnungen
+CadQuery 2.7.0 erzeugt Volumenkörper, STEP und Mesh-JSON in Millimetern. `model/drawings_d.py` erzeugt die A3-PDFs mit ReportLab. Three.js stellt die CAD-abgeleiteten Netze und vorbereiteten Schnitte dar. FreeCAD/TechDraw war eine frühere Option und ist keine Voraussetzung des vorhandenen Exports. GLB ist derzeit nicht im Einsatz.
 
-CadQuery beschreibt parametrische Volumenkörper in Python und exportiert STEP. Textbasierte Parameter und Modellcode sind in Git gut vergleichbar. Das einfache Rohr mit Ausschnitten eignet sich für diesen Ansatz.
+`model/render_docs.cjs` erzeugt Dokumentseiten aus Markdown. `model/check_release.py` prüft die gemeinsame Veröffentlichung gegen ein Dateihash-Manifest. Dieses Manifest dokumentiert Zusammengehörigkeit; es ist kein zusätzlicher mechanischer Nachweis.
 
-FreeCAD dient zum unabhängigen Öffnen des STEP-Modells und zur Ableitung technischer Zeichnungen mit TechDraw. Der Austausch erfolgt zunächst dateibasiert; ein MCP-Server ist dafür keine Voraussetzung.
+Generatoren enthalten noch Konzeptkonstanten außerhalb der JSON-Parameterdatei. Bis zu einer vollständigen Parametrisierung müssen Geometrieänderungen gemeinsam durch CAD-, Zeichnungs-, Bewegungs- und Dokumentprüfung laufen. Keine beliebigen Werte als automatisch unterstützt darstellen.
 
-OpenSCAD ist eine plausible Alternative für codebasierte Geometrie und Anschauungsmodelle. Für dieses Projekt gibt der direkte STEP-Arbeitsweg von CadQuery den Ausschlag. Es werden nicht mehrere gleichberechtigte Modellquellen gepflegt.
-
-## Geplante Ausgabeformate
-
-| Format | Zweck |
-|---|---|
-| Python + JSON | Änderbare Modellquelle und Parameter |
-| STEP | CAD-Austausch mit Fertiger |
-| PDF | Bemaßte Zeichnung und Auftrag |
-| PNG/SVG | Ansichten und Erläuterungen |
-| STL | Optionaler Anschauungsprototyp |
-| GLB | Optionale Webdarstellung |
-
-## Reproduzierbarkeit
-
-Vor dem ersten Modell-Build unterstützte Python-, CadQuery- und FreeCAD-Versionen in der tatsächlichen Umgebung prüfen. Erfolgreiche Versionen anschließend fixieren. CadQuery 2.7.0 ist installiert; D02 erzeugt zwei Solids mit geprüftem STEP-Rückimport. Zeichnungsableitung bleibt offen.
-
-Offizielle Referenzen:
-- https://cadquery.readthedocs.io/en/latest/intro.html
-- https://cadquery.readthedocs.io/en/latest/importexport.html
-- https://www.freecad.org/features.php
-- https://github.com/FreeCAD/FreeCAD-documentation/blob/main/wiki/TechDraw_Workbench.md
+[Konkrete Befehle und Grenzen](viewer-runbook.md).
