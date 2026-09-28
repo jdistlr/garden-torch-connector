@@ -17,7 +17,11 @@ Eine Modellrevision liefert aus CadQuery/OCCT:
 
 Three.js übernimmt Darstellung und Interaktion. Ein GLB-Dreiecksnetz ist kein exaktes CAD-Volumenmodell. Die exakte Modellquelle bleibt im CAD-Kern. Kennwerte werden dort berechnet und zusammen mit derselben Modellrevision angezeigt. Keine unabhängig nachgezeichnete Browsergeometrie.
 
-## Erste Viewer-Version
+## Priorität: klein anfangen
+
+Nach dem [vereinfachten Projektplan](plan.md) besteht die allererste Version nur aus Modell, Drehen/Zoomen/Reset und einer Maß-/Statusinfobox. Die nachfolgenden Funktionen beschreiben das spätere Zielbild und werden einzeln ergänzt. Einheiten, Modellherkunft und Kennzeichnung von Schätzungen gelten schon für die erste Version.
+
+## Ausbau des Viewers
 
 | Bereich | Geplante Funktion |
 |---|---|
