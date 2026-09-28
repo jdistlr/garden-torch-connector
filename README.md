@@ -6,9 +6,9 @@ Hier sammeln wir alles, was wir brauchen, um ein vorhandenes Verbindungsrohr fü
 
 ## Erster Viewer D01
 
-Der Viewer-Code liegt unter [web/](web/), mit Drehen/Zoomen, Ansichten, Schlitzdetail, Transparenz, Referenzfotos, Maßschätzungen und STEP-Download. Alle Browserdateien sind lokal eingebunden. Veröffentlichung erfolgt über den Pages-Workflow; den erfolgreichen Lauf unter Actions prüfen.
+Der Viewer-Code liegt unter [web/](web/), mit Drehen/Zoomen, Ansichten, Schlitzdetail, Transparenz, Referenzfotos, Maßschätzungen und STEP-Download. Alle Browserdateien sind lokal eingebunden. GitHub Pages veröffentlicht den main-Branch; die Startseite führt zum Viewer.
 
-Geplante Adresse: https://jdistlr.github.io/garden-torch-connector/
+Viewer: https://jdistlr.github.io/garden-torch-connector/
 
 [Starten, neu erzeugen und veröffentlichen](docs/viewer-runbook.md).
 
@@ -142,6 +142,6 @@ In der Parameterdatei bedeutet `null`: **noch unbekannt**, nicht null Millimeter
 
 ## Freigabe und Veröffentlichung
 
-Das Repository ist derzeit **öffentlich**. Eine interaktive 3D-Ansicht und der GitHub-Pages-Workflow sind erstellt. Die tatsächliche Veröffentlichung ist über den Deployment-Status zu prüfen.
+Das Repository ist derzeit **öffentlich**. Die erste interaktive 3D-Ansicht ist veröffentlicht; GitHub Pages baut Änderungen am main-Branch automatisch.
 
 Aktuell liegt eine **Projektgrundlage, keine Fertigungsfreigabe** vor. Erst wenn relevante Maße, Material, Funktion und Anforderungen geprüft sind, wird ein eindeutig gekennzeichnetes Auftragspaket zusammengestellt.

@@ -16,8 +16,10 @@ Parameter-, Generator-, STEP- und Mesh-Prüfsummen sind in metadata.json festgeh
 
 ## GitHub Pages
 
-Unter Settings → Pages → Build and deployment muss die Quelle **GitHub Actions** ausgewählt sein. Der Workflow `Publish engineering viewer` veröffentlicht ausschließlich web/. Er läuft bei Änderungen an web/ oder seiner Workflowdatei und lässt sich manuell starten.
+Der vorhandene Pages-Dienst veröffentlicht den main-Branch aus dem Repository-Stamm. index.html führt nach web/. Es wird kein zweiter eigener Deployment-Workflow benötigt.
 
-Vorgesehene URL: https://jdistlr.github.io/garden-torch-connector/
+Öffentlicher Einstieg: https://jdistlr.github.io/garden-torch-connector/
 
-Ein vorhandener Workflow ist allein kein Nachweis einer erfolgreichen Veröffentlichung. Den erfolgreichen Deploy-Lauf und die erreichbare Seite prüfen.
+Direkter Viewer: https://jdistlr.github.io/garden-torch-connector/web/
+
+Den Lauf „pages build and deployment“ unter Actions prüfen. Der erste eigene Deploy-Lauf war erfolgreich; für weitere Änderungen wird ausschließlich die bestehende Branch-Veröffentlichung genutzt.
