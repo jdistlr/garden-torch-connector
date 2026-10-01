@@ -18,7 +18,7 @@ for name in names:
     text=(root/f'web/{name}.html').read_text(); page=Page(text)
     assert all(n==1 for n in Counter(page.ids).values()),(name,'duplicate id')
     assert 'main-content' in page.ids
-    assert 'workbench.css?rev=3' in text
+    assert 'workbench.css?rev=4' in text
     assert 'class="desktop-nav"' in text
     for slug in names:assert f'{slug}.html' in page.hrefs,(name,slug)
     for href in page.hrefs:
