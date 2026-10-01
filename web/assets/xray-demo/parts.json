@@ -1,0 +1,172 @@
+{
+  "revision": "XR-DEMO / 01",
+  "status": "Fictional non-functional display model; all sizes, prices and suppliers invented",
+  "units": "demo-mm",
+  "parts": [
+    {
+      "id": "base",
+      "name": "Montagefuß",
+      "material": "Aluminiumoptik",
+      "size": "360 × 12 × 190",
+      "color": "#718ba0",
+      "offset": [
+        0,
+        -110,
+        0
+      ],
+      "price": 38,
+      "source": "POC Metallatelier",
+      "task": "Der Fuß bildet den visuellen Bezug. Keine geprüfte Tragstruktur."
+    },
+    {
+      "id": "carrier",
+      "name": "Innenrahmen",
+      "material": "Metalloptik",
+      "size": "280 × 86 × 120",
+      "color": "#a5b7c4",
+      "offset": [
+        0,
+        0,
+        -210
+      ],
+      "price": 54,
+      "source": "POC Formwerk",
+      "task": "Der Innenrahmen wird als Träger eingesetzt. Befestigungen und Toleranzen sind nicht ausgelegt."
+    },
+    {
+      "id": "anode",
+      "name": "Anodenteller mit Rotor",
+      "material": "Kupfer- und Stahloptik",
+      "size": "120 × Ø80",
+      "color": "#bc8056",
+      "offset": [
+        -210,
+        30,
+        0
+      ],
+      "price": 210,
+      "source": "POC Komponentenlabor",
+      "task": "Ein geometrischer Platzhalter für die Anodenseite. Kein funktionaler Rotor, kein berechnetes Target."
+    },
+    {
+      "id": "bearing",
+      "name": "Flüssigmetalllager (Symbol)",
+      "material": "Türkise Lagerfilm-Symbolik",
+      "size": "50 × Ø64",
+      "color": "#4caaa4",
+      "offset": [
+        -180,
+        120,
+        140
+      ],
+      "price": 125,
+      "source": "POC Lagerattrappen",
+      "task": "Die Ringe symbolisieren einen Flüssigmetall-Lagerfilm zwischen rotierender und stationärer Struktur. Keine reale Lagergeometrie, Legierung, Spaltweite oder Betriebsbedingung."
+    },
+    {
+      "id": "cathode",
+      "name": "Kathodenmodul",
+      "material": "Keramik- und Metalloptik",
+      "size": "70 × Ø46",
+      "color": "#d4dedf",
+      "offset": [
+        220,
+        30,
+        0
+      ],
+      "price": 140,
+      "source": "POC Komponentenlabor",
+      "task": "Die Gegenseite wird ergänzt. Emission, Fokussierung und elektrische Anschlüsse sind bewusst nicht ausgelegt."
+    },
+    {
+      "id": "envelope",
+      "name": "Röhrenhülle",
+      "material": "Transparente Demo-Hülle",
+      "size": "280 × Ø120",
+      "color": "#79b2c6",
+      "offset": [
+        0,
+        230,
+        0
+      ],
+      "price": 165,
+      "source": "POC Glasmodellbau",
+      "task": "Die transparente Hülle macht die Baugruppenbeziehung sichtbar. Das Überstülpen ist eine Erklärbewegung, kein Vakuum-Fertigungsprozess."
+    },
+    {
+      "id": "cooler",
+      "name": "Kühlmodul",
+      "material": "Dunkle Aluminiumoptik",
+      "size": "190 × 34 × 82",
+      "color": "#355366",
+      "offset": [
+        0,
+        160,
+        -180
+      ],
+      "price": 85,
+      "source": "POC Thermoattrappen",
+      "task": "Ein Kühlmodul ergänzt die Silhouette. Keine thermische Auslegung oder realer Kühlkreislauf."
+    },
+    {
+      "id": "housing",
+      "name": "Gehäuseschale",
+      "material": "Lackierte Metalloptik",
+      "size": "450 × 170 × 220",
+      "color": "#d1dce3",
+      "offset": [
+        0,
+        0,
+        -300
+      ],
+      "price": 110,
+      "source": "POC Formwerk",
+      "task": "Die äußere Schale umgibt das Modell. Ihre Dicke ist rein grafisch und kein Strahlenschutznachweis."
+    },
+    {
+      "id": "window",
+      "name": "Fenstermodul",
+      "material": "Kontrastfarbene Attrappe",
+      "size": "76 × 54 × 28",
+      "color": "#538d9f",
+      "offset": [
+        0,
+        0,
+        200
+      ],
+      "price": 32,
+      "source": "POC Optikattrappen",
+      "task": "Das Fenstermodul markiert eine gedachte Austrittsseite. Es gibt keinen Strahl, keine Filter- oder Dosisberechnung."
+    },
+    {
+      "id": "cover",
+      "name": "Servicehaube",
+      "material": "Helle Gehäuseoptik",
+      "size": "450 × 16 × 220",
+      "color": "#e2e8eb",
+      "offset": [
+        0,
+        290,
+        0
+      ],
+      "price": 62,
+      "source": "POC Formwerk",
+      "task": "Die Servicehaube schließt die Darstellung. Zugänglichkeit und Montagekollisionen sind nicht geprüft."
+    },
+    {
+      "id": "endcap",
+      "name": "Enddeckel",
+      "material": "Dunkle Gehäuseoptik",
+      "size": "16 × 170 × 220",
+      "color": "#294658",
+      "offset": [
+        250,
+        0,
+        0
+      ],
+      "price": 44,
+      "source": "POC Formwerk",
+      "task": "Der Enddeckel vervollständigt das Anschauungsmodell. Keine Inbetriebnahme – nur eine vollständige Darstellung."
+    }
+  ]
+}

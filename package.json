@@ -2,8 +2,8 @@
   "name": "garden-torch-connector",
   "private": true,
   "scripts": {
-    "docs": "node model/render_docs.cjs",
-    "check": "node model/test_montage.mjs && python3 model/test_workbench.py && python3 model/check_release.py"
+    "docs": "node model/render_docs.cjs && node model/render_xray.mjs",
+    "check": "node model/test_montage.mjs && node model/test_xray.mjs && python3 model/test_workbench.py && python3 model/check_release.py"
   },
   "devDependencies": {
     "marked": "17.0.5"

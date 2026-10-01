@@ -1,0 +1,170 @@
+solid XR_DEMO_NONFUNCTIONAL
+facet normal 1 0 0
+outer loop
+vertex 241.00000 76.00000 110.00000
+vertex 241.00000 -94.00000 110.00000
+vertex 241.00000 76.00000 -110.00000
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 241.00000 -94.00000 110.00000
+vertex 241.00000 -94.00000 -110.00000
+vertex 241.00000 76.00000 -110.00000
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 225.00000 76.00000 -110.00000
+vertex 225.00000 -94.00000 -110.00000
+vertex 225.00000 76.00000 110.00000
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 225.00000 -94.00000 -110.00000
+vertex 225.00000 -94.00000 110.00000
+vertex 225.00000 76.00000 110.00000
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 225.00000 76.00000 -110.00000
+vertex 225.00000 76.00000 110.00000
+vertex 241.00000 76.00000 -110.00000
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 225.00000 76.00000 110.00000
+vertex 241.00000 76.00000 110.00000
+vertex 241.00000 76.00000 -110.00000
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 225.00000 -94.00000 110.00000
+vertex 225.00000 -94.00000 -110.00000
+vertex 241.00000 -94.00000 110.00000
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 225.00000 -94.00000 -110.00000
+vertex 241.00000 -94.00000 -110.00000
+vertex 241.00000 -94.00000 110.00000
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 225.00000 76.00000 110.00000
+vertex 225.00000 -94.00000 110.00000
+vertex 241.00000 76.00000 110.00000
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 225.00000 -94.00000 110.00000
+vertex 241.00000 -94.00000 110.00000
+vertex 241.00000 76.00000 110.00000
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 241.00000 76.00000 -110.00000
+vertex 241.00000 -94.00000 -110.00000
+vertex 225.00000 76.00000 -110.00000
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 241.00000 -94.00000 -110.00000
+vertex 225.00000 -94.00000 -110.00000
+vertex 225.00000 76.00000 -110.00000
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 245.00000 28.00000 63.00000
+vertex 245.00000 -46.00000 63.00000
+vertex 245.00000 28.00000 -63.00000
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 245.00000 -46.00000 63.00000
+vertex 245.00000 -46.00000 -63.00000
+vertex 245.00000 28.00000 -63.00000
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 241.00000 28.00000 -63.00000
+vertex 241.00000 -46.00000 -63.00000
+vertex 241.00000 28.00000 63.00000
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 241.00000 -46.00000 -63.00000
+vertex 241.00000 -46.00000 63.00000
+vertex 241.00000 28.00000 63.00000
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 241.00000 28.00000 -63.00000
+vertex 241.00000 28.00000 63.00000
+vertex 245.00000 28.00000 -63.00000
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 241.00000 28.00000 63.00000
+vertex 245.00000 28.00000 63.00000
+vertex 245.00000 28.00000 -63.00000
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 241.00000 -46.00000 63.00000
+vertex 241.00000 -46.00000 -63.00000
+vertex 245.00000 -46.00000 63.00000
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 241.00000 -46.00000 -63.00000
+vertex 245.00000 -46.00000 -63.00000
+vertex 245.00000 -46.00000 63.00000
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 241.00000 28.00000 63.00000
+vertex 241.00000 -46.00000 63.00000
+vertex 245.00000 28.00000 63.00000
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 241.00000 -46.00000 63.00000
+vertex 245.00000 -46.00000 63.00000
+vertex 245.00000 28.00000 63.00000
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 245.00000 28.00000 -63.00000
+vertex 245.00000 -46.00000 -63.00000
+vertex 241.00000 28.00000 -63.00000
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 245.00000 -46.00000 -63.00000
+vertex 241.00000 -46.00000 -63.00000
+vertex 241.00000 28.00000 -63.00000
+endloop
+endfacet
+endsolid XR_DEMO_NONFUNCTIONAL
