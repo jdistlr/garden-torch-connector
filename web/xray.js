@@ -1,7 +1,7 @@
 import * as THREE from './vendor/three.module.js';
 import {mountPrinciple} from './xray-principle.js';
 import {OrbitControls} from './vendor/OrbitControls.js';
-import {parts,steps,buildParts,applyPose,activeStep,cameraPose,vectorScene} from './xray-model.js?rev=2';
+import {parts,steps,buildParts,applyPose,activeStep,cameraPose,vectorScene} from './xray-model.js?rev=3';
 const $=s=>document.querySelector(s),host=$('#xr-viewport'),entry=new URL(location.href),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const number=(key,fallback,min,max)=>{const n=Number(entry.searchParams.get(key));return entry.searchParams.has(key)&&Number.isFinite(n)?Math.max(min,Math.min(max,n)):fallback;};
 const state={mode:entry.searchParams.get('mode')==='montage'?'montage':'assembly',progress:number('step',parts.length,0,parts.length),explode:number('explode',0,0,1),selected:parts.some(p=>p.id===entry.searchParams.get('part'))?entry.searchParams.get('part'):'',hidden:(entry.searchParams.get('hidden')||'').split(',').filter(id=>parts.some(p=>p.id===id)),cut:entry.searchParams.get('cut')==='1',transparent:entry.searchParams.get('transparent')==='1',solo:entry.searchParams.get('solo')==='1',dimensions:entry.searchParams.get('dimensions')==='1'};
