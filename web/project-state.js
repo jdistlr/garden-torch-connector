@@ -16,6 +16,7 @@
   document.querySelectorAll('[data-project-state]').forEach(e=>e.textContent=`D-V03 · ${thickness} mm Platte · Konzept, keine Fertigungs-/Betriebsfreigabe`);
   document.querySelectorAll('[data-cost-state]').forEach(e=>e.textContent=thickness==='5'?'Für diese CAD-Ausführung gibt es noch keinen vollständigen Preis. Die folgende Budgetstudie betrifft abweichende Kandidatenteile.':`Für die gewählte ${thickness}-mm-Platte liegt keine Gesamtkalkulation vor. Die folgende 5-mm-Budgetstudie betrifft außerdem abweichende Kandidatenteile.`);
   for(const [id,file] of [['step-d','assembly'],['plate-d','plate'],['adapter-d','adapter'],['pin-d','pin'],['screw-d','screw'],['tube-d','tube']]){const a=document.getElementById(id);if(a)a.href=`assets/sockel-d/${file}-${thickness}.step`;}
+  document.querySelectorAll('[data-preview]').forEach(e=>e.src=`assets/ux/${e.dataset.preview}-${thickness}.png`);
   document.querySelectorAll('[data-thickness]').forEach(e=>e.textContent=thickness);
   document.querySelectorAll('[data-step-part]').forEach(a=>a.href=`assets/sockel-d/${a.dataset.stepPart}-${thickness}.step`);
   document.querySelectorAll('[data-pdf]').forEach(a=>a.href=`assets/sockel-d/zeichnungen-D-V03-${thickness}mm.pdf`);

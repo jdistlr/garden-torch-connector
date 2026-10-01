@@ -1,5 +1,9 @@
 # Übergabe · D-V03 nach Konsistenzaudit
 
+## Desktop-Arbeitsoberfläche · 01.10.2026
+
+Neue gemeinsame Layoutschicht `web/workbench.css`: ab 1100 px dauerhafte, nach Tätigkeit gruppierte Projektnavigation. Bildgestützter Projekteinstieg aus vorhandener CAD-Explosionsansicht, nächster realer Messaufgabe und drei Arbeitsphasen. Fachseiten erhalten eine Abschnittsnavigation; Bauteile, Mechanik und Montage nutzen CAD-Abbildungen mit Verweis zum Viewer. Modell: Szene links, zusammenhängender Inspektor rechts, Nachweise darunter. Die bisher unsichtbare Überschrift der geschlossenen Darstellungsoptionen ist wieder bedienbar. Unter 760 px wird gestapelt; keine zweite Kopie der Modellsteuerung. Preview-Bilder folgen der Plattenwahl. Neue Präsentationsbausteine im Generator `model/desktop-layout.cjs`; Dokumentquellen und bestehende Funktions-IDs bleiben erhalten. Keine CAD-, Materialfestlegungs- oder Bewegungsänderung. `python3 model/test_workbench.py` prüft Navigation, IDs und Abschnittsanker aller neun Seiten. Visuelle Browserprüfung zusätzlich erforderlich; WebGL-Fähigkeit getrennt vom HTML-Layout bewerten.
+
 Stand 28.09.2026. Ausgangscommit der Reparatur: `59661168c681c6fc0ee955d2f77ed9527727616c`. Frühere Übergabetexte sind in Git erhalten. Aktueller Einstieg: README und [Entscheidungskette](entscheidungen-d.md).
 
 ## Verbindlich
