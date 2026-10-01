@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "docs": "node model/render_docs.cjs",
-    "check": "node model/test_montage.mjs && python3 model/check_release.py"
+    "check": "node model/test_montage.mjs && python3 model/test_workbench.py && python3 model/check_release.py"
   },
   "devDependencies": {
     "marked": "17.0.5"
