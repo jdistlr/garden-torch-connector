@@ -44,4 +44,4 @@ Drei Nachweispakete: (1) Rohr, Schlitz, Kopf und Stift direkt messen; (2) Origin
 D02 und V01 sind historische Referenzen. Der aktuelle Einstieg ist D-V03. GitHub Pages veröffentlicht den main-Branch; das Repository bleibt öffentlich.
 # One More Thing
 
-Zusätzlicher, strikt fiktiver [Röntgenstrahler-Demonstrator](https://jdistlr.github.io/garden-torch-connector/web/one-more-thing.html): elf illustrative Baugruppen, schrittweise Erklärmontage, Kathode/Anodenteller/Flüssigmetalllager, schematische Strahlungsentstehung, erfundene Stückliste und zwei A3-Schemablätter. Kein realer Bauplan. [Abgrenzung und Implementierung](docs/xray-demo.md). Gartenfackel D-V03 bleibt ein eigenständiges Projekt.
+Zusätzlicher, Vectron-nah gestalteter, technisch fiktiver [Röntgenstrahler-Demonstrator](https://jdistlr.github.io/garden-torch-connector/web/one-more-thing.html): elf illustrative Baugruppen, schrittweise Erklärmontage, Kathode/Anodenteller/Flüssigmetalllager, schematische Strahlungsentstehung, erfundene Stückliste und zwei A3-Schemablätter. Kein realer Bauplan. [Abgrenzung und Implementierung](docs/xray-demo.md). Gartenfackel D-V03 bleibt ein eigenständiges Projekt.

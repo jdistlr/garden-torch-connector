@@ -1,5 +1,7 @@
 # Projektregeln
 
+- Ergänzung XR-DEMO / 02: Nutzer wünscht ausdrücklich Vectron-nahe äußere Form. Öffentliche Produktbilder als Formreferenz erlaubt; Quellen/Beobachtung und erfundene Geometrie strikt trennen. Keine Herstellerzugehörigkeit oder originale Innenkonstruktion behaupten. Kein Logo oder reale Betriebs-/Fertigungsparameter hinzufügen.
+
 - Separater Nutzerauftrag vom 01.10.2026: „One More Thing“ darf zusätzlich ein strikt fiktives Röntgenstrahler-Anschauungsmodell enthalten. Eigener Namensraum XR-DEMO, eigene Daten, keine Änderung an D-V03. Keine funktionsfähige Strahlenquelle, Hochspannungs-, Abschirmungs- oder Fertigungsauslegung. Abmessungen, Kosten und Anbieter dieses Demonstrators ausdrücklich erfunden kennzeichnen; keine echten Kaufempfehlungen daraus ableiten.
 
 - Zweck: ausschließlich Sockel D-V03 aus Grundplatte, massiver Aufnahme, Querstift, Senkschraube und geschlitztem Rohr. Der Erdspieß ist historische Originalreferenz.

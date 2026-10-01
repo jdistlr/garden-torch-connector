@@ -1,18 +1,18 @@
 {
-  "revision": "XR-DEMO / 01",
+  "revision": "XR-DEMO / 02 · Vectron-nahe Designstudie",
   "status": "Fictional non-functional display model; all sizes, prices and suppliers invented",
   "units": "demo-mm",
   "parts": [
     {
       "id": "base",
-      "name": "Montagefuß",
+      "name": "Silberner Montagerahmen",
       "material": "Aluminiumoptik",
-      "size": "360 × 12 × 190",
+      "size": "303 × 296 × 189.5",
       "color": "#718ba0",
       "offset": [
         0,
-        -110,
-        0
+        -210,
+        -90
       ],
       "price": 38,
       "source": "POC Metallatelier",
@@ -20,9 +20,9 @@
     },
     {
       "id": "carrier",
-      "name": "Innenrahmen",
+      "name": "Trägerstruktur (Schema)",
       "material": "Metalloptik",
-      "size": "280 × 86 × 120",
+      "size": "287.5 × 236 × 194",
       "color": "#a5b7c4",
       "offset": [
         0,
@@ -37,7 +37,7 @@
       "id": "anode",
       "name": "Anodenteller mit Rotor",
       "material": "Kupfer- und Stahloptik",
-      "size": "120 × Ø80",
+      "size": "129 × 116 × 116",
       "color": "#bc8056",
       "offset": [
         -210,
@@ -46,13 +46,13 @@
       ],
       "price": 210,
       "source": "POC Komponentenlabor",
-      "task": "Ein geometrischer Platzhalter für die Anodenseite. Kein funktionaler Rotor, kein berechnetes Target."
+      "task": "Anodenteller und Rotor als vereinfachte Innenbaugruppe. Keine originalen Vectron-Maße oder Targetauslegung."
     },
     {
       "id": "bearing",
       "name": "Flüssigmetalllager (Symbol)",
       "material": "Türkise Lagerfilm-Symbolik",
-      "size": "50 × Ø64",
+      "size": "48.5 × 59.1 × 60",
       "color": "#4caaa4",
       "offset": [
         -180,
@@ -67,7 +67,7 @@
       "id": "cathode",
       "name": "Kathodenmodul",
       "material": "Keramik- und Metalloptik",
-      "size": "70 × Ø46",
+      "size": "89 × 58 × 58",
       "color": "#d4dedf",
       "offset": [
         220,
@@ -82,7 +82,7 @@
       "id": "envelope",
       "name": "Röhrenhülle",
       "material": "Transparente Demo-Hülle",
-      "size": "280 × Ø120",
+      "size": "280 × 138 × 138",
       "color": "#79b2c6",
       "offset": [
         0,
@@ -95,24 +95,24 @@
     },
     {
       "id": "cooler",
-      "name": "Kühlmodul",
-      "material": "Dunkle Aluminiumoptik",
-      "size": "190 × 34 × 82",
+      "name": "Leitungen & Anschlüsse (Attrappe)",
+      "material": "Silber- und Messingoptik",
+      "size": "158 × 256.8 × 97",
       "color": "#355366",
       "offset": [
-        0,
-        160,
-        -180
+        -250,
+        70,
+        0
       ],
       "price": 85,
       "source": "POC Thermoattrappen",
-      "task": "Ein Kühlmodul ergänzt die Silhouette. Keine thermische Auslegung oder realer Kühlkreislauf."
+      "task": "Seitliche Leitungen und Anschlussattrappen prägen die Vectron-nahe Silhouette. Kein funktionsfähiger Kühlkreis oder elektrischer Anschluss."
     },
     {
       "id": "housing",
-      "name": "Gehäuseschale",
-      "material": "Lackierte Metalloptik",
-      "size": "450 × 170 × 220",
+      "name": "Zylindrischer Röhrenkörper",
+      "material": "Dunkle Metalloptik",
+      "size": "257 × 210 × 210",
       "color": "#d1dce3",
       "offset": [
         0,
@@ -127,12 +127,12 @@
       "id": "window",
       "name": "Fenstermodul",
       "material": "Kontrastfarbene Attrappe",
-      "size": "76 × 54 × 28",
+      "size": "66 × 23 × 14.5",
       "color": "#538d9f",
       "offset": [
         0,
-        0,
-        200
+        100,
+        350
       ],
       "price": 32,
       "source": "POC Optikattrappen",
@@ -140,24 +140,24 @@
     },
     {
       "id": "cover",
-      "name": "Servicehaube",
-      "material": "Helle Gehäuseoptik",
-      "size": "450 × 16 × 220",
+      "name": "Bronzefarbene Formhaube",
+      "material": "Bronze- / Messingoptik",
+      "size": "308 × 300 × 65.5",
       "color": "#e2e8eb",
       "offset": [
         0,
-        290,
-        0
+        70,
+        270
       ],
       "price": 62,
       "source": "POC Formwerk",
-      "task": "Die Servicehaube schließt die Darstellung. Zugänglichkeit und Montagekollisionen sind nicht geprüft."
+      "task": "Konturierte Formhaube und umlaufender Schraubflansch nach öffentlicher Erscheinungsreferenz. Keine originale Form-, Material- oder Abschirmungsauslegung."
     },
     {
       "id": "endcap",
-      "name": "Enddeckel",
+      "name": "Runder Seitendeckel",
       "material": "Dunkle Gehäuseoptik",
-      "size": "16 × 170 × 220",
+      "size": "17.5 × 202 × 202",
       "color": "#294658",
       "offset": [
         250,

@@ -1,4 +1,12 @@
-# One More Thing · XR-DEMO / 01
+# One More Thing · XR-DEMO / 02 · Vectron-nahe Designstudie
+
+## Formwechsel vom 01.10.2026
+
+Auf ausdrücklichen Nutzerwunsch wird die äußere Erscheinung jetzt an der öffentlich abgebildeten Siemens-Healthineers-Vectron-Baugruppe orientiert: bronzefarbene konturierte Haube mit Schraubflansch, silberner Trägerrahmen, kompakter runder Röhrenkörper und seitliche Leitungs-/Anschlussattrappen. Kein Logo, keine Herstellerzugehörigkeit, keine Behauptung einer originalgetreuen Replik. Innengeometrie, Proportionen und Montagebewegungen sind weiterhin eigene schematische Darstellungen. Die Maßanzeigen werden aus den erfundenen Modellnetzen abgeleitet, nicht aus dem Produktfoto gemessen.
+
+Öffentliche Formreferenz: [NAEOTOM Alpha / Full Vectron X-ray power](https://www.siemens-healthineers.com/en-us/computed-tomography/naeotom/naeotom-alpha), dort [Produktabbildung](https://marketing.webassets.siemens-healthineers.com/ddef0cf99f6e35a6/a8002f0892c5/v/ceff17427d70/siemens-healthineers_DI_CT_PCCT_Vectron-tube.jpg). Das Herstellerbild wird verlinkt, nicht als eigene Darstellung oder als Download neu veröffentlicht.
+
+Das öffentliche [SOMATOM-Force-Whitepaper, Abb. 2](https://academy.siemens-healthineers.com/_/en-us/somatom-force--get-two-steps-ahead-with-dual-source-ct/) benennt beim Vectron-Schema unter anderem Flüssigkeitslager, Kathode, Anode, Stator, Ablenkspulen, Elektronenfänger und Wasserkühlung. Das belegt die allgemeine Komponentenbenennung, nicht unsere vereinfachte Baugruppenaufteilung oder Geometrie. Das Flüssigmetalllager bleibt als Symbol gekennzeichnet; keine Spalte, Zusammensetzung oder Betriebsdaten werden übernommen.
 
 Separater Nutzerauftrag vom 01.10.2026: eine fiktive Röntgenstrahler-Demonstration als Beleg für die Übertragbarkeit des Projekt-Workflows. **Kein realer Bauplan, keine Strahlenquelle, keine Fertigungs- oder Betriebsfreigabe.** D-V03 bleibt unverändert.
 
@@ -21,14 +29,16 @@ Alle Maßzahlen, Anbieter und Preise sind erfunden. Summe 1.065 Demo-Euro pro Sa
 
 ## Hintergrundquellen
 
-Nur für die allgemein erklärten Zusammenhänge, nicht als Modellvorlage:
+Zusätzliche Grundlagen für die allgemein erklärten Zusammenhänge; die Formreferenz der Revision 02 ist oben getrennt aufgeführt:
 
 - [Siemens Healthineers Academy: X-ray technology basics](https://academy.siemens-healthineers.com/_/en-us/x-ray-essentials-basics-of-x-ray-technology-job-aid/)
 - [Siemens Healthineers OEM: X-ray tubes](https://www.oem-products.siemens-healthineers.com/x-ray-tube)
 
-Quellenstand: 01.10.2026. Keine Nachbildung eines Herstellerprodukts.
+Quellenstand: 01.10.2026. Keine maßgetreue oder funktionsfähige Nachbildung eines Herstellerprodukts.
 
-## Prüfstand 01.10.2026
+## Vorheriger Prüfstand der Revision 01
+
+Revision 02: sämtliche elf Netze und abgeleiteten STL-/SVG-Dateien neu erzeugt. Größenkonsistenz pro Teil und Gesamt-Hüllmaße automatisch geprüft; 45 Montagezustände weiterhin endlich. Zusätzliche Projektionstests prüfen, dass die neue Standardkamera bei 320-/375-Pixel-Seitenbreite das vollständige Modell zeigt. Schemablätter und Explosionsansicht lokal gerendert und visuell geprüft. Keine mechanische Kollisions- oder Herstellbarkeitsprüfung. WebGL-GPU-Abnahme weiterhin offen.
 
 Automatische Prüfungen erfolgreich: elf IDs, 45 endliche Montageposen, Stücklisten-/Beschaffungsanker, isolierte Bauteilwahl, transparente Hülle, SVG-Projektion und unveränderte D-V03-Posen. Vier SVG-Dateien als XML geprüft.
 
